@@ -95,3 +95,5 @@ Repository attachments should stay small, relevant, and reviewed through pull re
 3. Push to `main`.
 
 The Pages workflow validates data, generates the index, builds the app, and publishes `dist/`.
+
+If the workflow fails in `actions/configure-pages` with `HttpError: Not Found`, GitHub Pages has not been enabled for the repository yet. Open **Settings -> Pages**, set **Build and deployment** to **GitHub Actions**, then rerun the workflow. GitHub's default `GITHUB_TOKEN` can deploy a configured Pages site, but it cannot create the Pages site setting for a new repository.
