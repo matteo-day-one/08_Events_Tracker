@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.playwright-mcp/
+event-tracker-*.png
+.DS_Store
+*.tsbuildinfo
+node_modules/.tmp/

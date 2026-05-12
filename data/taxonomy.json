@@ -1,0 +1,50 @@
+{
+  "macrotopics": [
+    {
+      "id": "automotive",
+      "label": "Automotive",
+      "subtopics": [
+        { "id": "autonomous-driving", "label": "Autonomous driving" },
+        { "id": "electric-vehicles", "label": "Electric vehicles" },
+        { "id": "mobility", "label": "Mobility" }
+      ]
+    },
+    {
+      "id": "energy",
+      "label": "Energy",
+      "subtopics": [
+        { "id": "batteries", "label": "Batteries" },
+        { "id": "nuclear", "label": "Nuclear" },
+        { "id": "power-grids", "label": "Power grids" },
+        { "id": "renewables", "label": "Renewables" }
+      ]
+    },
+    {
+      "id": "health-care",
+      "label": "Health care",
+      "subtopics": [
+        { "id": "biomedical-devices", "label": "Biomedical devices" },
+        { "id": "digital-health", "label": "Digital health" },
+        { "id": "medical-robotics", "label": "Medical robotics" }
+      ]
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics",
+      "subtopics": [
+        { "id": "grippers", "label": "Grippers" },
+        { "id": "humanoids", "label": "Humanoids" },
+        { "id": "industrial-automation", "label": "Industrial automation" }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "label": "Manufacturing",
+      "subtopics": [
+        { "id": "additive-manufacturing", "label": "Additive manufacturing" },
+        { "id": "materials", "label": "Materials" },
+        { "id": "quality-control", "label": "Quality control" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "2026-clean-energy-summit",
+  "name": "Clean Energy Summit",
+  "description": "A two-day forum for researchers, startups, utilities, and manufacturers working on batteries, power grids, and industrial decarbonization.",
+  "website": "https://example.org/clean-energy-summit",
+  "location": "Milan, Italy",
+  "mode": "hybrid",
+  "startDate": "2026-09-15",
+  "endDate": "2026-09-16",
+  "applicationDeadline": "2026-08-20",
+  "fee": {
+    "type": "paid",
+    "amount": 120,
+    "currency": "EUR",
+    "notes": "Reduced fee for students and early-career researchers."
+  },
+  "macrotopics": ["energy"],
+  "subtopics": ["batteries", "power-grids", "renewables"],
+  "attachments": [
+    {
+      "label": "Sponsor pack",
+      "type": "repository",
+      "path": "data/attachments/2026-clean-energy-summit/sponsor-pack.md",
+      "description": "Example repository-hosted attachment reviewed through pull requests."
+    },
+    {
+      "label": "Registration page",
+      "type": "external",
+      "url": "https://example.org/clean-energy-summit/register"
+    }
+  ],
+  "createdAt": "2026-05-12T08:00:00.000Z",
+  "updatedAt": "2026-05-12T08:00:00.000Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2026-autonomous-mobility-forum",
+  "name": "Autonomous Mobility Forum",
+  "description": "Industry and academic talks on autonomous driving, electric vehicles, sensor stacks, and urban mobility pilots.",
+  "website": "https://example.org/autonomous-mobility-forum",
+  "location": "Turin, Italy",
+  "mode": "in-person",
+  "startDate": "2026-10-22",
+  "endDate": "2026-10-23",
+  "applicationDeadline": "2026-09-30",
+  "fee": {
+    "type": "unknown",
+    "notes": "Fee information will be published by the organizer."
+  },
+  "macrotopics": ["automotive"],
+  "subtopics": ["autonomous-driving", "electric-vehicles", "mobility"],
+  "attachments": [],
+  "createdAt": "2026-05-12T08:10:00.000Z",
+  "updatedAt": "2026-05-12T08:10:00.000Z"
+}

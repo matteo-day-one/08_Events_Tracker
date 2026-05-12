@@ -1,0 +1,25 @@
+{
+  "id": "2026-medical-robotics-workshop",
+  "name": "Medical Robotics Workshop",
+  "description": "Hands-on workshop covering robotic assistance, clinical workflow integration, and validation of biomedical devices.",
+  "website": "https://example.org/medical-robotics-workshop",
+  "location": "Online",
+  "mode": "online",
+  "startDate": "2026-07-08",
+  "applicationDeadline": "2026-06-15",
+  "fee": {
+    "type": "free",
+    "notes": "Registration required due to limited remote seats."
+  },
+  "macrotopics": ["health-care", "robotics"],
+  "subtopics": ["medical-robotics", "biomedical-devices"],
+  "attachments": [
+    {
+      "label": "Call for participants",
+      "type": "external",
+      "url": "https://example.org/medical-robotics-workshop/call"
+    }
+  ],
+  "createdAt": "2026-05-12T08:05:00.000Z",
+  "updatedAt": "2026-05-12T08:05:00.000Z"
+}
