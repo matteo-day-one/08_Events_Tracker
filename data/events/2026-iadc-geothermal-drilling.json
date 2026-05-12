@@ -1,0 +1,27 @@
+{
+  "id": "2026-iadc-geothermal-drilling",
+  "name": "IADC Geothermal Drilling 2026",
+  "description": "Conference and exhibition focused on geothermal drilling, upstream geothermal development, drilling technologies, standards, and regulatory challenges.",
+  "website": "https://iadc.org/event/iadc-geothermal-drilling-2026/",
+  "location": "Copenhagen, Denmark",
+  "mode": "in-person",
+  "startDate": "2026-11-17",
+  "endDate": "2026-11-18",
+  "fee": {
+    "type": "paid",
+    "amount": 775,
+    "currency": "EUR",
+    "notes": "IADC member registration fee; non-member rate is 975 EUR and some discounts may apply."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["geothermal", "downhole-drilling", "well-integrity"],
+  "attachments": [
+    {
+      "label": "IADC event page",
+      "type": "external",
+      "url": "https://iadc.org/event/iadc-geothermal-drilling-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

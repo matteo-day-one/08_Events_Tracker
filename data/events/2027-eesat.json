@@ -1,0 +1,26 @@
+{
+  "id": "2027-eesat",
+  "name": "Electrical Energy Storage Applications and Technologies Conference 2027",
+  "description": "Technical conference on electrical energy storage applications, controls, safety, degradation, power conversion, long-duration storage, markets, standards, and policy.",
+  "website": "https://energy.sandia.gov/news/call-for-papers-2027-electrical-energy-storage-applications-technologies-conference/",
+  "location": "St. Pete Beach, FL, USA",
+  "mode": "in-person",
+  "startDate": "2027-01-11",
+  "endDate": "2027-01-12",
+  "applicationDeadline": "2026-07-27",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official call-for-papers page."
+  },
+  "macrotopics": ["energy", "thermal-systems"],
+  "subtopics": ["batteries", "power-grids", "thermal-energy-storage"],
+  "attachments": [
+    {
+      "label": "Sandia call for papers",
+      "type": "external",
+      "url": "https://energy.sandia.gov/news/call-for-papers-2027-electrical-energy-storage-applications-technologies-conference/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

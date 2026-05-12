@@ -1,0 +1,33 @@
+{
+  "id": "2026-batteries-event",
+  "name": "Batteries Event 2026",
+  "description": "International battery industry meeting in Lyon covering materials, manufacturing, recycling, second life, advanced applications, exhibition, and networking.",
+  "website": "https://batteriesevent.com/",
+  "location": "Lyon, France",
+  "mode": "in-person",
+  "startDate": "2026-11-16",
+  "endDate": "2026-11-18",
+  "applicationDeadline": "2026-05-29",
+  "fee": {
+    "type": "paid",
+    "amount": 925,
+    "currency": "EUR",
+    "notes": "Standard attendee rate recorded from registration materials; speaker and poster badges vary."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://batteriesevent.com/"
+    },
+    {
+      "label": "Registration fees",
+      "type": "external",
+      "url": "https://batteriesevent.com/registration-fees"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

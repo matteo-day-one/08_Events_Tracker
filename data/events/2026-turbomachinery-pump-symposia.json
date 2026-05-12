@@ -1,0 +1,32 @@
+{
+  "id": "2026-turbomachinery-pump-symposia",
+  "name": "Turbomachinery & Pump Symposia 2026",
+  "description": "Industry symposium for rotating equipment engineers and technicians covering turbomachinery, pumps, reliability, maintenance, troubleshooting, and technical best practices.",
+  "website": "https://tps.tamu.edu/",
+  "location": "Houston, TX, USA",
+  "mode": "in-person",
+  "startDate": "2026-09-22",
+  "endDate": "2026-09-24",
+  "fee": {
+    "type": "paid",
+    "amount": 1210,
+    "currency": "USD",
+    "notes": "Full Symposia Pass price; day passes, short courses, exhibitor badges, and discounts vary."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["turbomachinery", "rotating-equipment", "condition-monitoring"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://tps.tamu.edu/"
+    },
+    {
+      "label": "Registration page",
+      "type": "external",
+      "url": "https://tps.tamu.edu/register/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

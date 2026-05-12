@@ -19,98 +19,102 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
 
   return (
     <section className="filter-band" aria-label="Event filters">
-      <div className="search-field">
-        <Search aria-hidden="true" size={18} />
-        <label htmlFor="event-search">Search events</label>
-        <input
-          id="event-search"
-          type="search"
-          value={filters.query}
-          onChange={(event) => updateFilter("query", event.target.value)}
-          placeholder="Name, topic, location, description"
-        />
+      <div className="filter-toolbar">
+        <div className="search-field">
+          <Search aria-hidden="true" size={18} />
+          <label htmlFor="event-search">Search events</label>
+          <input
+            id="event-search"
+            type="search"
+            value={filters.query}
+            onChange={(event) => updateFilter("query", event.target.value)}
+            placeholder="Name, topic, location, description"
+          />
+        </div>
+
+        <label className="select-field">
+          <span>Topic filter</span>
+          <select
+            value={filters.macrotopic}
+            onChange={(event) => updateFilter("macrotopic", event.target.value)}
+          >
+            <option value="all">All topics</option>
+            {taxonomy.macrotopics.map((topic) => (
+              <option key={topic.id} value={topic.id}>
+                {topic.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="select-field">
+          <span>Subtopic filter</span>
+          <select
+            value={filters.subtopic}
+            onChange={(event) => updateFilter("subtopic", event.target.value)}
+          >
+            <option value="all">All subtopics</option>
+            {subtopics.map((subtopic) => (
+              <option key={subtopic.id} value={subtopic.id}>
+                {subtopic.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="select-field compact">
+          <span>Mode</span>
+          <select value={filters.mode} onChange={(event) => updateFilter("mode", event.target.value)}>
+            <option value="all">All modes</option>
+            <option value="in-person">In person</option>
+            <option value="online">Online</option>
+            <option value="hybrid">Hybrid</option>
+          </select>
+        </label>
+
+        <label className="select-field compact">
+          <span>Fee</span>
+          <select
+            value={filters.feeType}
+            onChange={(event) => updateFilter("feeType", event.target.value)}
+          >
+            <option value="all">Any fee</option>
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </label>
+
+        <label className="date-field">
+          <span>Starts after</span>
+          <input
+            type="date"
+            value={filters.startsAfter}
+            onChange={(event) => updateFilter("startsAfter", event.target.value)}
+          />
+        </label>
+
+        <label className="date-field">
+          <span>Deadline before</span>
+          <input
+            type="date"
+            value={filters.deadlineBefore}
+            onChange={(event) => updateFilter("deadlineBefore", event.target.value)}
+          />
+        </label>
       </div>
 
-      <label className="select-field">
-        <span>Topic filter</span>
-        <select
-          value={filters.macrotopic}
-          onChange={(event) => updateFilter("macrotopic", event.target.value)}
-        >
-          <option value="all">All topics</option>
-          {taxonomy.macrotopics.map((topic) => (
-            <option key={topic.id} value={topic.id}>
-              {topic.label}
-            </option>
-          ))}
-        </select>
-      </label>
+      <div className="filter-actions-row">
+        <div className="filter-summary" aria-live="polite">
+          <strong>{resultCount}</strong>
+          <span>of {totalCount}</span>
+        </div>
 
-      <label className="select-field">
-        <span>Subtopic filter</span>
-        <select
-          value={filters.subtopic}
-          onChange={(event) => updateFilter("subtopic", event.target.value)}
-        >
-          <option value="all">All subtopics</option>
-          {subtopics.map((subtopic) => (
-            <option key={subtopic.id} value={subtopic.id}>
-              {subtopic.label}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <label className="select-field">
-        <span>Mode</span>
-        <select value={filters.mode} onChange={(event) => updateFilter("mode", event.target.value)}>
-          <option value="all">All modes</option>
-          <option value="in-person">In person</option>
-          <option value="online">Online</option>
-          <option value="hybrid">Hybrid</option>
-        </select>
-      </label>
-
-      <label className="select-field">
-        <span>Fee</span>
-        <select
-          value={filters.feeType}
-          onChange={(event) => updateFilter("feeType", event.target.value)}
-        >
-          <option value="all">Any fee</option>
-          <option value="free">Free</option>
-          <option value="paid">Paid</option>
-          <option value="unknown">Unknown</option>
-        </select>
-      </label>
-
-      <label className="date-field">
-        <span>Starts after</span>
-        <input
-          type="date"
-          value={filters.startsAfter}
-          onChange={(event) => updateFilter("startsAfter", event.target.value)}
-        />
-      </label>
-
-      <label className="date-field">
-        <span>Deadline before</span>
-        <input
-          type="date"
-          value={filters.deadlineBefore}
-          onChange={(event) => updateFilter("deadlineBefore", event.target.value)}
-        />
-      </label>
-
-      <div className="filter-summary" aria-live="polite">
-        <strong>{resultCount}</strong>
-        <span>of {totalCount}</span>
+        <button className="icon-button secondary" type="button" onClick={() => onFiltersChange(defaultFilters)}>
+          <RotateCcw aria-hidden="true" size={16} />
+          Reset
+        </button>
       </div>
-
-      <button className="icon-button secondary" type="button" onClick={() => onFiltersChange(defaultFilters)}>
-        <RotateCcw aria-hidden="true" size={16} />
-        Reset
-      </button>
     </section>
   );
 }

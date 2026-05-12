@@ -1,0 +1,26 @@
+{
+  "id": "2026-geothermal-rising-conference",
+  "name": "2026 Geothermal Rising Conference",
+  "description": "Annual geothermal industry conference with technical, policy, market, education, tour, and exhibition programming for geothermal energy professionals.",
+  "website": "https://www.geothermal.org/events/2026-geothermal-rising-conference",
+  "location": "Houston, TX, USA",
+  "mode": "in-person",
+  "startDate": "2026-09-20",
+  "endDate": "2026-09-23",
+  "applicationDeadline": "2026-08-14",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration is open, but pricing was not visible on the official event page."
+  },
+  "macrotopics": ["energy", "drilling-and-wells", "thermal-systems"],
+  "subtopics": ["geothermal", "downhole-drilling", "heat-recovery"],
+  "attachments": [
+    {
+      "label": "Geothermal Rising event page",
+      "type": "external",
+      "url": "https://www.geothermal.org/events/2026-geothermal-rising-conference"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

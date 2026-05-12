@@ -19,10 +19,13 @@ describe("event tracker app", () => {
     expect(screen.getByRole("row", { name: /Medical Robotics Workshop/ })).toBeInTheDocument();
   });
 
-  it("generates a structured add proposal from the contribution form", () => {
+  it("opens add proposals in a drawer and returns focus when closed", () => {
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Propose add" }));
+    const addButton = screen.getByRole("button", { name: "Add event" });
+    fireEvent.click(addButton);
+
+    expect(screen.getByRole("dialog", { name: "Add event proposal" })).toBeInTheDocument();
 
     fireEvent.change(screen.getByLabelText("Event name"), {
       target: { value: "Battery Research Demo Day" }
@@ -58,5 +61,31 @@ describe("event tracker app", () => {
     expect(outputValue).toContain("Action: add");
     expect(outputValue).toContain("2026-battery-research-demo-day");
     expect(outputValue).toContain('"macrotopics": [');
+
+    fireEvent.click(screen.getByRole("button", { name: "Close proposal drawer" }));
+
+    expect(screen.queryByRole("dialog", { name: "Add event proposal" })).not.toBeInTheDocument();
+    expect(addButton).toHaveFocus();
+  });
+
+  it("opens update and delete proposal drawers from the selected event details", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: /Clean Energy Summit/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Update event" }));
+
+    expect(screen.getByRole("dialog", { name: "Update event proposal" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Target event")).toHaveValue("2026-clean-energy-summit");
+
+    fireEvent.keyDown(document, { key: "Escape" });
+    expect(
+      screen.queryByRole("dialog", { name: "Update event proposal" })
+    ).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Update event" })).toHaveFocus();
+
+    fireEvent.click(screen.getByRole("button", { name: "Delete event" }));
+
+    expect(screen.getByRole("dialog", { name: "Delete event proposal" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Target event")).toHaveValue("2026-clean-energy-summit");
   });
 });

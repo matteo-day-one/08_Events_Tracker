@@ -1,0 +1,28 @@
+{
+  "id": "2026-asme-turbo-expo",
+  "name": "ASME Turbo Expo 2026",
+  "description": "Technical conference and exposition for turbomachinery and propulsion engineering, including gas turbines and power and propulsion systems.",
+  "website": "https://event.asme.org/Turbo-Expo",
+  "location": "Milan, Italy",
+  "mode": "in-person",
+  "startDate": "2026-06-15",
+  "endDate": "2026-06-19",
+  "applicationDeadline": "2026-03-16",
+  "fee": {
+    "type": "paid",
+    "amount": 1725,
+    "currency": "EUR",
+    "notes": "Full conference rate recorded from registration materials; member, nonmember, and VAT treatment vary."
+  },
+  "macrotopics": ["industrial-operations", "thermal-systems"],
+  "subtopics": ["gas-turbines", "turbomachinery", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://event.asme.org/Turbo-Expo"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

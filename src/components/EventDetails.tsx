@@ -1,13 +1,15 @@
-import { CalendarDays, ExternalLink, FileText, MapPin, Tag } from "lucide-react";
+import { CalendarDays, ExternalLink, FileText, MapPin, Pencil, Tag, Trash2 } from "lucide-react";
 import type { EventRecord } from "../lib/eventTypes";
 import { formatDate, formatDateRange, formatFee, formatMode } from "../lib/formatters";
 import { getMacrotopicLabel, getSubtopicLabel } from "../lib/taxonomy";
 
 type EventDetailsProps = {
   event: EventRecord;
+  onUpdate: (opener: HTMLElement) => void;
+  onDelete: (opener: HTMLElement) => void;
 };
 
-export function EventDetails({ event }: EventDetailsProps) {
+export function EventDetails({ event, onUpdate, onDelete }: EventDetailsProps) {
   return (
     <aside className="detail-panel" aria-label="Selected event details">
       <div className="detail-header">
@@ -67,6 +69,14 @@ export function EventDetails({ event }: EventDetailsProps) {
           <ExternalLink aria-hidden="true" size={16} />
           Website
         </a>
+        <button className="icon-button secondary" type="button" onClick={(event) => onUpdate(event.currentTarget)}>
+          <Pencil aria-hidden="true" size={15} />
+          Update event
+        </button>
+        <button className="icon-button secondary danger" type="button" onClick={(event) => onDelete(event.currentTarget)}>
+          <Trash2 aria-hidden="true" size={15} />
+          Delete event
+        </button>
       </div>
 
       <section className="attachment-list" aria-label="Event attachments">

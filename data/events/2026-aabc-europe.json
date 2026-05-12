@@ -1,0 +1,25 @@
+{
+  "id": "2026-aabc-europe",
+  "name": "AABC Europe 2026",
+  "description": "Automotive battery conference covering vehicle electrification, battery chemistry, engineering, manufacturing, and next-generation energy storage technologies.",
+  "website": "https://www.advancedautobat.com/europe",
+  "location": "Mainz, Germany",
+  "mode": "in-person",
+  "startDate": "2026-05-18",
+  "endDate": "2026-05-21",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration is required; pricing was not visible on the official event page."
+  },
+  "macrotopics": ["automotive", "energy"],
+  "subtopics": ["batteries", "electric-vehicles", "solid-state-batteries", "high-temperature-batteries"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.advancedautobat.com/europe"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

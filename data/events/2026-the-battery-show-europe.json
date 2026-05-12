@@ -1,0 +1,28 @@
+{
+  "id": "2026-the-battery-show-europe",
+  "name": "The Battery Show Europe 2026",
+  "description": "European battery and electric vehicle technology event with conference, exhibition, and networking for advanced battery systems and manufacturing.",
+  "website": "https://www.thebatteryshow.eu/day-pass-options/",
+  "location": "Stuttgart, Germany",
+  "mode": "in-person",
+  "startDate": "2026-06-09",
+  "endDate": "2026-06-11",
+  "applicationDeadline": "2026-06-08",
+  "fee": {
+    "type": "paid",
+    "amount": 799,
+    "currency": "EUR",
+    "notes": "Advanced 1-day leader pass price; 2-day, 3-day, onsite, and other pass prices vary."
+  },
+  "macrotopics": ["automotive", "energy"],
+  "subtopics": ["batteries", "electric-vehicles", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Passes and pricing",
+      "type": "external",
+      "url": "https://www.thebatteryshow.eu/day-pass-options/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

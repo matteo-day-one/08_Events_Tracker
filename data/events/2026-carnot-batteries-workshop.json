@@ -1,0 +1,25 @@
+{
+  "id": "2026-carnot-batteries-workshop",
+  "name": "5th International Workshop on Carnot Batteries",
+  "description": "Workshop for energy storage experts discussing research and demonstration projects in thermal energy storage with a focus on Carnot batteries.",
+  "website": "https://www.dlr.de/en/tt/latest/events/2026/iwcb",
+  "location": "Stuttgart, Germany",
+  "mode": "in-person",
+  "startDate": "2026-09-21",
+  "endDate": "2026-09-23",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official event page."
+  },
+  "macrotopics": ["energy", "thermal-systems"],
+  "subtopics": ["thermal-batteries", "thermal-energy-storage", "renewables"],
+  "attachments": [
+    {
+      "label": "DLR event page",
+      "type": "external",
+      "url": "https://www.dlr.de/en/tt/latest/events/2026/iwcb"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

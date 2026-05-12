@@ -4,6 +4,7 @@ import {
   validateEvent,
   validateEventCollection
 } from "../src/lib/eventSchema";
+import { events } from "../src/generated/eventIndex";
 import { taxonomy } from "../src/lib/taxonomy";
 
 const validEvent = {
@@ -80,6 +81,57 @@ describe("event schema validation", () => {
 
     expect(result.ok).toBe(false);
     expect(result.errors).toEqual([expect.stringContaining("Duplicate event id")]);
+  });
+
+  it("includes the controlled taxonomy needed for 2026 and 2027 industrial events", () => {
+    expect(taxonomy.macrotopics.map((topic) => topic.id)).toEqual(
+      expect.arrayContaining([
+        "drilling-and-wells",
+        "industrial-operations",
+        "thermal-systems"
+      ])
+    );
+    expect(taxonomy.macrotopics.flatMap((topic) => topic.subtopics).map((topic) => topic.id)).toEqual(
+      expect.arrayContaining([
+        "geothermal",
+        "downhole-drilling",
+        "well-integrity",
+        "heat-recovery",
+        "waste-heat",
+        "thermal-energy-storage",
+        "thermal-batteries",
+        "solid-state-batteries",
+        "thin-film-batteries",
+        "high-temperature-batteries",
+        "predictive-maintenance",
+        "industrial-iot",
+        "condition-monitoring",
+        "gas-turbines",
+        "turbomachinery",
+        "rotating-equipment"
+      ])
+    );
+  });
+
+  it("includes the verified 2026 and 2027 seed events in the generated index", () => {
+    expect(events.map((event) => event.id)).toEqual(
+      expect.arrayContaining([
+        "2026-aabc-europe",
+        "2026-the-battery-show-europe",
+        "2026-icemrb",
+        "2026-carnot-batteries-workshop",
+        "2026-batteries-event",
+        "2026-mrs-en04",
+        "2027-eesat",
+        "2026-iadc-geothermal-drilling",
+        "2026-celle-drilling",
+        "2026-geothermal-rising-conference",
+        "2026-asme-turbo-expo",
+        "2026-intelligent-maintenance-conference",
+        "2026-turbomachinery-pump-symposia",
+        "2026-aimcs"
+      ])
+    );
   });
 });
 

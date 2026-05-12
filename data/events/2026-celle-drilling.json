@@ -1,0 +1,25 @@
+{
+  "id": "2026-celle-drilling",
+  "name": "Celle Drilling 2026",
+  "description": "International conference and exhibition for advanced drilling technology, drilling processes, innovative drilling methods, case studies, and geothermal wells.",
+  "website": "https://www.celle-drilling.com/",
+  "location": "Celle, Germany",
+  "mode": "in-person",
+  "startDate": "2026-09-15",
+  "endDate": "2026-09-16",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official event page."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "geothermal", "well-integrity"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.celle-drilling.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

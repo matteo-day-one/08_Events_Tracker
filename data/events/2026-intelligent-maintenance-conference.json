@@ -1,0 +1,28 @@
+{
+  "id": "2026-intelligent-maintenance-conference",
+  "name": "Intelligent Maintenance Conference 2026",
+  "description": "Maintenance conference focused on AI, data science, predictive maintenance, condition monitoring, diagnostics, and industrial maintenance decision support.",
+  "website": "https://www.intelligent-maintenance.ch/",
+  "location": "Lausanne, Switzerland",
+  "mode": "in-person",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-02",
+  "applicationDeadline": "2026-07-01",
+  "fee": {
+    "type": "paid",
+    "amount": 300,
+    "currency": "CHF",
+    "notes": "Standard early-bird rate is 300 CHF per day or 600 CHF for two days; student rates are lower."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.intelligent-maintenance.ch/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

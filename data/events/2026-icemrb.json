@@ -1,0 +1,26 @@
+{
+  "id": "2026-icemrb",
+  "name": "International Conference on Energy Materials and Rechargeable Batteries 2026",
+  "description": "Scientific conference on energy materials and rechargeable batteries, including solid-state, thin-film, flexible, metal-air, and sustainable battery research.",
+  "website": "https://www.rsc.org/events/find-an-event/international-conference-on-energy-materials-and-rechargeable-batteries-2026",
+  "location": "Faridabad, India",
+  "mode": "in-person",
+  "startDate": "2026-10-14",
+  "endDate": "2026-10-17",
+  "applicationDeadline": "2026-08-30",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official event listing."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries", "thin-film-batteries"],
+  "attachments": [
+    {
+      "label": "RSC event listing",
+      "type": "external",
+      "url": "https://www.rsc.org/events/find-an-event/international-conference-on-energy-materials-and-rechargeable-batteries-2026"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

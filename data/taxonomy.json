@@ -6,7 +6,9 @@
       "subtopics": [
         { "id": "autonomous-driving", "label": "Autonomous driving" },
         { "id": "electric-vehicles", "label": "Electric vehicles" },
-        { "id": "mobility", "label": "Mobility" }
+        { "id": "mobility", "label": "Mobility" },
+        { "id": "solid-state-batteries", "label": "Solid-state batteries" },
+        { "id": "high-temperature-batteries", "label": "High-temperature batteries" }
       ]
     },
     {
@@ -14,9 +16,19 @@
       "label": "Energy",
       "subtopics": [
         { "id": "batteries", "label": "Batteries" },
+        { "id": "geothermal", "label": "Geothermal" },
         { "id": "nuclear", "label": "Nuclear" },
         { "id": "power-grids", "label": "Power grids" },
-        { "id": "renewables", "label": "Renewables" }
+        { "id": "renewables", "label": "Renewables" },
+        { "id": "thin-film-batteries", "label": "Thin-film batteries" }
+      ]
+    },
+    {
+      "id": "drilling-and-wells",
+      "label": "Drilling and wells",
+      "subtopics": [
+        { "id": "downhole-drilling", "label": "Downhole drilling" },
+        { "id": "well-integrity", "label": "Well integrity" }
       ]
     },
     {
@@ -38,12 +50,34 @@
       ]
     },
     {
+      "id": "industrial-operations",
+      "label": "Industrial operations",
+      "subtopics": [
+        { "id": "condition-monitoring", "label": "Condition monitoring" },
+        { "id": "gas-turbines", "label": "Gas turbines" },
+        { "id": "industrial-iot", "label": "Industrial IoT" },
+        { "id": "predictive-maintenance", "label": "Predictive maintenance" },
+        { "id": "rotating-equipment", "label": "Rotating equipment" },
+        { "id": "turbomachinery", "label": "Turbomachinery" }
+      ]
+    },
+    {
       "id": "manufacturing",
       "label": "Manufacturing",
       "subtopics": [
         { "id": "additive-manufacturing", "label": "Additive manufacturing" },
         { "id": "materials", "label": "Materials" },
         { "id": "quality-control", "label": "Quality control" }
+      ]
+    },
+    {
+      "id": "thermal-systems",
+      "label": "Thermal systems",
+      "subtopics": [
+        { "id": "heat-recovery", "label": "Heat recovery" },
+        { "id": "thermal-batteries", "label": "Thermal batteries" },
+        { "id": "thermal-energy-storage", "label": "Thermal energy storage" },
+        { "id": "waste-heat", "label": "Waste heat" }
       ]
     }
   ]

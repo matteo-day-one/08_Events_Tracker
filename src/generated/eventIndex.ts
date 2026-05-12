@@ -3,6 +3,109 @@ import type { EventRecord } from "../lib/eventTypes";
 
 export const events: EventRecord[] = [
   {
+    "id": "2026-aabc-europe",
+    "name": "AABC Europe 2026",
+    "description": "Automotive battery conference covering vehicle electrification, battery chemistry, engineering, manufacturing, and next-generation energy storage technologies.",
+    "website": "https://www.advancedautobat.com/europe",
+    "location": "Mainz, Germany",
+    "mode": "in-person",
+    "startDate": "2026-05-18",
+    "endDate": "2026-05-21",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration is required; pricing was not visible on the official event page."
+    },
+    "macrotopics": [
+      "automotive",
+      "energy"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "solid-state-batteries",
+      "high-temperature-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.advancedautobat.com/europe"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-the-battery-show-europe",
+    "name": "The Battery Show Europe 2026",
+    "description": "European battery and electric vehicle technology event with conference, exhibition, and networking for advanced battery systems and manufacturing.",
+    "website": "https://www.thebatteryshow.eu/day-pass-options/",
+    "location": "Stuttgart, Germany",
+    "mode": "in-person",
+    "startDate": "2026-06-09",
+    "endDate": "2026-06-11",
+    "applicationDeadline": "2026-06-08",
+    "fee": {
+      "type": "paid",
+      "amount": 799,
+      "currency": "EUR",
+      "notes": "Advanced 1-day leader pass price; 2-day, 3-day, onsite, and other pass prices vary."
+    },
+    "macrotopics": [
+      "automotive",
+      "energy"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Passes and pricing",
+        "type": "external",
+        "url": "https://www.thebatteryshow.eu/day-pass-options/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-asme-turbo-expo",
+    "name": "ASME Turbo Expo 2026",
+    "description": "Technical conference and exposition for turbomachinery and propulsion engineering, including gas turbines and power and propulsion systems.",
+    "website": "https://event.asme.org/Turbo-Expo",
+    "location": "Milan, Italy",
+    "mode": "in-person",
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-19",
+    "applicationDeadline": "2026-03-16",
+    "fee": {
+      "type": "paid",
+      "amount": 1725,
+      "currency": "EUR",
+      "notes": "Full conference rate recorded from registration materials; member, nonmember, and VAT treatment vary."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "gas-turbines",
+      "turbomachinery",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://event.asme.org/Turbo-Expo"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
     "id": "2026-medical-robotics-workshop",
     "name": "Medical Robotics Workshop",
     "description": "Hands-on workshop covering robotic assistance, clinical workflow integration, and validation of biomedical devices.",
@@ -32,6 +135,72 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T08:05:00.000Z",
     "updatedAt": "2026-05-12T08:05:00.000Z"
+  },
+  {
+    "id": "2026-intelligent-maintenance-conference",
+    "name": "Intelligent Maintenance Conference 2026",
+    "description": "Maintenance conference focused on AI, data science, predictive maintenance, condition monitoring, diagnostics, and industrial maintenance decision support.",
+    "website": "https://www.intelligent-maintenance.ch/",
+    "location": "Lausanne, Switzerland",
+    "mode": "in-person",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-02",
+    "applicationDeadline": "2026-07-01",
+    "fee": {
+      "type": "paid",
+      "amount": 300,
+      "currency": "CHF",
+      "notes": "Standard early-bird rate is 300 CHF per day or 600 CHF for two days; student rates are lower."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.intelligent-maintenance.ch/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-celle-drilling",
+    "name": "Celle Drilling 2026",
+    "description": "International conference and exhibition for advanced drilling technology, drilling processes, innovative drilling methods, case studies, and geothermal wells.",
+    "website": "https://www.celle-drilling.com/",
+    "location": "Celle, Germany",
+    "mode": "in-person",
+    "startDate": "2026-09-15",
+    "endDate": "2026-09-16",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event page."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "geothermal",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.celle-drilling.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
     "id": "2026-clean-energy-summit",
@@ -74,6 +243,144 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T08:00:00.000Z"
   },
   {
+    "id": "2026-geothermal-rising-conference",
+    "name": "2026 Geothermal Rising Conference",
+    "description": "Annual geothermal industry conference with technical, policy, market, education, tour, and exhibition programming for geothermal energy professionals.",
+    "website": "https://www.geothermal.org/events/2026-geothermal-rising-conference",
+    "location": "Houston, TX, USA",
+    "mode": "in-person",
+    "startDate": "2026-09-20",
+    "endDate": "2026-09-23",
+    "applicationDeadline": "2026-08-14",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration is open, but pricing was not visible on the official event page."
+    },
+    "macrotopics": [
+      "energy",
+      "drilling-and-wells",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "geothermal",
+      "downhole-drilling",
+      "heat-recovery"
+    ],
+    "attachments": [
+      {
+        "label": "Geothermal Rising event page",
+        "type": "external",
+        "url": "https://www.geothermal.org/events/2026-geothermal-rising-conference"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-carnot-batteries-workshop",
+    "name": "5th International Workshop on Carnot Batteries",
+    "description": "Workshop for energy storage experts discussing research and demonstration projects in thermal energy storage with a focus on Carnot batteries.",
+    "website": "https://www.dlr.de/en/tt/latest/events/2026/iwcb",
+    "location": "Stuttgart, Germany",
+    "mode": "in-person",
+    "startDate": "2026-09-21",
+    "endDate": "2026-09-23",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event page."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "thermal-batteries",
+      "thermal-energy-storage",
+      "renewables"
+    ],
+    "attachments": [
+      {
+        "label": "DLR event page",
+        "type": "external",
+        "url": "https://www.dlr.de/en/tt/latest/events/2026/iwcb"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-turbomachinery-pump-symposia",
+    "name": "Turbomachinery & Pump Symposia 2026",
+    "description": "Industry symposium for rotating equipment engineers and technicians covering turbomachinery, pumps, reliability, maintenance, troubleshooting, and technical best practices.",
+    "website": "https://tps.tamu.edu/",
+    "location": "Houston, TX, USA",
+    "mode": "in-person",
+    "startDate": "2026-09-22",
+    "endDate": "2026-09-24",
+    "fee": {
+      "type": "paid",
+      "amount": 1210,
+      "currency": "USD",
+      "notes": "Full Symposia Pass price; day passes, short courses, exhibitor badges, and discounts vary."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "turbomachinery",
+      "rotating-equipment",
+      "condition-monitoring"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://tps.tamu.edu/"
+      },
+      {
+        "label": "Registration page",
+        "type": "external",
+        "url": "https://tps.tamu.edu/register/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-icemrb",
+    "name": "International Conference on Energy Materials and Rechargeable Batteries 2026",
+    "description": "Scientific conference on energy materials and rechargeable batteries, including solid-state, thin-film, flexible, metal-air, and sustainable battery research.",
+    "website": "https://www.rsc.org/events/find-an-event/international-conference-on-energy-materials-and-rechargeable-batteries-2026",
+    "location": "Faridabad, India",
+    "mode": "in-person",
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-17",
+    "applicationDeadline": "2026-08-30",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event listing."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries",
+      "thin-film-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "RSC event listing",
+        "type": "external",
+        "url": "https://www.rsc.org/events/find-an-event/international-conference-on-energy-materials-and-rechargeable-batteries-2026"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
     "id": "2026-autonomous-mobility-forum",
     "name": "Autonomous Mobility Forum",
     "description": "Industry and academic talks on autonomous driving, electric vehicles, sensor stacks, and urban mobility pilots.",
@@ -98,5 +405,181 @@ export const events: EventRecord[] = [
     "attachments": [],
     "createdAt": "2026-05-12T08:10:00.000Z",
     "updatedAt": "2026-05-12T08:10:00.000Z"
+  },
+  {
+    "id": "2026-aimcs",
+    "name": "AIMCS 2026",
+    "description": "International conference on AI for industrial monitoring, control, and supervision across industrial systems, maintenance, diagnostics, IoT, and automation.",
+    "website": "https://aimcs2026.org/",
+    "location": "Paris, France",
+    "mode": "in-person",
+    "startDate": "2026-10-28",
+    "endDate": "2026-10-30",
+    "applicationDeadline": "2026-07-28",
+    "fee": {
+      "type": "paid",
+      "amount": 550,
+      "currency": "EUR",
+      "notes": "Early regular paper registration fee; member, student, online, late, and attendee-only fees vary."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "condition-monitoring",
+      "industrial-iot",
+      "predictive-maintenance",
+      "industrial-automation"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://aimcs2026.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-batteries-event",
+    "name": "Batteries Event 2026",
+    "description": "International battery industry meeting in Lyon covering materials, manufacturing, recycling, second life, advanced applications, exhibition, and networking.",
+    "website": "https://batteriesevent.com/",
+    "location": "Lyon, France",
+    "mode": "in-person",
+    "startDate": "2026-11-16",
+    "endDate": "2026-11-18",
+    "applicationDeadline": "2026-05-29",
+    "fee": {
+      "type": "paid",
+      "amount": 925,
+      "currency": "EUR",
+      "notes": "Standard attendee rate recorded from registration materials; speaker and poster badges vary."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://batteriesevent.com/"
+      },
+      {
+        "label": "Registration fees",
+        "type": "external",
+        "url": "https://batteriesevent.com/registration-fees"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-iadc-geothermal-drilling",
+    "name": "IADC Geothermal Drilling 2026",
+    "description": "Conference and exhibition focused on geothermal drilling, upstream geothermal development, drilling technologies, standards, and regulatory challenges.",
+    "website": "https://iadc.org/event/iadc-geothermal-drilling-2026/",
+    "location": "Copenhagen, Denmark",
+    "mode": "in-person",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-18",
+    "fee": {
+      "type": "paid",
+      "amount": 775,
+      "currency": "EUR",
+      "notes": "IADC member registration fee; non-member rate is 975 EUR and some discounts may apply."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "geothermal",
+      "downhole-drilling",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "IADC event page",
+        "type": "external",
+        "url": "https://iadc.org/event/iadc-geothermal-drilling-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-mrs-en04",
+    "name": "MRS Fall Meeting Symposium EN04",
+    "description": "MRS Fall Meeting symposium on materials, characterization, interface engineering, processing, manufacturing, and applications for solid-state batteries.",
+    "website": "https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/symposium-sessions/call-for-papers/2026-mrs-fall-meeting-exhibit/Symposium-EN04-Materials--Characterization-and-Manufacturing-for-Solid-State-Batteries",
+    "location": "Boston, MA, USA",
+    "mode": "in-person",
+    "startDate": "2026-11-29",
+    "endDate": "2026-12-04",
+    "applicationDeadline": "2026-06-17",
+    "fee": {
+      "type": "unknown",
+      "notes": "Symposium-specific pricing was not visible on the official call-for-papers page."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "MRS symposium page",
+        "type": "external",
+        "url": "https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/symposium-sessions/call-for-papers/2026-mrs-fall-meeting-exhibit/Symposium-EN04-Materials--Characterization-and-Manufacturing-for-Solid-State-Batteries"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2027-eesat",
+    "name": "Electrical Energy Storage Applications and Technologies Conference 2027",
+    "description": "Technical conference on electrical energy storage applications, controls, safety, degradation, power conversion, long-duration storage, markets, standards, and policy.",
+    "website": "https://energy.sandia.gov/news/call-for-papers-2027-electrical-energy-storage-applications-technologies-conference/",
+    "location": "St. Pete Beach, FL, USA",
+    "mode": "in-person",
+    "startDate": "2027-01-11",
+    "endDate": "2027-01-12",
+    "applicationDeadline": "2026-07-27",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official call-for-papers page."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "batteries",
+      "power-grids",
+      "thermal-energy-storage"
+    ],
+    "attachments": [
+      {
+        "label": "Sandia call for papers",
+        "type": "external",
+        "url": "https://energy.sandia.gov/news/call-for-papers-2027-electrical-energy-storage-applications-technologies-conference/"
+      }
+    ],
+    "createdAt": "2026-05-12T09:00:00.000Z",
+    "updatedAt": "2026-05-12T09:00:00.000Z"
   }
 ];

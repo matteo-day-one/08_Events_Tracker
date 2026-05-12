@@ -1,0 +1,28 @@
+{
+  "id": "2026-aimcs",
+  "name": "AIMCS 2026",
+  "description": "International conference on AI for industrial monitoring, control, and supervision across industrial systems, maintenance, diagnostics, IoT, and automation.",
+  "website": "https://aimcs2026.org/",
+  "location": "Paris, France",
+  "mode": "in-person",
+  "startDate": "2026-10-28",
+  "endDate": "2026-10-30",
+  "applicationDeadline": "2026-07-28",
+  "fee": {
+    "type": "paid",
+    "amount": 550,
+    "currency": "EUR",
+    "notes": "Early regular paper registration fee; member, student, online, late, and attendee-only fees vary."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["condition-monitoring", "industrial-iot", "predictive-maintenance", "industrial-automation"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://aimcs2026.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}

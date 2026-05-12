@@ -1,0 +1,26 @@
+{
+  "id": "2026-mrs-en04",
+  "name": "MRS Fall Meeting Symposium EN04",
+  "description": "MRS Fall Meeting symposium on materials, characterization, interface engineering, processing, manufacturing, and applications for solid-state batteries.",
+  "website": "https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/symposium-sessions/call-for-papers/2026-mrs-fall-meeting-exhibit/Symposium-EN04-Materials--Characterization-and-Manufacturing-for-Solid-State-Batteries",
+  "location": "Boston, MA, USA",
+  "mode": "in-person",
+  "startDate": "2026-11-29",
+  "endDate": "2026-12-04",
+  "applicationDeadline": "2026-06-17",
+  "fee": {
+    "type": "unknown",
+    "notes": "Symposium-specific pricing was not visible on the official call-for-papers page."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "MRS symposium page",
+      "type": "external",
+      "url": "https://www.mrs.org/meetings-events/annual-meetings/archive/meeting/symposium-sessions/call-for-papers/2026-mrs-fall-meeting-exhibit/Symposium-EN04-Materials--Characterization-and-Manufacturing-for-Solid-State-Batteries"
+    }
+  ],
+  "createdAt": "2026-05-12T09:00:00.000Z",
+  "updatedAt": "2026-05-12T09:00:00.000Z"
+}
