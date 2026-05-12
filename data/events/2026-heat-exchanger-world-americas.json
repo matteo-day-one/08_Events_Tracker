@@ -1,0 +1,25 @@
+{
+  "id": "2026-heat-exchanger-world-americas",
+  "name": "Heat Exchanger World Americas 2026",
+  "description": "Conference and expo for heat exchangers, heat transfer equipment, thermal processing, industrial heat transfer, and waste-heat-adjacent applications.",
+  "website": "https://heat-exchanger-world-americas.com/",
+  "location": "Baytown, United States",
+  "mode": "in-person",
+  "startDate": "2026-10-06",
+  "endDate": "2026-10-07",
+  "fee": {
+    "type": "free",
+    "notes": "Expo attendance was listed as free; conference pricing was not captured during verification."
+  },
+  "macrotopics": ["thermal-systems", "industrial-operations"],
+  "subtopics": ["heat-recovery", "waste-heat", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://heat-exchanger-world-americas.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

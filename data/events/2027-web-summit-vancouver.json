@@ -1,0 +1,25 @@
+{
+  "id": "2027-web-summit-vancouver",
+  "name": "Web Summit Vancouver 2027",
+  "description": "North American technology and startup conference connecting startups, investors, AI, hardtech, clean technology, and life science innovation communities.",
+  "website": "https://vancouver.websummit.com/web-summit-vancouver-2027/",
+  "location": "Vancouver, Canada",
+  "mode": "in-person",
+  "startDate": "2027-05-25",
+  "endDate": "2027-05-28",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pre-registration was visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "energy", "health-care"],
+  "subtopics": ["startups", "venture-capital", "ai", "deep-tech", "climate-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://vancouver.websummit.com/web-summit-vancouver-2027/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

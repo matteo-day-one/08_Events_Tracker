@@ -1,0 +1,25 @@
+{
+  "id": "2026-eic-summit",
+  "name": "EIC Summit 2026",
+  "description": "European Innovation Council flagship summit with workshops, startup and scaleup sessions, investors, policy discussions, networking, and an EIC exhibition area.",
+  "website": "https://eic.ec.europa.eu/eic-summit-2026_en",
+  "location": "Brussels, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-06-03",
+  "endDate": "2026-06-04",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration was open, but pricing was not visible during verification."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["eic", "deep-tech", "startups", "venture-capital"],
+  "attachments": [
+    {
+      "label": "Official EIC Summit page",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-summit-2026_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

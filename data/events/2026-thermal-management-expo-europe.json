@@ -1,0 +1,25 @@
+{
+  "id": "2026-thermal-management-expo-europe",
+  "name": "Thermal Management Expo Europe 2026",
+  "description": "Expo and conference for thermal management materials, cooling technologies, sustainable thermal systems, industrial thermal design, and heat-recovery-adjacent applications.",
+  "website": "https://www.thermalmanagementexpo-europe.com/",
+  "location": "Stuttgart, Germany",
+  "mode": "in-person",
+  "startDate": "2026-11-10",
+  "endDate": "2026-11-12",
+  "fee": {
+    "type": "free",
+    "notes": "Advance registration was listed as free; some onsite commercial registration fees may apply."
+  },
+  "macrotopics": ["thermal-systems", "manufacturing"],
+  "subtopics": ["heat-recovery", "waste-heat", "materials"],
+  "attachments": [
+    {
+      "label": "Official expo page",
+      "type": "external",
+      "url": "https://www.thermalmanagementexpo-europe.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

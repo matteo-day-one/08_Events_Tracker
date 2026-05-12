@@ -1,0 +1,25 @@
+{
+  "id": "2026-smart-maintenance-expo-tokyo",
+  "name": "Smart Maintenance Expo Tokyo 2026",
+  "description": "Manufacturing World Tokyo sub-show focused on factory maintenance, predictive maintenance, monitoring, diagnostics, and digital transformation for factories.",
+  "website": "https://www.manufacturing-world.jp/tokyo/en-gb/about/maintenance.html",
+  "location": "Tokyo, Japan",
+  "mode": "in-person",
+  "startDate": "2026-07-01",
+  "endDate": "2026-07-03",
+  "fee": {
+    "type": "free",
+    "notes": "Visitor registration was marked free on the official event hub."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official expo page",
+      "type": "external",
+      "url": "https://www.manufacturing-world.jp/tokyo/en-gb/about/maintenance.html"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

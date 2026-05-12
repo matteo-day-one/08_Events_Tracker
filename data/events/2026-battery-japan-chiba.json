@@ -1,0 +1,25 @@
+{
+  "id": "2026-battery-japan-chiba",
+  "name": "BATTERY JAPAN Chiba 2026",
+  "description": "Rechargeable battery expo covering battery materials, components, devices, development, production equipment, and energy storage technologies.",
+  "website": "https://www.wsew.jp/hub/en-gb/about/bj.html",
+  "location": "Chiba, Japan",
+  "mode": "in-person",
+  "startDate": "2026-09-09",
+  "endDate": "2026-09-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official BATTERY JAPAN page",
+      "type": "external",
+      "url": "https://www.wsew.jp/hub/en-gb/about/bj.html"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

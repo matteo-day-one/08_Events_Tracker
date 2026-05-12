@@ -1,0 +1,26 @@
+{
+  "id": "2026-imlb",
+  "name": "IMLB 2026",
+  "description": "International Meeting on Lithium Batteries covering lithium battery science, solid electrolytes, lithium metal, beyond lithium-ion systems, and manufacturing research.",
+  "website": "https://www.imlb.org/",
+  "location": "Montreal, Canada",
+  "mode": "in-person",
+  "startDate": "2026-06-14",
+  "endDate": "2026-06-19",
+  "applicationDeadline": "2026-04-20",
+  "fee": {
+    "type": "paid",
+    "notes": "Early-bird registration rates were visible; attendee categories and currencies vary."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "solid-state-batteries", "materials"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.imlb.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

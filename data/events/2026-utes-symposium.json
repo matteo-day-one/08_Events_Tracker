@@ -1,0 +1,24 @@
+{
+  "id": "2026-utes-symposium",
+  "name": "International Underground Thermal Energy Storage Symposium",
+  "description": "Symposium focused on underground thermal energy storage, geothermal heat storage, and subsurface thermal energy systems.",
+  "website": "https://www.geothermica.eu/event/international-underground-thermal-energy-storage-symposium",
+  "location": "Calgary, Canada",
+  "mode": "in-person",
+  "startDate": "2026-06-07",
+  "fee": {
+    "type": "free",
+    "notes": "Official event information indicated registration is required and participation is free."
+  },
+  "macrotopics": ["thermal-systems", "energy", "drilling-and-wells"],
+  "subtopics": ["thermal-energy-storage", "geothermal", "heat-recovery"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.geothermica.eu/event/international-underground-thermal-energy-storage-symposium"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

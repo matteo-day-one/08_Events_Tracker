@@ -1,0 +1,25 @@
+{
+  "id": "2026-sps",
+  "name": "SPS 2026",
+  "description": "Smart production solutions trade fair focused on automation, connected industry, industrial IoT, controls, and digital manufacturing.",
+  "website": "https://sps.mesago.com/",
+  "location": "Nuremberg, Germany",
+  "mode": "in-person",
+  "startDate": "2026-11-24",
+  "endDate": "2026-11-26",
+  "fee": {
+    "type": "unknown",
+    "notes": "Exhibitor registration was open; public visitor pricing was not captured during verification."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["industrial-iot", "industrial-automation", "advanced-manufacturing"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://sps.mesago.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

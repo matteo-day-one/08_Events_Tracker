@@ -1,0 +1,25 @@
+{
+  "id": "2026-the-battery-show-india",
+  "name": "The Battery Show India 2026",
+  "description": "Battery expo and conference covering advanced batteries, EV technology, battery manufacturing, pack design, and thermal management.",
+  "website": "https://www.thebatteryshowindia.com/",
+  "location": "Greater Noida, India",
+  "mode": "in-person",
+  "startDate": "2026-10-22",
+  "endDate": "2026-10-24",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["energy", "automotive", "manufacturing"],
+  "subtopics": ["batteries", "electric-vehicles", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.thebatteryshowindia.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2026-the-battery-show-middle-east",
+  "name": "The Battery Show Middle East 2026",
+  "description": "Battery and energy storage exhibition co-located with Middle East Energy, covering batteries, EV and e-mobility, energy storage, and regional energy markets.",
+  "website": "https://www.middleeast-energy.com/en/home.html",
+  "location": "Dubai, United Arab Emirates",
+  "mode": "in-person",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-03",
+  "fee": {
+    "type": "unknown",
+    "notes": "Visitor and VIP registration were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "automotive"],
+  "subtopics": ["batteries", "electric-vehicles", "power-grids"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.middleeast-energy.com/en/home.html"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2026-climatech-expo",
+  "name": "ClimaTech Expo 2026",
+  "description": "Trade fair and congress for ventilation, air conditioning, cooling, heat recovery, and energy-efficient thermal systems.",
+  "website": "https://warsawclimatech.com/en/",
+  "location": "Warsaw, Poland",
+  "mode": "in-person",
+  "startDate": "2026-11-17",
+  "endDate": "2026-11-19",
+  "fee": {
+    "type": "free",
+    "notes": "Free ticket information was visible on the official event site."
+  },
+  "macrotopics": ["thermal-systems", "energy"],
+  "subtopics": ["heat-recovery", "waste-heat", "renewables"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://warsawclimatech.com/en/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

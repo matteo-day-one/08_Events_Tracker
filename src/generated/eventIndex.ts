@@ -3,6 +3,70 @@ import type { EventRecord } from "../lib/eventTypes";
 
 export const events: EventRecord[] = [
   {
+    "id": "2026-cibf",
+    "name": "CIBF2026 China International Battery Fair",
+    "description": "International battery fair covering battery materials, equipment, cell manufacturing, battery packs, recycling, and the global battery value chain.",
+    "website": "https://www.cibf.org.cn/en-US/about-us",
+    "location": "Shenzhen, China",
+    "mode": "in-person",
+    "startDate": "2026-05-13",
+    "endDate": "2026-05-15",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "quality-control"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.cibf.org.cn/en-US/about-us"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-7f-users-group",
+    "name": "7F Users Group Annual Conference 2026",
+    "description": "Owner and operator user conference focused on GE 7F gas turbine operations, maintenance, reliability, and peer technical exchange.",
+    "website": "https://www.powerusers.org/our-groups/7f-users-group/",
+    "location": "The Woodlands, United States",
+    "mode": "in-person",
+    "startDate": "2026-05-18",
+    "endDate": "2026-05-22",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "gas-turbines",
+      "turbomachinery",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official group page",
+        "type": "external",
+        "url": "https://www.powerusers.org/our-groups/7f-users-group/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-aabc-europe",
     "name": "AABC Europe 2026",
     "description": "Automotive battery conference covering vehicle electrification, battery chemistry, engineering, manufacturing, and next-generation energy storage technologies.",
@@ -34,6 +98,37 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-asia-turbomachinery-pump-symposia",
+    "name": "Asia Turbomachinery & Pump Symposia 2026",
+    "description": "Asia-Pacific symposium and exhibition for rotating equipment, turbomachinery, pumps, operations, maintenance, and reliability.",
+    "website": "https://atps.tamu.edu/registration-now-open-for-the-sixth-biennial-asia-turbomachinery-pump-symposia/",
+    "location": "Kuala Lumpur, Malaysia",
+    "mode": "in-person",
+    "startDate": "2026-05-19",
+    "endDate": "2026-05-21",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration was open; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "turbomachinery",
+      "rotating-equipment",
+      "condition-monitoring"
+    ],
+    "attachments": [
+      {
+        "label": "Official ATPS page",
+        "type": "external",
+        "url": "https://atps.tamu.edu/registration-now-open-for-the-sixth-biennial-asia-turbomachinery-pump-symposia/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-iea-heat-pump-conference",
@@ -71,6 +166,164 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-eic-ecosystem-partners-day",
+    "name": "EIC Ecosystem Partners Day 2026",
+    "description": "European Innovation Council partner meeting connecting EIC partners, EIC-backed innovators, and ecosystem stakeholders ahead of the EIC Summit.",
+    "website": "https://eic.ec.europa.eu/events/eic-ecosystem-partners-day-2026-06-02_en",
+    "location": "Brussels, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-06-02",
+    "fee": {
+      "type": "unknown",
+      "notes": "Participation details were listed, but public pricing was not visible."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "eic",
+      "deep-tech",
+      "startups"
+    ],
+    "attachments": [
+      {
+        "label": "Official EIC event page",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/events/eic-ecosystem-partners-day-2026-06-02_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-eic-multicorporate-life-sciences",
+    "name": "EIC Multi-Corporate Day in Life Sciences at EIC Summit",
+    "description": "European Innovation Council Business Acceleration Services corporate matchmaking event for EIC-backed innovators in life sciences and health technologies.",
+    "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+    "location": "Brussels, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-06-03",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible; participation may be restricted to eligible EIC companies."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "health-care"
+    ],
+    "subtopics": [
+      "eic",
+      "startups",
+      "deep-tech",
+      "biomedical-devices"
+    ],
+    "attachments": [
+      {
+        "label": "EIC Corporate Partnership Programme",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-eic-summit",
+    "name": "EIC Summit 2026",
+    "description": "European Innovation Council flagship summit with workshops, startup and scaleup sessions, investors, policy discussions, networking, and an EIC exhibition area.",
+    "website": "https://eic.ec.europa.eu/eic-summit-2026_en",
+    "location": "Brussels, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-06-03",
+    "endDate": "2026-06-04",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration was open, but pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "eic",
+      "deep-tech",
+      "startups",
+      "venture-capital"
+    ],
+    "attachments": [
+      {
+        "label": "Official EIC Summit page",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-summit-2026_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-maintec",
+    "name": "Maintec 2026",
+    "description": "Maintenance and reliability exhibition within Smart Manufacturing Week, focused on predictive maintenance, asset management, and industrial operations.",
+    "website": "https://www.smartmanufacturingweek.com/welcome-maintec",
+    "location": "Birmingham, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-06-03",
+    "endDate": "2026-06-04",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration was open; public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official Maintec page",
+        "type": "external",
+        "url": "https://www.smartmanufacturingweek.com/welcome-maintec"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-south-summit-madrid",
+    "name": "South Summit Madrid 2026",
+    "description": "Startup, investor, and corporate innovation summit focused on entrepreneurship, AI, open innovation, scaleups, and venture networking.",
+    "website": "https://www.southsummit.io/e/madrid/en",
+    "location": "Madrid, Spain",
+    "mode": "in-person",
+    "startDate": "2026-06-03",
+    "endDate": "2026-06-05",
+    "applicationDeadline": "2026-02-14",
+    "fee": {
+      "type": "unknown",
+      "notes": "Startup Competition deadline was visible; attendee pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "ai"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.southsummit.io/e/madrid/en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-spe-well-decommissioning",
     "name": "SPE Well Decommissioning 2026",
     "description": "SPE Aberdeen conference focused on well decommissioning, plug and abandonment, legacy wells, sustained annulus pressure, and late-life well integrity.",
@@ -100,6 +353,103 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-esil-business-angels-deep-tech-teams",
+    "name": "Business Angels and Deep Tech Teams: ESIL Annual Event",
+    "description": "European Innovation Council listed investor and deep-tech event connecting business angels, deep-tech teams, and lab-to-market innovation networks.",
+    "website": "https://eic.ec.europa.eu/events/business-angels-and-deep-tech-teams-esils-annual-event-2026-06-05_en",
+    "location": "Brussels, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-06-05",
+    "applicationDeadline": "2026-05-29",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration deadline was visible; pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "deep-tech",
+      "venture-capital",
+      "startups",
+      "eic"
+    ],
+    "attachments": [
+      {
+        "label": "Official EIC event page",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/events/business-angels-and-deep-tech-teams-esils-annual-event-2026-06-05_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-utes-symposium",
+    "name": "International Underground Thermal Energy Storage Symposium",
+    "description": "Symposium focused on underground thermal energy storage, geothermal heat storage, and subsurface thermal energy systems.",
+    "website": "https://www.geothermica.eu/event/international-underground-thermal-energy-storage-symposium",
+    "location": "Calgary, Canada",
+    "mode": "in-person",
+    "startDate": "2026-06-07",
+    "fee": {
+      "type": "free",
+      "notes": "Official event information indicated registration is required and participation is free."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "thermal-energy-storage",
+      "geothermal",
+      "heat-recovery"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.geothermica.eu/event/international-underground-thermal-energy-storage-symposium"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-world-geothermal-congress",
+    "name": "World Geothermal Congress 2026",
+    "description": "Global geothermal congress with technical sessions, workshops, expo activity, field trips, and networking focused on geothermal development and subsurface energy.",
+    "website": "https://www.wgc2026.com/",
+    "location": "Calgary, Canada",
+    "mode": "in-person",
+    "startDate": "2026-06-08",
+    "endDate": "2026-06-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract and paper deadlines were closed; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "thermal-energy-storage",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official congress page",
+        "type": "external",
+        "url": "https://www.wgc2026.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-cm-condition-monitoring-asset-management",
@@ -168,6 +518,38 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-sensor-test",
+    "name": "SENSOR+TEST 2026",
+    "description": "Trade fair and conference for sensors, measurement, testing, condition monitoring, and industrial instrumentation.",
+    "website": "https://www.sensor-test.de/",
+    "location": "Nuremberg, Germany",
+    "mode": "in-person",
+    "startDate": "2026-06-09",
+    "endDate": "2026-06-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Ticket shop and exhibitor package information were visible; attendee pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "condition-monitoring",
+      "industrial-iot",
+      "quality-control"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.sensor-test.de/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-the-battery-show-europe",
     "name": "The Battery Show Europe 2026",
     "description": "European battery and electric vehicle technology event with conference, exhibition, and networking for advanced battery systems and manufacturing.",
@@ -201,6 +583,111 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-eic-multicorporate-semiconductors-embodied-ai",
+    "name": "EIC Multi-Corporate Day on Semiconductors and Embodied AI",
+    "description": "European Innovation Council corporate matchmaking event at Hello Tomorrow for EIC-backed companies in semiconductors, embodied AI, robotics, and adjacent deep-tech fields.",
+    "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+    "location": "Amsterdam, Netherlands",
+    "mode": "in-person",
+    "startDate": "2026-06-11",
+    "endDate": "2026-06-12",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible; participation may be restricted to eligible EIC companies."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "robotics",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "eic",
+      "ai",
+      "deep-tech",
+      "industrial-automation",
+      "advanced-manufacturing"
+    ],
+    "attachments": [
+      {
+        "label": "EIC Corporate Partnership Programme",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-hello-tomorrow-summit",
+    "name": "Hello Tomorrow Global Summit 2026",
+    "description": "Deep-tech summit for startups, investors, corporates, and researchers across energy, climate, health, advanced computing, and industrial innovation.",
+    "website": "https://hello-tomorrow.org/global-summit/",
+    "location": "Amsterdam, Netherlands",
+    "mode": "in-person",
+    "startDate": "2026-06-11",
+    "endDate": "2026-06-12",
+    "applicationDeadline": "2026-01-05",
+    "fee": {
+      "type": "paid",
+      "amount": 490,
+      "currency": "EUR",
+      "notes": "Startup pass price recorded from official event materials; other pass categories vary."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "energy",
+      "health-care"
+    ],
+    "subtopics": [
+      "deep-tech",
+      "startups",
+      "venture-capital",
+      "climate-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official summit page",
+        "type": "external",
+        "url": "https://hello-tomorrow.org/global-summit/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-imlb",
+    "name": "IMLB 2026",
+    "description": "International Meeting on Lithium Batteries covering lithium battery science, solid electrolytes, lithium metal, beyond lithium-ion systems, and manufacturing research.",
+    "website": "https://www.imlb.org/",
+    "location": "Montreal, Canada",
+    "mode": "in-person",
+    "startDate": "2026-06-14",
+    "endDate": "2026-06-19",
+    "applicationDeadline": "2026-04-20",
+    "fee": {
+      "type": "paid",
+      "notes": "Early-bird registration rates were visible; attendee categories and currencies vary."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "solid-state-batteries",
+      "materials"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.imlb.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-asme-turbo-expo",
@@ -238,6 +725,173 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-reliable-plant",
+    "name": "Reliable Plant 2026",
+    "description": "Conference and expo focused on plant reliability, maintenance, asset management, lubrication, and industrial operations improvement.",
+    "website": "https://conference.reliableplant.com/",
+    "location": "Reno Tahoe, United States",
+    "mode": "in-person",
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-18",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing link was visible; public amounts were not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://conference.reliableplant.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-iadc-world-drilling",
+    "name": "IADC World Drilling 2026",
+    "description": "IADC conference and exhibition for global drilling professionals, drilling operations, automation, well control, HPHT, and geothermal drilling topics.",
+    "website": "https://iadc.org/event/iadc-world-drilling-2026/",
+    "location": "Estoril, Portugal",
+    "mode": "in-person",
+    "startDate": "2026-06-16",
+    "endDate": "2026-06-17",
+    "fee": {
+      "type": "paid",
+      "amount": 850,
+      "currency": "EUR",
+      "notes": "IADC member rate; non-member rate is higher and discounts may apply."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity",
+      "geothermal"
+    ],
+    "attachments": [
+      {
+        "label": "Official IADC event page",
+        "type": "external",
+        "url": "https://iadc.org/event/iadc-world-drilling-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-iam-global-conference",
+    "name": "IAM Global Conference 2026",
+    "description": "Institute of Asset Management global conference focused on asset management, connected assets, digital twins, and reliability practices.",
+    "website": "https://theiam.org/events/iam-global-conference-2026/",
+    "location": "London, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-18",
+    "fee": {
+      "type": "paid",
+      "amount": 540,
+      "currency": "GBP",
+      "notes": "Member rate was visible; non-member and other categories vary."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "condition-monitoring",
+      "predictive-maintenance",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://theiam.org/events/iam-global-conference-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-vivatech",
+    "name": "VivaTech 2026",
+    "description": "Large European startup and technology event connecting startups, corporates, investors, and innovation ecosystems across AI, deep tech, climate, health, and mobility.",
+    "website": "https://vivatechnology.com/",
+    "location": "Paris, France",
+    "mode": "in-person",
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-20",
+    "fee": {
+      "type": "unknown",
+      "notes": "Ticketing was visible, but public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "manufacturing",
+      "energy"
+    ],
+    "subtopics": [
+      "startups",
+      "deep-tech",
+      "ai",
+      "climate-tech",
+      "venture-capital"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://vivatechnology.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-automate",
+    "name": "Automate 2026",
+    "description": "Automation trade show and conference covering industrial automation, robotics, AI, vision, manufacturing technology, and startup challenge programming.",
+    "website": "https://www.automateshow.com/",
+    "location": "Chicago, United States",
+    "mode": "in-person",
+    "startDate": "2026-06-22",
+    "endDate": "2026-06-25",
+    "fee": {
+      "type": "free",
+      "notes": "Show registration was listed as free; paid conference options may apply."
+    },
+    "macrotopics": [
+      "manufacturing",
+      "robotics",
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "industrial-automation",
+      "advanced-manufacturing",
+      "ai",
+      "startups"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.automateshow.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-ees-europe",
     "name": "ees Europe 2026",
     "description": "European exhibition and conference for batteries and energy storage systems, including storage applications, battery technology, power-to-gas, and integrated renewable energy systems.",
@@ -270,6 +924,37 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-urtec",
+    "name": "URTeC 2026",
+    "description": "Unconventional Resources Technology Conference covering subsurface development, drilling and completions, geoscience, reservoir engineering, and energy resource technology.",
+    "website": "https://urtec.org/2026/",
+    "location": "Houston, United States",
+    "mode": "in-person",
+    "startDate": "2026-06-22",
+    "endDate": "2026-06-24",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://urtec.org/2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-euromaintenance",
@@ -340,6 +1025,110 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-gitex-ai-europe",
+    "name": "GITEX AI Europe 2026",
+    "description": "European GITEX technology and startup exhibition focused on AI, cyber, quantum, digital infrastructure, deep tech, and innovation networking, with EIC pavilion activity listed by EIC BAS.",
+    "website": "https://www.gitex-europe.com/",
+    "location": "Berlin, Germany",
+    "mode": "in-person",
+    "startDate": "2026-06-30",
+    "endDate": "2026-07-01",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pass information was visible, but public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "manufacturing",
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "ai",
+      "deep-tech",
+      "startups",
+      "eic",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official GITEX Europe page",
+        "type": "external",
+        "url": "https://www.gitex-europe.com/"
+      },
+      {
+        "label": "EIC Business Acceleration Services",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-smart-maintenance-expo-tokyo",
+    "name": "Smart Maintenance Expo Tokyo 2026",
+    "description": "Manufacturing World Tokyo sub-show focused on factory maintenance, predictive maintenance, monitoring, diagnostics, and digital transformation for factories.",
+    "website": "https://www.manufacturing-world.jp/tokyo/en-gb/about/maintenance.html",
+    "location": "Tokyo, Japan",
+    "mode": "in-person",
+    "startDate": "2026-07-01",
+    "endDate": "2026-07-03",
+    "fee": {
+      "type": "free",
+      "notes": "Visitor registration was marked free on the official event hub."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official expo page",
+        "type": "external",
+        "url": "https://www.manufacturing-world.jp/tokyo/en-gb/about/maintenance.html"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-battery-cells-systems-expo",
+    "name": "Battery Cells & Systems Expo 2026",
+    "description": "Expo and conference focused on battery cells, battery systems, BMS, pack technology, manufacturing, and battery safety.",
+    "website": "https://batterysystemsexpo.com/about/",
+    "location": "Birmingham, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-07-08",
+    "endDate": "2026-07-09",
+    "fee": {
+      "type": "free",
+      "notes": "Official event materials indicated the expo is free to attend."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "quality-control"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://batterysystemsexpo.com/about/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-medical-robotics-workshop",
     "name": "Medical Robotics Workshop",
     "description": "Hands-on workshop covering robotic assistance, clinical workflow integration, and validation of biomedical devices.",
@@ -369,6 +1158,144 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T08:05:00.000Z",
     "updatedAt": "2026-05-12T08:05:00.000Z"
+  },
+  {
+    "id": "2026-eic-impact-circle-corporate-days",
+    "name": "EIC Multi-Corporate Days at The Impact Circle",
+    "description": "European Innovation Council corporate matchmaking days connected to The Impact Circle, covering energy, cleantech, battery materials, semiconductors, and circular economy opportunities.",
+    "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+    "location": "Boom, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-24",
+    "applicationDeadline": "2026-05-23",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible; some application deadlines were listed by corporate challenge."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "eic",
+      "climate-tech",
+      "batteries",
+      "materials",
+      "deep-tech"
+    ],
+    "attachments": [
+      {
+        "label": "EIC Corporate Partnership Programme",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-asme-shtc",
+    "name": "ASME Summer Heat Transfer Conference 2026",
+    "description": "ASME technical conference focused on heat and mass transfer, energy systems, heat transfer equipment, thermal management, and thermal engineering research.",
+    "website": "https://event.asme.org/SHTC",
+    "location": "Bellevue, United States",
+    "mode": "in-person",
+    "startDate": "2026-07-26",
+    "endDate": "2026-07-29",
+    "applicationDeadline": "2026-06-29",
+    "fee": {
+      "type": "paid",
+      "notes": "Advance registration deadline was visible; registration rates vary by membership and category."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "thermal-energy-storage"
+    ],
+    "attachments": [
+      {
+        "label": "Official ASME event page",
+        "type": "external",
+        "url": "https://event.asme.org/SHTC"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-solid-state-battery-summit",
+    "name": "Solid-State Battery Summit 2026",
+    "description": "Summit focused on solid-state and semi-solid-state batteries, manufacturing, cost, safety, pack design, and commercialization.",
+    "website": "https://www.cambridgeenertech.com/solid-state-batteries",
+    "location": "Chicago, United States",
+    "mode": "hybrid",
+    "startDate": "2026-08-11",
+    "endDate": "2026-08-12",
+    "applicationDeadline": "2026-06-05",
+    "fee": {
+      "type": "paid",
+      "notes": "A save-by discount deadline was visible; exact pass pricing varies."
+    },
+    "macrotopics": [
+      "energy",
+      "automotive",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "solid-state-batteries",
+      "batteries",
+      "materials"
+    ],
+    "attachments": [
+      {
+        "label": "Official summit page",
+        "type": "external",
+        "url": "https://www.cambridgeenertech.com/solid-state-batteries"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-battery-safety-summit",
+    "name": "Battery Safety Summit 2026",
+    "description": "Battery safety summit covering thermal runaway mitigation, thermal stability, solid-state battery safety, abuse testing, and pack-level safety design.",
+    "website": "https://www.cambridgeenertech.com/battery-safety/program",
+    "location": "Chicago, United States",
+    "mode": "in-person",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-13",
+    "applicationDeadline": "2026-06-05",
+    "fee": {
+      "type": "paid",
+      "notes": "A save-by discount deadline was visible; exact pass pricing varies."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "solid-state-batteries",
+      "heat-recovery",
+      "quality-control"
+    ],
+    "attachments": [
+      {
+        "label": "Official program page",
+        "type": "external",
+        "url": "https://www.cambridgeenertech.com/battery-safety/program"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-wccm",
@@ -403,6 +1330,102 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-iadc-advanced-rig-technology",
+    "name": "IADC Advanced Rig Technology Conference & Exhibition 2026",
+    "description": "Conference and exhibition for rig technology, drilling automation, downhole operations, data-driven drilling, and advanced well construction systems.",
+    "website": "https://iadc.org/event/iadc-art-2026/",
+    "location": "Austin, United States",
+    "mode": "in-person",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-26",
+    "applicationDeadline": "2026-02-06",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract deadline was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "industrial-iot",
+      "condition-monitoring"
+    ],
+    "attachments": [
+      {
+        "label": "Official IADC event page",
+        "type": "external",
+        "url": "https://iadc.org/event/iadc-art-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-spe-artificial-lift-americas",
+    "name": "SPE Artificial Lift Conference & Exhibition - Americas 2026",
+    "description": "SPE conference and exhibition for artificial lift, downhole production systems, life-of-well design, production optimization, and well operations.",
+    "website": "https://www.spe-events.org/artificiallift/about",
+    "location": "The Woodlands, United States",
+    "mode": "in-person",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-27",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "Official SPE event page",
+        "type": "external",
+        "url": "https://www.spe-events.org/artificiallift/about"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-icmiam",
+    "name": "ICMIAM 2026",
+    "description": "International conference and workshops on intelligent maintenance and asset management, diagnostics, monitoring, and data-driven maintenance.",
+    "website": "https://icmiam.com/",
+    "location": "Huddersfield, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-03",
+    "applicationDeadline": "2026-05-15",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract and early-bird deadlines were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://icmiam.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-intelligent-maintenance-conference",
     "name": "Intelligent Maintenance Conference 2026",
     "description": "Maintenance conference focused on AI, data science, predictive maintenance, condition monitoring, diagnostics, and industrial maintenance decision support.",
@@ -435,6 +1458,168 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-the-battery-show-middle-east",
+    "name": "The Battery Show Middle East 2026",
+    "description": "Battery and energy storage exhibition co-located with Middle East Energy, covering batteries, EV and e-mobility, energy storage, and regional energy markets.",
+    "website": "https://www.middleeast-energy.com/en/home.html",
+    "location": "Dubai, United Arab Emirates",
+    "mode": "in-person",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-03",
+    "fee": {
+      "type": "unknown",
+      "notes": "Visitor and VIP registration were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "automotive"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "power-grids"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.middleeast-energy.com/en/home.html"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-the-battery-show-indonesia",
+    "name": "The Battery Show Indonesia 2026",
+    "description": "Battery and energy storage expo focused on Indonesia's battery supply chain, materials, battery systems, EV technology, and regional energy storage markets.",
+    "website": "https://www.thebatteryshowindonesia.com/about/about-the-show/",
+    "location": "Jakarta, Indonesia",
+    "mode": "in-person",
+    "startDate": "2026-09-02",
+    "endDate": "2026-09-05",
+    "fee": {
+      "type": "free",
+      "notes": "Official event materials indicated exhibition attendance is complimentary."
+    },
+    "macrotopics": [
+      "energy",
+      "automotive",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "materials"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.thebatteryshowindonesia.com/about/about-the-show/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-gitex-nigeria",
+    "name": "GITEX Nigeria 2026",
+    "description": "GITEX technology and startup show for Nigeria and West Africa, covering AI, cloud, cyber, fintech, agritech, smart cities, and startup ecosystem networking.",
+    "website": "https://gitexnigeria.ng/",
+    "location": "Abuja and Lagos, Nigeria",
+    "mode": "in-person",
+    "startDate": "2026-09-07",
+    "endDate": "2026-09-10",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pre-registration and startup enquiry options were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "startups",
+      "ai",
+      "venture-capital",
+      "deep-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://gitexnigeria.ng/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-battery-japan-chiba",
+    "name": "BATTERY JAPAN Chiba 2026",
+    "description": "Rechargeable battery expo covering battery materials, components, devices, development, production equipment, and energy storage technologies.",
+    "website": "https://www.wsew.jp/hub/en-gb/about/bj.html",
+    "location": "Chiba, Japan",
+    "mode": "in-person",
+    "startDate": "2026-09-09",
+    "endDate": "2026-09-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official BATTERY JAPAN page",
+        "type": "external",
+        "url": "https://www.wsew.jp/hub/en-gb/about/bj.html"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-dsg",
+    "name": "Developments in Geothermal 2026",
+    "description": "Geothermal workshop focused on geothermal technology, engineering, economics, development, and networking for the geothermal community.",
+    "website": "https://www.dsg2026.com/",
+    "location": "Trabzon, Turkiye",
+    "mode": "in-person",
+    "startDate": "2026-09-14",
+    "endDate": "2026-09-16",
+    "fee": {
+      "type": "free",
+      "notes": "Official event information listed participation as free."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "heat-recovery",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official workshop page",
+        "type": "external",
+        "url": "https://www.dsg2026.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-celle-drilling",
@@ -540,6 +1725,39 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-solarpaces",
+    "name": "SolarPACES 2026",
+    "description": "Conference on concentrating solar power and thermal energy systems, including thermal energy storage, solar process heat, and thermal and chemical energy systems.",
+    "website": "https://www.solarpaces-conference.org/",
+    "location": "Bad Neuenahr, Germany",
+    "mode": "in-person",
+    "startDate": "2026-09-15",
+    "endDate": "2026-09-18",
+    "applicationDeadline": "2026-08-06",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration timing and early-bird deadline were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy"
+    ],
+    "subtopics": [
+      "thermal-energy-storage",
+      "heat-recovery",
+      "renewables"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.solarpaces-conference.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-therminic",
@@ -678,6 +1896,37 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-smrp-annual-conference",
+    "name": "SMRP Annual Conference 2026",
+    "description": "Society for Maintenance & Reliability Professionals annual conference and expo for maintenance, reliability, and physical asset management.",
+    "website": "https://smrp.org/Events/Annual-Conference",
+    "location": "Raleigh, United States",
+    "mode": "in-person",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-01",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract call was closed; public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://smrp.org/Events/Annual-Conference"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-european-geothermal-workshop",
     "name": "European Geothermal Workshop 2026",
     "description": "European geothermal research workshop focused on geothermal systems, subsurface experiments, GeoLaB, and utilization of underground thermal resources.",
@@ -745,6 +1994,72 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-heat-exchanger-world-americas",
+    "name": "Heat Exchanger World Americas 2026",
+    "description": "Conference and expo for heat exchangers, heat transfer equipment, thermal processing, industrial heat transfer, and waste-heat-adjacent applications.",
+    "website": "https://heat-exchanger-world-americas.com/",
+    "location": "Baytown, United States",
+    "mode": "in-person",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-07",
+    "fee": {
+      "type": "free",
+      "notes": "Expo attendance was listed as free; conference pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://heat-exchanger-world-americas.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-the-battery-show-north-america",
+    "name": "The Battery Show North America 2026",
+    "description": "Battery expo, conference, and workshop for advanced batteries, EV technology, battery manufacturing, thermal management, and energy storage.",
+    "website": "https://www.thebatteryshow.com/",
+    "location": "Detroit, United States",
+    "mode": "in-person",
+    "startDate": "2026-10-12",
+    "endDate": "2026-10-15",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration inquiry was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "automotive",
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "thermal-energy-storage",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.thebatteryshow.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-iadc-international-well-control",
     "name": "IADC International Well Control Conference & Exhibition 2026",
     "description": "IADC conference and exhibition focused on well control, drilling safety, pressure management, incident prevention, and well-control practices.",
@@ -777,6 +2092,44 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-techcrunch-disrupt",
+    "name": "TechCrunch Disrupt 2026",
+    "description": "Startup and venture capital conference with founder programming, investor networking, Startup Battlefield, and technology startup showcases.",
+    "website": "https://techcrunch.com/events/techcrunch-disrupt/",
+    "location": "San Francisco, United States",
+    "mode": "in-person",
+    "startDate": "2026-10-13",
+    "endDate": "2026-10-15",
+    "applicationDeadline": "2026-05-27",
+    "fee": {
+      "type": "unknown",
+      "notes": "Startup Battlefield deadline was visible; attendee pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "ai",
+      "deep-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://techcrunch.com/events/techcrunch-disrupt/"
+      },
+      {
+        "label": "Startup Battlefield page",
+        "type": "external",
+        "url": "https://techcrunch.com/startup-battlefield/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-icemrb",
@@ -845,6 +2198,73 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-itap",
+    "name": "Industrial Transformation Asia-Pacific 2026",
+    "description": "Advanced manufacturing and industrial transformation expo focused on Industry 4.0 and 5.0, digital manufacturing, automation, and sustainable operations.",
+    "website": "https://www.industrial-transformation.com/about/about-itap",
+    "location": "Singapore",
+    "mode": "in-person",
+    "startDate": "2026-10-21",
+    "endDate": "2026-10-23",
+    "fee": {
+      "type": "unknown",
+      "notes": "Exhibit and mailing-list options were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "manufacturing",
+      "industrial-operations",
+      "startup-innovation"
+    ],
+    "subtopics": [
+      "advanced-manufacturing",
+      "industrial-iot",
+      "industrial-automation",
+      "ai"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.industrial-transformation.com/about/about-itap"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-rtc-summit",
+    "name": "RTC Summit 2026",
+    "description": "Renewable Thermal Collaborative summit focused on renewable thermal energy, industrial heat decarbonization, thermal energy storage, and networking for industrial heat users.",
+    "website": "https://www.renewablethermal.org/",
+    "location": "Arlington, United States",
+    "mode": "in-person",
+    "startDate": "2026-10-21",
+    "endDate": "2026-10-23",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration link was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy",
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "thermal-energy-storage"
+    ],
+    "attachments": [
+      {
+        "label": "Official organizer page",
+        "type": "external",
+        "url": "https://www.renewablethermal.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-autonomous-mobility-forum",
     "name": "Autonomous Mobility Forum",
     "description": "Industry and academic talks on autonomous driving, electric vehicles, sensor stacks, and urban mobility pilots.",
@@ -869,6 +2289,39 @@ export const events: EventRecord[] = [
     "attachments": [],
     "createdAt": "2026-05-12T08:10:00.000Z",
     "updatedAt": "2026-05-12T08:10:00.000Z"
+  },
+  {
+    "id": "2026-the-battery-show-india",
+    "name": "The Battery Show India 2026",
+    "description": "Battery expo and conference covering advanced batteries, EV technology, battery manufacturing, pack design, and thermal management.",
+    "website": "https://www.thebatteryshowindia.com/",
+    "location": "Greater Noida, India",
+    "mode": "in-person",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-24",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "automotive",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.thebatteryshowindia.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-aimcs",
@@ -907,6 +2360,40 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-eage-get",
+    "name": "EAGE Global Energy Transition Conference & Exhibition 2026",
+    "description": "Conference and exhibition for subsurface energy transition topics including geothermal energy, CCS, hydrogen and storage, and applied geoscience.",
+    "website": "https://eageget.org/",
+    "location": "Hannover, Germany",
+    "mode": "in-person",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-06",
+    "applicationDeadline": "2026-06-15",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract deadline was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "thermal-energy-storage",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://eageget.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-electrobatt",
     "name": "ElectROBatt 2026",
     "description": "Conference on electrochemical energy storage, advanced battery materials, battery chemistries, and rechargeable battery research.",
@@ -938,6 +2425,107 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-eage-aapg-geothermal-middle-east-workshop",
+    "name": "EAGE/AAPG Geothermal Energy in the Middle East Workshop 2026",
+    "description": "Workshop focused on geothermal discovery and management in the Middle East, drilling technologies, CAPEX optimization, and geothermal subsurface development.",
+    "website": "https://eage.eventsair.com/second-eageaapg-geothermal-energy-in-the-middle-east-workshop/",
+    "location": "Jeddah, Saudi Arabia",
+    "mode": "in-person",
+    "startDate": "2026-11-09",
+    "endDate": "2026-11-11",
+    "applicationDeadline": "2026-05-22",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract deadline was visible; registration pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "downhole-drilling",
+      "thermal-energy-storage"
+    ],
+    "attachments": [
+      {
+        "label": "Official workshop page",
+        "type": "external",
+        "url": "https://eage.eventsair.com/second-eageaapg-geothermal-energy-in-the-middle-east-workshop/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-web-summit-lisbon",
+    "name": "Web Summit Lisbon 2026",
+    "description": "Major technology and startup conference with startup, investor, AI, hardtech, robotics, energy, and venture programming.",
+    "website": "https://websummit.com/web-summit-2026/",
+    "location": "Lisbon, Portugal",
+    "mode": "in-person",
+    "startDate": "2026-11-09",
+    "endDate": "2026-11-12",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pre-registration and discount sale information was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "robotics",
+      "energy"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "ai",
+      "deep-tech",
+      "climate-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://websummit.com/web-summit-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-thermal-management-expo-europe",
+    "name": "Thermal Management Expo Europe 2026",
+    "description": "Expo and conference for thermal management materials, cooling technologies, sustainable thermal systems, industrial thermal design, and heat-recovery-adjacent applications.",
+    "website": "https://www.thermalmanagementexpo-europe.com/",
+    "location": "Stuttgart, Germany",
+    "mode": "in-person",
+    "startDate": "2026-11-10",
+    "endDate": "2026-11-12",
+    "fee": {
+      "type": "free",
+      "notes": "Advance registration was listed as free; some onsite commercial registration fees may apply."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "materials"
+    ],
+    "attachments": [
+      {
+        "label": "Official expo page",
+        "type": "external",
+        "url": "https://www.thermalmanagementexpo-europe.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-spe-icota-european-well-intervention",
@@ -1012,6 +2600,38 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-climatech-expo",
+    "name": "ClimaTech Expo 2026",
+    "description": "Trade fair and congress for ventilation, air conditioning, cooling, heat recovery, and energy-efficient thermal systems.",
+    "website": "https://warsawclimatech.com/en/",
+    "location": "Warsaw, Poland",
+    "mode": "in-person",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-19",
+    "fee": {
+      "type": "free",
+      "notes": "Free ticket information was visible on the official event site."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "renewables"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://warsawclimatech.com/en/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-iadc-geothermal-drilling",
     "name": "IADC Geothermal Drilling 2026",
     "description": "Conference and exhibition focused on geothermal drilling, upstream geothermal development, drilling technologies, standards, and regulatory challenges.",
@@ -1078,6 +2698,74 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2026-battery-japan-osaka",
+    "name": "BATTERY JAPAN Osaka 2026",
+    "description": "Rechargeable battery expo covering battery materials, components, devices, development, production equipment, and energy storage technologies.",
+    "website": "https://www.wsew.jp/hub/en-gb/about/bj.html",
+    "location": "Osaka, Japan",
+    "mode": "in-person",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-20",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official BATTERY JAPAN page",
+        "type": "external",
+        "url": "https://www.wsew.jp/hub/en-gb/about/bj.html"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2026-slush",
+    "name": "Slush 2026",
+    "description": "Founder and investor event focused on startup fundraising, deep tech, health, energy, manufacturing startups, and high-density venture networking.",
+    "website": "https://slush.org/",
+    "location": "Helsinki, Finland",
+    "mode": "in-person",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-19",
+    "fee": {
+      "type": "paid",
+      "amount": 345,
+      "currency": "EUR",
+      "notes": "Early startup pass pricing was visible; investor and other pass categories vary."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "deep-tech",
+      "climate-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://slush.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2026-future-battery-forum",
     "name": "Future Battery Forum 2026",
     "description": "Battery industry conference and exhibition focused on the battery value chain, manufacturing, materials, innovation, and European battery markets.",
@@ -1108,6 +2796,38 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-sps",
+    "name": "SPS 2026",
+    "description": "Smart production solutions trade fair focused on automation, connected industry, industrial IoT, controls, and digital manufacturing.",
+    "website": "https://sps.mesago.com/",
+    "location": "Nuremberg, Germany",
+    "mode": "in-person",
+    "startDate": "2026-11-24",
+    "endDate": "2026-11-26",
+    "fee": {
+      "type": "unknown",
+      "notes": "Exhibitor registration was open; public visitor pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "industrial-iot",
+      "industrial-automation",
+      "advanced-manufacturing"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://sps.mesago.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2026-mrs-en04",
@@ -1143,6 +2863,46 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-gitex-global",
+    "name": "GITEX Global 2026",
+    "description": "Global technology and startup exhibition covering AI, quantum, robotics, advanced manufacturing, mobility, and digital transformation, with EIC pavilion activity listed by EIC BAS.",
+    "website": "https://www.gitex.com/gitex-global-2026",
+    "location": "Dubai, United Arab Emirates",
+    "mode": "in-person",
+    "startDate": "2026-12-07",
+    "endDate": "2026-12-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Exhibit and registration interest were visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "robotics",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "startups",
+      "ai",
+      "deep-tech",
+      "advanced-manufacturing",
+      "eic"
+    ],
+    "attachments": [
+      {
+        "label": "Official GITEX Global page",
+        "type": "external",
+        "url": "https://www.gitex.com/gitex-global-2026"
+      },
+      {
+        "label": "EIC Business Acceleration Services",
+        "type": "external",
+        "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas_en"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2027-eesat",
     "name": "Electrical Energy Storage Applications and Technologies Conference 2027",
     "description": "Technical conference on electrical energy storage applications, controls, safety, degradation, power conversion, long-duration storage, markets, standards, and policy.",
@@ -1174,6 +2934,72 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2027-web-summit-qatar",
+    "name": "Web Summit Qatar 2027",
+    "description": "Major technology and startup conference for the Middle East, covering AI, hardtech, health, new energy, startups, investors, and venture networking.",
+    "website": "https://qatar.websummit.com/web-summit-qatar-homepage/",
+    "location": "Doha, Qatar",
+    "mode": "in-person",
+    "startDate": "2027-01-31",
+    "endDate": "2027-02-03",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pre-registration and ticket sale information was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "energy",
+      "health-care"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "ai",
+      "deep-tech",
+      "climate-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://qatar.websummit.com/web-summit-qatar-homepage/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2027-maintenance-bilbao",
+    "name": "Maintenance Bilbao 2027",
+    "description": "Industrial maintenance trade fair focused on maintenance, asset management, reliability, and industrial operations within the +INDUSTRY ecosystem.",
+    "website": "https://maintenance.bilbaoexhibitioncentre.com/en/",
+    "location": "Bilbao, Spain",
+    "mode": "in-person",
+    "startDate": "2027-02-23",
+    "endDate": "2027-02-25",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://maintenance.bilbaoexhibitioncentre.com/en/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2027-geotherm-offenburg",
@@ -1209,6 +3035,37 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
+    "id": "2027-spe-iadc-international-drilling",
+    "name": "SPE/IADC International Drilling Conference and Exhibition 2027",
+    "description": "International drilling conference and exhibition focused on drilling, well construction technologies, field-proven solutions, automation, and operational drilling advances.",
+    "website": "https://www.drillingconference.org/",
+    "location": "Stavanger, Norway",
+    "mode": "in-person",
+    "startDate": "2027-03-09",
+    "endDate": "2027-03-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Call for proposals was open; public pricing was not yet visible during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.drillingconference.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
     "id": "2027-ictm-conference",
     "name": "8th ICTM Conference",
     "description": "International conference on turbomachinery manufacturing covering aircraft engines, stationary turbomachinery, digitized manufacturing, and production technologies.",
@@ -1239,6 +3096,74 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2027-battery-japan-tokyo",
+    "name": "BATTERY JAPAN Tokyo 2027",
+    "description": "Rechargeable battery expo covering battery materials, components, devices, development, production equipment, and energy storage technologies.",
+    "website": "https://www.wsew.jp/hub/en-gb/about/bj.html",
+    "location": "Tokyo, Japan",
+    "mode": "in-person",
+    "startDate": "2027-03-24",
+    "endDate": "2027-03-26",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official BATTERY JAPAN page",
+        "type": "external",
+        "url": "https://www.wsew.jp/hub/en-gb/about/bj.html"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2027-hannover-messe",
+    "name": "HANNOVER MESSE 2027",
+    "description": "Flagship industrial trade fair for industrial AI, automation, digitalization, energy systems, industrial infrastructure, manufacturing technology, and startup industrial tech.",
+    "website": "https://www.hannovermesse.de/en/",
+    "location": "Hannover, Germany",
+    "mode": "in-person",
+    "startDate": "2027-04-05",
+    "endDate": "2027-04-08",
+    "fee": {
+      "type": "unknown",
+      "notes": "Ticket information was visible, but public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "manufacturing",
+      "industrial-operations",
+      "startup-innovation",
+      "energy"
+    ],
+    "subtopics": [
+      "advanced-manufacturing",
+      "industrial-iot",
+      "ai",
+      "startups",
+      "power-grids"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.hannovermesse.de/en/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   },
   {
     "id": "2027-etc17",
@@ -1302,5 +3227,105 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T10:00:00.000Z",
     "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2027-web-summit-vancouver",
+    "name": "Web Summit Vancouver 2027",
+    "description": "North American technology and startup conference connecting startups, investors, AI, hardtech, clean technology, and life science innovation communities.",
+    "website": "https://vancouver.websummit.com/web-summit-vancouver-2027/",
+    "location": "Vancouver, Canada",
+    "mode": "in-person",
+    "startDate": "2027-05-25",
+    "endDate": "2027-05-28",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pre-registration was visible; public pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "startup-innovation",
+      "energy",
+      "health-care"
+    ],
+    "subtopics": [
+      "startups",
+      "venture-capital",
+      "ai",
+      "deep-tech",
+      "climate-tech"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://vancouver.websummit.com/web-summit-vancouver-2027/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2027-synergy-turbine-expo",
+    "name": "Synergy Turbine Expo 2027",
+    "description": "Niche expo and conference focused on gas turbines, steam turbines, thermal power generation, balance-of-plant systems, and turbine operations.",
+    "website": "https://www.synergyte.com/",
+    "location": "Galveston, United States",
+    "mode": "in-person",
+    "startDate": "2027-06-08",
+    "endDate": "2027-06-10",
+    "fee": {
+      "type": "unknown",
+      "notes": "Public pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "gas-turbines",
+      "turbomachinery",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.synergyte.com/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
+  },
+  {
+    "id": "2027-the-battery-show-asia",
+    "name": "The Battery Show Asia 2027",
+    "description": "Battery, energy storage, and mobility technology expo and networking event for the Asian battery and advanced mobility ecosystem.",
+    "website": "https://www.thebatteryshow.asia/",
+    "location": "Hong Kong, China",
+    "mode": "in-person",
+    "startDate": "2027-07-14",
+    "endDate": "2027-07-16",
+    "fee": {
+      "type": "free",
+      "notes": "Official event materials showed a free registration option."
+    },
+    "macrotopics": [
+      "energy",
+      "automotive",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "electric-vehicles",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.thebatteryshow.asia/"
+      }
+    ],
+    "createdAt": "2026-05-12T11:00:00.000Z",
+    "updatedAt": "2026-05-12T11:00:00.000Z"
   }
 ];

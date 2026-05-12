@@ -1,0 +1,25 @@
+{
+  "id": "2027-synergy-turbine-expo",
+  "name": "Synergy Turbine Expo 2027",
+  "description": "Niche expo and conference focused on gas turbines, steam turbines, thermal power generation, balance-of-plant systems, and turbine operations.",
+  "website": "https://www.synergyte.com/",
+  "location": "Galveston, United States",
+  "mode": "in-person",
+  "startDate": "2027-06-08",
+  "endDate": "2027-06-10",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations", "thermal-systems"],
+  "subtopics": ["gas-turbines", "turbomachinery", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.synergyte.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

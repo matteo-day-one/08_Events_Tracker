@@ -1,0 +1,26 @@
+{
+  "id": "2026-eic-impact-circle-corporate-days",
+  "name": "EIC Multi-Corporate Days at The Impact Circle",
+  "description": "European Innovation Council corporate matchmaking days connected to The Impact Circle, covering energy, cleantech, battery materials, semiconductors, and circular economy opportunities.",
+  "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+  "location": "Boom, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-07-22",
+  "endDate": "2026-07-24",
+  "applicationDeadline": "2026-05-23",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible; some application deadlines were listed by corporate challenge."
+  },
+  "macrotopics": ["startup-innovation", "energy", "manufacturing"],
+  "subtopics": ["eic", "climate-tech", "batteries", "materials", "deep-tech"],
+  "attachments": [
+    {
+      "label": "EIC Corporate Partnership Programme",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "2026-gitex-ai-europe",
+  "name": "GITEX AI Europe 2026",
+  "description": "European GITEX technology and startup exhibition focused on AI, cyber, quantum, digital infrastructure, deep tech, and innovation networking, with EIC pavilion activity listed by EIC BAS.",
+  "website": "https://www.gitex-europe.com/",
+  "location": "Berlin, Germany",
+  "mode": "in-person",
+  "startDate": "2026-06-30",
+  "endDate": "2026-07-01",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pass information was visible, but public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "manufacturing", "industrial-operations"],
+  "subtopics": ["ai", "deep-tech", "startups", "eic", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official GITEX Europe page",
+      "type": "external",
+      "url": "https://www.gitex-europe.com/"
+    },
+    {
+      "label": "EIC Business Acceleration Services",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

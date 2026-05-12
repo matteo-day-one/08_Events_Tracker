@@ -1,0 +1,26 @@
+{
+  "id": "2026-battery-safety-summit",
+  "name": "Battery Safety Summit 2026",
+  "description": "Battery safety summit covering thermal runaway mitigation, thermal stability, solid-state battery safety, abuse testing, and pack-level safety design.",
+  "website": "https://www.cambridgeenertech.com/battery-safety/program",
+  "location": "Chicago, United States",
+  "mode": "in-person",
+  "startDate": "2026-08-12",
+  "endDate": "2026-08-13",
+  "applicationDeadline": "2026-06-05",
+  "fee": {
+    "type": "paid",
+    "notes": "A save-by discount deadline was visible; exact pass pricing varies."
+  },
+  "macrotopics": ["energy", "thermal-systems", "manufacturing"],
+  "subtopics": ["batteries", "solid-state-batteries", "heat-recovery", "quality-control"],
+  "attachments": [
+    {
+      "label": "Official program page",
+      "type": "external",
+      "url": "https://www.cambridgeenertech.com/battery-safety/program"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

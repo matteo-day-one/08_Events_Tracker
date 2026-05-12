@@ -1,0 +1,25 @@
+{
+  "id": "2026-battery-cells-systems-expo",
+  "name": "Battery Cells & Systems Expo 2026",
+  "description": "Expo and conference focused on battery cells, battery systems, BMS, pack technology, manufacturing, and battery safety.",
+  "website": "https://batterysystemsexpo.com/about/",
+  "location": "Birmingham, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-07-08",
+  "endDate": "2026-07-09",
+  "fee": {
+    "type": "free",
+    "notes": "Official event materials indicated the expo is free to attend."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "quality-control"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://batterysystemsexpo.com/about/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

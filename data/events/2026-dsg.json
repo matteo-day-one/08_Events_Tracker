@@ -1,0 +1,25 @@
+{
+  "id": "2026-dsg",
+  "name": "Developments in Geothermal 2026",
+  "description": "Geothermal workshop focused on geothermal technology, engineering, economics, development, and networking for the geothermal community.",
+  "website": "https://www.dsg2026.com/",
+  "location": "Trabzon, Turkiye",
+  "mode": "in-person",
+  "startDate": "2026-09-14",
+  "endDate": "2026-09-16",
+  "fee": {
+    "type": "free",
+    "notes": "Official event information listed participation as free."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "heat-recovery", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official workshop page",
+      "type": "external",
+      "url": "https://www.dsg2026.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

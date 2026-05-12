@@ -1,0 +1,25 @@
+{
+  "id": "2026-asia-turbomachinery-pump-symposia",
+  "name": "Asia Turbomachinery & Pump Symposia 2026",
+  "description": "Asia-Pacific symposium and exhibition for rotating equipment, turbomachinery, pumps, operations, maintenance, and reliability.",
+  "website": "https://atps.tamu.edu/registration-now-open-for-the-sixth-biennial-asia-turbomachinery-pump-symposia/",
+  "location": "Kuala Lumpur, Malaysia",
+  "mode": "in-person",
+  "startDate": "2026-05-19",
+  "endDate": "2026-05-21",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration was open; public pricing was not captured during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["turbomachinery", "rotating-equipment", "condition-monitoring"],
+  "attachments": [
+    {
+      "label": "Official ATPS page",
+      "type": "external",
+      "url": "https://atps.tamu.edu/registration-now-open-for-the-sixth-biennial-asia-turbomachinery-pump-symposia/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

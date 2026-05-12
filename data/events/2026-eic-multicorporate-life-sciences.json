@@ -1,0 +1,24 @@
+{
+  "id": "2026-eic-multicorporate-life-sciences",
+  "name": "EIC Multi-Corporate Day in Life Sciences at EIC Summit",
+  "description": "European Innovation Council Business Acceleration Services corporate matchmaking event for EIC-backed innovators in life sciences and health technologies.",
+  "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+  "location": "Brussels, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-06-03",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible; participation may be restricted to eligible EIC companies."
+  },
+  "macrotopics": ["startup-innovation", "health-care"],
+  "subtopics": ["eic", "startups", "deep-tech", "biomedical-devices"],
+  "attachments": [
+    {
+      "label": "EIC Corporate Partnership Programme",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

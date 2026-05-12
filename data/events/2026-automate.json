@@ -1,0 +1,25 @@
+{
+  "id": "2026-automate",
+  "name": "Automate 2026",
+  "description": "Automation trade show and conference covering industrial automation, robotics, AI, vision, manufacturing technology, and startup challenge programming.",
+  "website": "https://www.automateshow.com/",
+  "location": "Chicago, United States",
+  "mode": "in-person",
+  "startDate": "2026-06-22",
+  "endDate": "2026-06-25",
+  "fee": {
+    "type": "free",
+    "notes": "Show registration was listed as free; paid conference options may apply."
+  },
+  "macrotopics": ["manufacturing", "robotics", "startup-innovation"],
+  "subtopics": ["industrial-automation", "advanced-manufacturing", "ai", "startups"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.automateshow.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

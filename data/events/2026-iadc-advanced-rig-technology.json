@@ -1,0 +1,26 @@
+{
+  "id": "2026-iadc-advanced-rig-technology",
+  "name": "IADC Advanced Rig Technology Conference & Exhibition 2026",
+  "description": "Conference and exhibition for rig technology, drilling automation, downhole operations, data-driven drilling, and advanced well construction systems.",
+  "website": "https://iadc.org/event/iadc-art-2026/",
+  "location": "Austin, United States",
+  "mode": "in-person",
+  "startDate": "2026-08-25",
+  "endDate": "2026-08-26",
+  "applicationDeadline": "2026-02-06",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract deadline was visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "industrial-operations"],
+  "subtopics": ["downhole-drilling", "industrial-iot", "condition-monitoring"],
+  "attachments": [
+    {
+      "label": "Official IADC event page",
+      "type": "external",
+      "url": "https://iadc.org/event/iadc-art-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

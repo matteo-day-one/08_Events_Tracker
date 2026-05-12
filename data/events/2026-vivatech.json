@@ -1,0 +1,25 @@
+{
+  "id": "2026-vivatech",
+  "name": "VivaTech 2026",
+  "description": "Large European startup and technology event connecting startups, corporates, investors, and innovation ecosystems across AI, deep tech, climate, health, and mobility.",
+  "website": "https://vivatechnology.com/",
+  "location": "Paris, France",
+  "mode": "in-person",
+  "startDate": "2026-06-17",
+  "endDate": "2026-06-20",
+  "fee": {
+    "type": "unknown",
+    "notes": "Ticketing was visible, but public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "manufacturing", "energy"],
+  "subtopics": ["startups", "deep-tech", "ai", "climate-tech", "venture-capital"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://vivatechnology.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

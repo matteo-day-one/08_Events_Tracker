@@ -1,0 +1,25 @@
+{
+  "id": "2027-web-summit-qatar",
+  "name": "Web Summit Qatar 2027",
+  "description": "Major technology and startup conference for the Middle East, covering AI, hardtech, health, new energy, startups, investors, and venture networking.",
+  "website": "https://qatar.websummit.com/web-summit-qatar-homepage/",
+  "location": "Doha, Qatar",
+  "mode": "in-person",
+  "startDate": "2027-01-31",
+  "endDate": "2027-02-03",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pre-registration and ticket sale information was visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "energy", "health-care"],
+  "subtopics": ["startups", "venture-capital", "ai", "deep-tech", "climate-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://qatar.websummit.com/web-summit-qatar-homepage/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

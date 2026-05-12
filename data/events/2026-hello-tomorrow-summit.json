@@ -1,0 +1,28 @@
+{
+  "id": "2026-hello-tomorrow-summit",
+  "name": "Hello Tomorrow Global Summit 2026",
+  "description": "Deep-tech summit for startups, investors, corporates, and researchers across energy, climate, health, advanced computing, and industrial innovation.",
+  "website": "https://hello-tomorrow.org/global-summit/",
+  "location": "Amsterdam, Netherlands",
+  "mode": "in-person",
+  "startDate": "2026-06-11",
+  "endDate": "2026-06-12",
+  "applicationDeadline": "2026-01-05",
+  "fee": {
+    "type": "paid",
+    "amount": 490,
+    "currency": "EUR",
+    "notes": "Startup pass price recorded from official event materials; other pass categories vary."
+  },
+  "macrotopics": ["startup-innovation", "energy", "health-care"],
+  "subtopics": ["deep-tech", "startups", "venture-capital", "climate-tech"],
+  "attachments": [
+    {
+      "label": "Official summit page",
+      "type": "external",
+      "url": "https://hello-tomorrow.org/global-summit/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

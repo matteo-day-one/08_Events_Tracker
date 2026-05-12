@@ -113,6 +113,21 @@ describe("event schema validation", () => {
     );
   });
 
+  it("includes controlled taxonomy for startup innovation and EIC events", () => {
+    expect(taxonomy.macrotopics.map((topic) => topic.id)).toContain("startup-innovation");
+    expect(taxonomy.macrotopics.flatMap((topic) => topic.subtopics).map((topic) => topic.id)).toEqual(
+      expect.arrayContaining([
+        "deep-tech",
+        "startups",
+        "venture-capital",
+        "eic",
+        "ai",
+        "climate-tech",
+        "advanced-manufacturing"
+      ])
+    );
+  });
+
   it("includes the verified 2026 and 2027 seed events in the generated index", () => {
     expect(events.map((event) => event.id)).toEqual(
       expect.arrayContaining([

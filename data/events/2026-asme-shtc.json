@@ -1,0 +1,26 @@
+{
+  "id": "2026-asme-shtc",
+  "name": "ASME Summer Heat Transfer Conference 2026",
+  "description": "ASME technical conference focused on heat and mass transfer, energy systems, heat transfer equipment, thermal management, and thermal engineering research.",
+  "website": "https://event.asme.org/SHTC",
+  "location": "Bellevue, United States",
+  "mode": "in-person",
+  "startDate": "2026-07-26",
+  "endDate": "2026-07-29",
+  "applicationDeadline": "2026-06-29",
+  "fee": {
+    "type": "paid",
+    "notes": "Advance registration deadline was visible; registration rates vary by membership and category."
+  },
+  "macrotopics": ["thermal-systems", "energy"],
+  "subtopics": ["heat-recovery", "waste-heat", "thermal-energy-storage"],
+  "attachments": [
+    {
+      "label": "Official ASME event page",
+      "type": "external",
+      "url": "https://event.asme.org/SHTC"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

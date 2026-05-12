@@ -1,0 +1,26 @@
+{
+  "id": "2026-south-summit-madrid",
+  "name": "South Summit Madrid 2026",
+  "description": "Startup, investor, and corporate innovation summit focused on entrepreneurship, AI, open innovation, scaleups, and venture networking.",
+  "website": "https://www.southsummit.io/e/madrid/en",
+  "location": "Madrid, Spain",
+  "mode": "in-person",
+  "startDate": "2026-06-03",
+  "endDate": "2026-06-05",
+  "applicationDeadline": "2026-02-14",
+  "fee": {
+    "type": "unknown",
+    "notes": "Startup Competition deadline was visible; attendee pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["startups", "venture-capital", "ai"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.southsummit.io/e/madrid/en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

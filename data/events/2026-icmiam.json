@@ -1,0 +1,26 @@
+{
+  "id": "2026-icmiam",
+  "name": "ICMIAM 2026",
+  "description": "International conference and workshops on intelligent maintenance and asset management, diagnostics, monitoring, and data-driven maintenance.",
+  "website": "https://icmiam.com/",
+  "location": "Huddersfield, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-03",
+  "applicationDeadline": "2026-05-15",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract and early-bird deadlines were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://icmiam.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

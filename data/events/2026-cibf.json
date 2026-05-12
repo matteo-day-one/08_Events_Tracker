@@ -1,0 +1,25 @@
+{
+  "id": "2026-cibf",
+  "name": "CIBF2026 China International Battery Fair",
+  "description": "International battery fair covering battery materials, equipment, cell manufacturing, battery packs, recycling, and the global battery value chain.",
+  "website": "https://www.cibf.org.cn/en-US/about-us",
+  "location": "Shenzhen, China",
+  "mode": "in-person",
+  "startDate": "2026-05-13",
+  "endDate": "2026-05-15",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "quality-control"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.cibf.org.cn/en-US/about-us"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

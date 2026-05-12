@@ -88,4 +88,23 @@ describe("event tracker app", () => {
     expect(screen.getByRole("dialog", { name: "Delete event proposal" })).toBeInTheDocument();
     expect(screen.getByLabelText("Target event")).toHaveValue("2026-clean-energy-summit");
   });
+
+  it("renders macro and micro topic chips with deterministic sector colors", () => {
+    render(<App />);
+
+    const cleanEnergyRow = screen.getByRole("row", { name: /Clean Energy Summit/ });
+
+    expect(within(cleanEnergyRow).getByText("Energy")).toHaveClass("topic-chip", "topic-chip-macro", "topic-energy");
+    expect(within(cleanEnergyRow).getByText("Batteries")).toHaveClass(
+      "topic-chip",
+      "topic-chip-micro",
+      "topic-energy"
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /Clean Energy Summit/ }));
+    const details = within(screen.getByLabelText("Selected event details"));
+
+    expect(details.getByText("Energy")).toHaveClass("topic-chip", "topic-chip-macro", "topic-energy");
+    expect(details.getByText("Batteries")).toHaveClass("topic-chip", "topic-chip-micro", "topic-energy");
+  });
 });

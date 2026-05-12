@@ -1,0 +1,26 @@
+{
+  "id": "2026-solid-state-battery-summit",
+  "name": "Solid-State Battery Summit 2026",
+  "description": "Summit focused on solid-state and semi-solid-state batteries, manufacturing, cost, safety, pack design, and commercialization.",
+  "website": "https://www.cambridgeenertech.com/solid-state-batteries",
+  "location": "Chicago, United States",
+  "mode": "hybrid",
+  "startDate": "2026-08-11",
+  "endDate": "2026-08-12",
+  "applicationDeadline": "2026-06-05",
+  "fee": {
+    "type": "paid",
+    "notes": "A save-by discount deadline was visible; exact pass pricing varies."
+  },
+  "macrotopics": ["energy", "automotive", "manufacturing"],
+  "subtopics": ["solid-state-batteries", "batteries", "materials"],
+  "attachments": [
+    {
+      "label": "Official summit page",
+      "type": "external",
+      "url": "https://www.cambridgeenertech.com/solid-state-batteries"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

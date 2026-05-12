@@ -1,0 +1,25 @@
+{
+  "id": "2027-maintenance-bilbao",
+  "name": "Maintenance Bilbao 2027",
+  "description": "Industrial maintenance trade fair focused on maintenance, asset management, reliability, and industrial operations within the +INDUSTRY ecosystem.",
+  "website": "https://maintenance.bilbaoexhibitioncentre.com/en/",
+  "location": "Bilbao, Spain",
+  "mode": "in-person",
+  "startDate": "2027-02-23",
+  "endDate": "2027-02-25",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://maintenance.bilbaoexhibitioncentre.com/en/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

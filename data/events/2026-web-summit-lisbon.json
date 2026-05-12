@@ -1,0 +1,25 @@
+{
+  "id": "2026-web-summit-lisbon",
+  "name": "Web Summit Lisbon 2026",
+  "description": "Major technology and startup conference with startup, investor, AI, hardtech, robotics, energy, and venture programming.",
+  "website": "https://websummit.com/web-summit-2026/",
+  "location": "Lisbon, Portugal",
+  "mode": "in-person",
+  "startDate": "2026-11-09",
+  "endDate": "2026-11-12",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pre-registration and discount sale information was visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "robotics", "energy"],
+  "subtopics": ["startups", "venture-capital", "ai", "deep-tech", "climate-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://websummit.com/web-summit-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

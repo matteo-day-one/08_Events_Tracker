@@ -1,0 +1,25 @@
+{
+  "id": "2026-eic-multicorporate-semiconductors-embodied-ai",
+  "name": "EIC Multi-Corporate Day on Semiconductors and Embodied AI",
+  "description": "European Innovation Council corporate matchmaking event at Hello Tomorrow for EIC-backed companies in semiconductors, embodied AI, robotics, and adjacent deep-tech fields.",
+  "website": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en",
+  "location": "Amsterdam, Netherlands",
+  "mode": "in-person",
+  "startDate": "2026-06-11",
+  "endDate": "2026-06-12",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible; participation may be restricted to eligible EIC companies."
+  },
+  "macrotopics": ["startup-innovation", "robotics", "manufacturing"],
+  "subtopics": ["eic", "ai", "deep-tech", "industrial-automation", "advanced-manufacturing"],
+  "attachments": [
+    {
+      "label": "EIC Corporate Partnership Programme",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas/eic-corporate-partnership-programme_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

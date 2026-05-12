@@ -79,6 +79,19 @@
         { "id": "thermal-energy-storage", "label": "Thermal energy storage" },
         { "id": "waste-heat", "label": "Waste heat" }
       ]
+    },
+    {
+      "id": "startup-innovation",
+      "label": "Startup innovation",
+      "subtopics": [
+        { "id": "deep-tech", "label": "Deep tech" },
+        { "id": "startups", "label": "Startups" },
+        { "id": "venture-capital", "label": "Venture capital" },
+        { "id": "eic", "label": "European Innovation Council" },
+        { "id": "ai", "label": "AI" },
+        { "id": "climate-tech", "label": "Climate tech" },
+        { "id": "advanced-manufacturing", "label": "Advanced manufacturing" }
+      ]
     }
   ]
 }

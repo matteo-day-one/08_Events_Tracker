@@ -1,0 +1,30 @@
+{
+  "id": "2026-gitex-global",
+  "name": "GITEX Global 2026",
+  "description": "Global technology and startup exhibition covering AI, quantum, robotics, advanced manufacturing, mobility, and digital transformation, with EIC pavilion activity listed by EIC BAS.",
+  "website": "https://www.gitex.com/gitex-global-2026",
+  "location": "Dubai, United Arab Emirates",
+  "mode": "in-person",
+  "startDate": "2026-12-07",
+  "endDate": "2026-12-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Exhibit and registration interest were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation", "robotics", "manufacturing"],
+  "subtopics": ["startups", "ai", "deep-tech", "advanced-manufacturing", "eic"],
+  "attachments": [
+    {
+      "label": "Official GITEX Global page",
+      "type": "external",
+      "url": "https://www.gitex.com/gitex-global-2026"
+    },
+    {
+      "label": "EIC Business Acceleration Services",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/bas_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

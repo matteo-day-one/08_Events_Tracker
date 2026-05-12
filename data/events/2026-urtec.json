@@ -1,0 +1,25 @@
+{
+  "id": "2026-urtec",
+  "name": "URTeC 2026",
+  "description": "Unconventional Resources Technology Conference covering subsurface development, drilling and completions, geoscience, reservoir engineering, and energy resource technology.",
+  "website": "https://urtec.org/2026/",
+  "location": "Houston, United States",
+  "mode": "in-person",
+  "startDate": "2026-06-22",
+  "endDate": "2026-06-24",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://urtec.org/2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

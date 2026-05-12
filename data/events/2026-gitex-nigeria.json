@@ -1,0 +1,25 @@
+{
+  "id": "2026-gitex-nigeria",
+  "name": "GITEX Nigeria 2026",
+  "description": "GITEX technology and startup show for Nigeria and West Africa, covering AI, cloud, cyber, fintech, agritech, smart cities, and startup ecosystem networking.",
+  "website": "https://gitexnigeria.ng/",
+  "location": "Abuja and Lagos, Nigeria",
+  "mode": "in-person",
+  "startDate": "2026-09-07",
+  "endDate": "2026-09-10",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pre-registration and startup enquiry options were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["startups", "ai", "venture-capital", "deep-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://gitexnigeria.ng/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

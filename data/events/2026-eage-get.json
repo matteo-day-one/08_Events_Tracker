@@ -1,0 +1,26 @@
+{
+  "id": "2026-eage-get",
+  "name": "EAGE Global Energy Transition Conference & Exhibition 2026",
+  "description": "Conference and exhibition for subsurface energy transition topics including geothermal energy, CCS, hydrogen and storage, and applied geoscience.",
+  "website": "https://eageget.org/",
+  "location": "Hannover, Germany",
+  "mode": "in-person",
+  "startDate": "2026-11-02",
+  "endDate": "2026-11-06",
+  "applicationDeadline": "2026-06-15",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract deadline was visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "thermal-energy-storage", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://eageget.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

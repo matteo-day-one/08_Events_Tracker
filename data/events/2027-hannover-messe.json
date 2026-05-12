@@ -1,0 +1,25 @@
+{
+  "id": "2027-hannover-messe",
+  "name": "HANNOVER MESSE 2027",
+  "description": "Flagship industrial trade fair for industrial AI, automation, digitalization, energy systems, industrial infrastructure, manufacturing technology, and startup industrial tech.",
+  "website": "https://www.hannovermesse.de/en/",
+  "location": "Hannover, Germany",
+  "mode": "in-person",
+  "startDate": "2027-04-05",
+  "endDate": "2027-04-08",
+  "fee": {
+    "type": "unknown",
+    "notes": "Ticket information was visible, but public pricing was not captured during verification."
+  },
+  "macrotopics": ["manufacturing", "industrial-operations", "startup-innovation", "energy"],
+  "subtopics": ["advanced-manufacturing", "industrial-iot", "ai", "startups", "power-grids"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.hannovermesse.de/en/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

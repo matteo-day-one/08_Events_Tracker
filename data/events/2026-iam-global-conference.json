@@ -1,0 +1,27 @@
+{
+  "id": "2026-iam-global-conference",
+  "name": "IAM Global Conference 2026",
+  "description": "Institute of Asset Management global conference focused on asset management, connected assets, digital twins, and reliability practices.",
+  "website": "https://theiam.org/events/iam-global-conference-2026/",
+  "location": "London, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-06-17",
+  "endDate": "2026-06-18",
+  "fee": {
+    "type": "paid",
+    "amount": 540,
+    "currency": "GBP",
+    "notes": "Member rate was visible; non-member and other categories vary."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["condition-monitoring", "predictive-maintenance", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://theiam.org/events/iam-global-conference-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

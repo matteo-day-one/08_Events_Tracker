@@ -1,0 +1,27 @@
+{
+  "id": "2026-slush",
+  "name": "Slush 2026",
+  "description": "Founder and investor event focused on startup fundraising, deep tech, health, energy, manufacturing startups, and high-density venture networking.",
+  "website": "https://slush.org/",
+  "location": "Helsinki, Finland",
+  "mode": "in-person",
+  "startDate": "2026-11-18",
+  "endDate": "2026-11-19",
+  "fee": {
+    "type": "paid",
+    "amount": 345,
+    "currency": "EUR",
+    "notes": "Early startup pass pricing was visible; investor and other pass categories vary."
+  },
+  "macrotopics": ["startup-innovation", "energy", "manufacturing"],
+  "subtopics": ["startups", "venture-capital", "deep-tech", "climate-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://slush.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

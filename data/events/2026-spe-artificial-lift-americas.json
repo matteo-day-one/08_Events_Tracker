@@ -1,0 +1,25 @@
+{
+  "id": "2026-spe-artificial-lift-americas",
+  "name": "SPE Artificial Lift Conference & Exhibition - Americas 2026",
+  "description": "SPE conference and exhibition for artificial lift, downhole production systems, life-of-well design, production optimization, and well operations.",
+  "website": "https://www.spe-events.org/artificiallift/about",
+  "location": "The Woodlands, United States",
+  "mode": "in-person",
+  "startDate": "2026-08-25",
+  "endDate": "2026-08-27",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity"],
+  "attachments": [
+    {
+      "label": "Official SPE event page",
+      "type": "external",
+      "url": "https://www.spe-events.org/artificiallift/about"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

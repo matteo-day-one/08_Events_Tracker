@@ -1,0 +1,25 @@
+{
+  "id": "2026-world-geothermal-congress",
+  "name": "World Geothermal Congress 2026",
+  "description": "Global geothermal congress with technical sessions, workshops, expo activity, field trips, and networking focused on geothermal development and subsurface energy.",
+  "website": "https://www.wgc2026.com/",
+  "location": "Calgary, Canada",
+  "mode": "in-person",
+  "startDate": "2026-06-08",
+  "endDate": "2026-06-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract and paper deadlines were closed; public pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "thermal-energy-storage", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official congress page",
+      "type": "external",
+      "url": "https://www.wgc2026.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

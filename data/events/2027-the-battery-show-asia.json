@@ -1,0 +1,25 @@
+{
+  "id": "2027-the-battery-show-asia",
+  "name": "The Battery Show Asia 2027",
+  "description": "Battery, energy storage, and mobility technology expo and networking event for the Asian battery and advanced mobility ecosystem.",
+  "website": "https://www.thebatteryshow.asia/",
+  "location": "Hong Kong, China",
+  "mode": "in-person",
+  "startDate": "2027-07-14",
+  "endDate": "2027-07-16",
+  "fee": {
+    "type": "free",
+    "notes": "Official event materials showed a free registration option."
+  },
+  "macrotopics": ["energy", "automotive", "manufacturing"],
+  "subtopics": ["batteries", "electric-vehicles", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.thebatteryshow.asia/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

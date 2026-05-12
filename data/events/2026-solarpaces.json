@@ -1,0 +1,26 @@
+{
+  "id": "2026-solarpaces",
+  "name": "SolarPACES 2026",
+  "description": "Conference on concentrating solar power and thermal energy systems, including thermal energy storage, solar process heat, and thermal and chemical energy systems.",
+  "website": "https://www.solarpaces-conference.org/",
+  "location": "Bad Neuenahr, Germany",
+  "mode": "in-person",
+  "startDate": "2026-09-15",
+  "endDate": "2026-09-18",
+  "applicationDeadline": "2026-08-06",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration timing and early-bird deadline were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["thermal-systems", "energy"],
+  "subtopics": ["thermal-energy-storage", "heat-recovery", "renewables"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.solarpaces-conference.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2026-iadc-world-drilling",
+  "name": "IADC World Drilling 2026",
+  "description": "IADC conference and exhibition for global drilling professionals, drilling operations, automation, well control, HPHT, and geothermal drilling topics.",
+  "website": "https://iadc.org/event/iadc-world-drilling-2026/",
+  "location": "Estoril, Portugal",
+  "mode": "in-person",
+  "startDate": "2026-06-16",
+  "endDate": "2026-06-17",
+  "fee": {
+    "type": "paid",
+    "amount": 850,
+    "currency": "EUR",
+    "notes": "IADC member rate; non-member rate is higher and discounts may apply."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity", "geothermal"],
+  "attachments": [
+    {
+      "label": "Official IADC event page",
+      "type": "external",
+      "url": "https://iadc.org/event/iadc-world-drilling-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

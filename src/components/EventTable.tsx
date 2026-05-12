@@ -2,7 +2,12 @@ import { ArrowDownUp, ExternalLink } from "lucide-react";
 import type { EventRecord } from "../lib/eventTypes";
 import type { SortKey, SortState } from "../lib/eventFilters";
 import { formatDate, formatDateRange, formatFee, formatMode } from "../lib/formatters";
-import { getMacrotopicLabel, getSubtopicLabel } from "../lib/taxonomy";
+import {
+  getMacrotopicColorClass,
+  getMacrotopicLabel,
+  getSubtopicColorClass,
+  getSubtopicLabel
+} from "../lib/taxonomy";
 
 type EventTableProps = {
   events: EventRecord[];
@@ -84,8 +89,20 @@ export function EventTable({
               </td>
               <td>
                 <div className="topic-stack">
-                  <span>{event.macrotopics.map((id) => getMacrotopicLabel(id)).join(", ")}</span>
-                  <small>{event.subtopics.map((id) => getSubtopicLabel(id)).join(", ")}</small>
+                  <div className="topic-chip-row" aria-label="Event macrotopics">
+                    {event.macrotopics.map((id) => (
+                      <span key={id} className={`topic-chip topic-chip-macro ${getMacrotopicColorClass(id)}`}>
+                        {getMacrotopicLabel(id)}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="topic-chip-row" aria-label="Event subtopics">
+                    {event.subtopics.map((id) => (
+                      <span key={id} className={`topic-chip topic-chip-micro ${getSubtopicColorClass(id)}`}>
+                        {getSubtopicLabel(id)}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </td>
               <td>

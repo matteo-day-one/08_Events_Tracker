@@ -1,0 +1,25 @@
+{
+  "id": "2026-itap",
+  "name": "Industrial Transformation Asia-Pacific 2026",
+  "description": "Advanced manufacturing and industrial transformation expo focused on Industry 4.0 and 5.0, digital manufacturing, automation, and sustainable operations.",
+  "website": "https://www.industrial-transformation.com/about/about-itap",
+  "location": "Singapore",
+  "mode": "in-person",
+  "startDate": "2026-10-21",
+  "endDate": "2026-10-23",
+  "fee": {
+    "type": "unknown",
+    "notes": "Exhibit and mailing-list options were visible; public pricing was not captured during verification."
+  },
+  "macrotopics": ["manufacturing", "industrial-operations", "startup-innovation"],
+  "subtopics": ["advanced-manufacturing", "industrial-iot", "industrial-automation", "ai"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.industrial-transformation.com/about/about-itap"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

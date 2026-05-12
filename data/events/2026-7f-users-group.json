@@ -1,0 +1,25 @@
+{
+  "id": "2026-7f-users-group",
+  "name": "7F Users Group Annual Conference 2026",
+  "description": "Owner and operator user conference focused on GE 7F gas turbine operations, maintenance, reliability, and peer technical exchange.",
+  "website": "https://www.powerusers.org/our-groups/7f-users-group/",
+  "location": "The Woodlands, United States",
+  "mode": "in-person",
+  "startDate": "2026-05-18",
+  "endDate": "2026-05-22",
+  "fee": {
+    "type": "unknown",
+    "notes": "Public pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations", "thermal-systems"],
+  "subtopics": ["gas-turbines", "turbomachinery", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official group page",
+      "type": "external",
+      "url": "https://www.powerusers.org/our-groups/7f-users-group/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-eage-aapg-geothermal-middle-east-workshop",
+  "name": "EAGE/AAPG Geothermal Energy in the Middle East Workshop 2026",
+  "description": "Workshop focused on geothermal discovery and management in the Middle East, drilling technologies, CAPEX optimization, and geothermal subsurface development.",
+  "website": "https://eage.eventsair.com/second-eageaapg-geothermal-energy-in-the-middle-east-workshop/",
+  "location": "Jeddah, Saudi Arabia",
+  "mode": "in-person",
+  "startDate": "2026-11-09",
+  "endDate": "2026-11-11",
+  "applicationDeadline": "2026-05-22",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract deadline was visible; registration pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "downhole-drilling", "thermal-energy-storage"],
+  "attachments": [
+    {
+      "label": "Official workshop page",
+      "type": "external",
+      "url": "https://eage.eventsair.com/second-eageaapg-geothermal-energy-in-the-middle-east-workshop/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

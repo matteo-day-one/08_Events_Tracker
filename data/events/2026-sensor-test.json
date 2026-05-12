@@ -1,0 +1,25 @@
+{
+  "id": "2026-sensor-test",
+  "name": "SENSOR+TEST 2026",
+  "description": "Trade fair and conference for sensors, measurement, testing, condition monitoring, and industrial instrumentation.",
+  "website": "https://www.sensor-test.de/",
+  "location": "Nuremberg, Germany",
+  "mode": "in-person",
+  "startDate": "2026-06-09",
+  "endDate": "2026-06-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Ticket shop and exhibitor package information were visible; attendee pricing was not captured during verification."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["condition-monitoring", "industrial-iot", "quality-control"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.sensor-test.de/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

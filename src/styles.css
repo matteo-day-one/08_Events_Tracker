@@ -265,7 +265,7 @@ a:focus-visible {
 
 .workspace-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(310px, 380px);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 350px);
   gap: 18px;
   align-items: start;
 }
@@ -280,7 +280,12 @@ a:focus-visible {
 }
 
 .directory-panel {
+  min-width: 0;
   overflow: hidden;
+}
+
+.detail-panel {
+  min-width: 0;
 }
 
 .table-scroll {
@@ -364,12 +369,12 @@ a:focus-visible {
 
 .topic-stack {
   display: grid;
-  gap: 3px;
-  min-width: 190px;
+  gap: 6px;
+  min-width: 230px;
 }
 
 .mode-chip,
-.tag-block span {
+.topic-chip {
   display: inline-flex;
   align-items: center;
   width: max-content;
@@ -378,6 +383,120 @@ a:focus-visible {
   padding: 0 9px;
   font-size: 0.78rem;
   font-weight: 800;
+}
+
+.topic-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.topic-chip-macro {
+  border: 1px solid transparent;
+}
+
+.topic-chip-micro {
+  border: 1px solid currentColor;
+}
+
+.topic-automotive.topic-chip-macro {
+  background: #dff4ff;
+  color: #075985;
+}
+
+.topic-automotive.topic-chip-micro {
+  background: #f0faff;
+  color: #0369a1;
+}
+
+.topic-energy.topic-chip-macro {
+  background: #ddf7df;
+  color: #166534;
+}
+
+.topic-energy.topic-chip-micro {
+  background: #f0fbf1;
+  color: #15803d;
+}
+
+.topic-drilling.topic-chip-macro {
+  background: #fae7d1;
+  color: #8a3a0a;
+}
+
+.topic-drilling.topic-chip-micro {
+  background: #fff4e7;
+  color: #9a3412;
+}
+
+.topic-health.topic-chip-macro {
+  background: #fce3ec;
+  color: #9d174d;
+}
+
+.topic-health.topic-chip-micro {
+  background: #fff1f6;
+  color: #be185d;
+}
+
+.topic-robotics.topic-chip-macro {
+  background: #e7e9ff;
+  color: #3730a3;
+}
+
+.topic-robotics.topic-chip-micro {
+  background: #f3f4ff;
+  color: #4338ca;
+}
+
+.topic-industrial.topic-chip-macro {
+  background: #e3e8ef;
+  color: #334155;
+}
+
+.topic-industrial.topic-chip-micro {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.topic-manufacturing.topic-chip-macro {
+  background: #ede7ff;
+  color: #6d28d9;
+}
+
+.topic-manufacturing.topic-chip-micro {
+  background: #f6f1ff;
+  color: #7c3aed;
+}
+
+.topic-thermal.topic-chip-macro {
+  background: #ffe4d6;
+  color: #9a3412;
+}
+
+.topic-thermal.topic-chip-micro {
+  background: #fff3ed;
+  color: #c2410c;
+}
+
+.topic-startup.topic-chip-macro {
+  background: #d8f5ef;
+  color: #0f766e;
+}
+
+.topic-startup.topic-chip-micro {
+  background: #ecfffb;
+  color: #0f766e;
+}
+
+.topic-default.topic-chip-macro {
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+.topic-default.topic-chip-micro {
+  background: #f8fafc;
+  color: var(--muted);
 }
 
 .mode-chip {
@@ -479,10 +598,6 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 7px;
   margin: 18px 0;
-}
-
-.tag-block span {
-  background: var(--surface-strong);
 }
 
 .detail-actions {
@@ -679,7 +794,7 @@ body.proposal-drawer-open {
   background: #f8fafb;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1020px) {
   .workspace-grid {
     grid-template-columns: 1fr;
   }

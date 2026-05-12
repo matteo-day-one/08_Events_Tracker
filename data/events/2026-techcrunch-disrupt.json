@@ -1,0 +1,31 @@
+{
+  "id": "2026-techcrunch-disrupt",
+  "name": "TechCrunch Disrupt 2026",
+  "description": "Startup and venture capital conference with founder programming, investor networking, Startup Battlefield, and technology startup showcases.",
+  "website": "https://techcrunch.com/events/techcrunch-disrupt/",
+  "location": "San Francisco, United States",
+  "mode": "in-person",
+  "startDate": "2026-10-13",
+  "endDate": "2026-10-15",
+  "applicationDeadline": "2026-05-27",
+  "fee": {
+    "type": "unknown",
+    "notes": "Startup Battlefield deadline was visible; attendee pricing was not captured during verification."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["startups", "venture-capital", "ai", "deep-tech"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://techcrunch.com/events/techcrunch-disrupt/"
+    },
+    {
+      "label": "Startup Battlefield page",
+      "type": "external",
+      "url": "https://techcrunch.com/startup-battlefield/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

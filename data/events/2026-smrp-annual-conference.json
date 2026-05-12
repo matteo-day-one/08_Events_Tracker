@@ -1,0 +1,25 @@
+{
+  "id": "2026-smrp-annual-conference",
+  "name": "SMRP Annual Conference 2026",
+  "description": "Society for Maintenance & Reliability Professionals annual conference and expo for maintenance, reliability, and physical asset management.",
+  "website": "https://smrp.org/Events/Annual-Conference",
+  "location": "Raleigh, United States",
+  "mode": "in-person",
+  "startDate": "2026-09-28",
+  "endDate": "2026-10-01",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract call was closed; public pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://smrp.org/Events/Annual-Conference"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

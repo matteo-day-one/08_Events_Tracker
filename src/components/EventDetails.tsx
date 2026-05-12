@@ -1,7 +1,12 @@
 import { CalendarDays, ExternalLink, FileText, MapPin, Pencil, Tag, Trash2 } from "lucide-react";
 import type { EventRecord } from "../lib/eventTypes";
 import { formatDate, formatDateRange, formatFee, formatMode } from "../lib/formatters";
-import { getMacrotopicLabel, getSubtopicLabel } from "../lib/taxonomy";
+import {
+  getMacrotopicColorClass,
+  getMacrotopicLabel,
+  getSubtopicColorClass,
+  getSubtopicLabel
+} from "../lib/taxonomy";
 
 type EventDetailsProps = {
   event: EventRecord;
@@ -57,10 +62,14 @@ export function EventDetails({ event, onUpdate, onDelete }: EventDetailsProps) {
 
       <div className="tag-block">
         {event.macrotopics.map((id) => (
-          <span key={id}>{getMacrotopicLabel(id)}</span>
+          <span key={id} className={`topic-chip topic-chip-macro ${getMacrotopicColorClass(id)}`}>
+            {getMacrotopicLabel(id)}
+          </span>
         ))}
         {event.subtopics.map((id) => (
-          <span key={id}>{getSubtopicLabel(id)}</span>
+          <span key={id} className={`topic-chip topic-chip-micro ${getSubtopicColorClass(id)}`}>
+            {getSubtopicLabel(id)}
+          </span>
         ))}
       </div>
 

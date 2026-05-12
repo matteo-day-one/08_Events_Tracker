@@ -1,0 +1,25 @@
+{
+  "id": "2026-esil-business-angels-deep-tech-teams",
+  "name": "Business Angels and Deep Tech Teams: ESIL Annual Event",
+  "description": "European Innovation Council listed investor and deep-tech event connecting business angels, deep-tech teams, and lab-to-market innovation networks.",
+  "website": "https://eic.ec.europa.eu/events/business-angels-and-deep-tech-teams-esils-annual-event-2026-06-05_en",
+  "location": "Brussels, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-06-05",
+  "applicationDeadline": "2026-05-29",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration deadline was visible; pricing was not visible during verification."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["deep-tech", "venture-capital", "startups", "eic"],
+  "attachments": [
+    {
+      "label": "Official EIC event page",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/events/business-angels-and-deep-tech-teams-esils-annual-event-2026-06-05_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

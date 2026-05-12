@@ -1,0 +1,25 @@
+{
+  "id": "2027-spe-iadc-international-drilling",
+  "name": "SPE/IADC International Drilling Conference and Exhibition 2027",
+  "description": "International drilling conference and exhibition focused on drilling, well construction technologies, field-proven solutions, automation, and operational drilling advances.",
+  "website": "https://www.drillingconference.org/",
+  "location": "Stavanger, Norway",
+  "mode": "in-person",
+  "startDate": "2027-03-09",
+  "endDate": "2027-03-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Call for proposals was open; public pricing was not yet visible during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.drillingconference.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

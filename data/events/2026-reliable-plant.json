@@ -1,0 +1,25 @@
+{
+  "id": "2026-reliable-plant",
+  "name": "Reliable Plant 2026",
+  "description": "Conference and expo focused on plant reliability, maintenance, asset management, lubrication, and industrial operations improvement.",
+  "website": "https://conference.reliableplant.com/",
+  "location": "Reno Tahoe, United States",
+  "mode": "in-person",
+  "startDate": "2026-06-15",
+  "endDate": "2026-06-18",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing link was visible; public amounts were not captured during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://conference.reliableplant.com/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

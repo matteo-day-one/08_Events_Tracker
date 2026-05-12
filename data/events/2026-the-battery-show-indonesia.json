@@ -1,0 +1,25 @@
+{
+  "id": "2026-the-battery-show-indonesia",
+  "name": "The Battery Show Indonesia 2026",
+  "description": "Battery and energy storage expo focused on Indonesia's battery supply chain, materials, battery systems, EV technology, and regional energy storage markets.",
+  "website": "https://www.thebatteryshowindonesia.com/about/about-the-show/",
+  "location": "Jakarta, Indonesia",
+  "mode": "in-person",
+  "startDate": "2026-09-02",
+  "endDate": "2026-09-05",
+  "fee": {
+    "type": "free",
+    "notes": "Official event materials indicated exhibition attendance is complimentary."
+  },
+  "macrotopics": ["energy", "automotive", "manufacturing"],
+  "subtopics": ["batteries", "electric-vehicles", "materials"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.thebatteryshowindonesia.com/about/about-the-show/"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

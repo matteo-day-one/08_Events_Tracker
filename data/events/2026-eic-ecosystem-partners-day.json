@@ -1,0 +1,24 @@
+{
+  "id": "2026-eic-ecosystem-partners-day",
+  "name": "EIC Ecosystem Partners Day 2026",
+  "description": "European Innovation Council partner meeting connecting EIC partners, EIC-backed innovators, and ecosystem stakeholders ahead of the EIC Summit.",
+  "website": "https://eic.ec.europa.eu/events/eic-ecosystem-partners-day-2026-06-02_en",
+  "location": "Brussels, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-06-02",
+  "fee": {
+    "type": "unknown",
+    "notes": "Participation details were listed, but public pricing was not visible."
+  },
+  "macrotopics": ["startup-innovation"],
+  "subtopics": ["eic", "deep-tech", "startups"],
+  "attachments": [
+    {
+      "label": "Official EIC event page",
+      "type": "external",
+      "url": "https://eic.ec.europa.eu/events/eic-ecosystem-partners-day-2026-06-02_en"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}

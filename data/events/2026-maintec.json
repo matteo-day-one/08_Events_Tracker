@@ -1,0 +1,25 @@
+{
+  "id": "2026-maintec",
+  "name": "Maintec 2026",
+  "description": "Maintenance and reliability exhibition within Smart Manufacturing Week, focused on predictive maintenance, asset management, and industrial operations.",
+  "website": "https://www.smartmanufacturingweek.com/welcome-maintec",
+  "location": "Birmingham, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-06-03",
+  "endDate": "2026-06-04",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration was open; public pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official Maintec page",
+      "type": "external",
+      "url": "https://www.smartmanufacturingweek.com/welcome-maintec"
+    }
+  ],
+  "createdAt": "2026-05-12T11:00:00.000Z",
+  "updatedAt": "2026-05-12T11:00:00.000Z"
+}
