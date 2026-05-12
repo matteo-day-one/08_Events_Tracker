@@ -1,0 +1,28 @@
+{
+  "id": "2026-cm-condition-monitoring-asset-management",
+  "name": "CM 2026: International Conference on Condition Monitoring and Asset Management",
+  "description": "Condition monitoring and asset management conference with technical sessions and tabletop exhibition covering machinery diagnostics, industrial reliability, and failure prevention.",
+  "website": "https://www.bindt.org/events-and-awards/cm-2026/",
+  "location": "York, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-06-09",
+  "endDate": "2026-06-11",
+  "applicationDeadline": "2026-05-08",
+  "fee": {
+    "type": "paid",
+    "amount": 695,
+    "currency": "GBP",
+    "notes": "Full-time conference pricing starts from the listed member rate; non-member rates and VAT vary."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["condition-monitoring", "predictive-maintenance", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.bindt.org/events-and-awards/cm-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

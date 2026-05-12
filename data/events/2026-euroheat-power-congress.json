@@ -1,0 +1,25 @@
+{
+  "id": "2026-euroheat-power-congress",
+  "name": "Euroheat & Power Congress 2026",
+  "description": "European district heating and cooling congress with B2B networking, focused on thermal systems, heat networks, decarbonized heat, and industrial heat integration.",
+  "website": "https://www.euroheat.org/events/save-the-date-euroheat-and-power-congress-2026",
+  "location": "Krakow, Poland",
+  "mode": "in-person",
+  "startDate": "2026-06-09",
+  "endDate": "2026-06-11",
+  "fee": {
+    "type": "unknown",
+    "notes": "Tickets were announced on the official event page, but pricing was not visible during verification."
+  },
+  "macrotopics": ["thermal-systems", "energy"],
+  "subtopics": ["heat-recovery", "waste-heat", "thermal-energy-storage"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.euroheat.org/events/save-the-date-euroheat-and-power-congress-2026"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

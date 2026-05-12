@@ -1,0 +1,25 @@
+{
+  "id": "2026-spe-well-decommissioning",
+  "name": "SPE Well Decommissioning 2026",
+  "description": "SPE Aberdeen conference focused on well decommissioning, plug and abandonment, legacy wells, sustained annulus pressure, and late-life well integrity.",
+  "website": "https://www.spe-aberdeen.org/events/well-decommissioning-2026",
+  "location": "Aberdeen, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-06-03",
+  "endDate": "2026-06-04",
+  "fee": {
+    "type": "unknown",
+    "notes": "Ticketing is referenced on the official page, but pricing was not visible during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["well-integrity", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.spe-aberdeen.org/events/well-decommissioning-2026"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

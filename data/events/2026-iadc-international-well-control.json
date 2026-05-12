@@ -1,0 +1,28 @@
+{
+  "id": "2026-iadc-international-well-control",
+  "name": "IADC International Well Control Conference & Exhibition 2026",
+  "description": "IADC conference and exhibition focused on well control, drilling safety, pressure management, incident prevention, and well-control practices.",
+  "website": "https://iadc.org/event/iadc-international-well-control-2026/",
+  "location": "Stavanger, Norway",
+  "mode": "in-person",
+  "startDate": "2026-10-13",
+  "endDate": "2026-10-14",
+  "applicationDeadline": "2026-03-17",
+  "fee": {
+    "type": "paid",
+    "amount": 750,
+    "currency": "EUR",
+    "notes": "IADC member rate; non-member registration is higher and discounts may apply."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["well-integrity", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official IADC event page",
+      "type": "external",
+      "url": "https://iadc.org/event/iadc-international-well-control-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

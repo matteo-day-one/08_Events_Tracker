@@ -1,0 +1,25 @@
+{
+  "id": "2026-iot-tech-expo-europe",
+  "name": "IoT Tech Expo Europe 2026",
+  "description": "European IoT expo and conference covering industrial IoT, smart manufacturing, connected operations, edge AI, digital twins, and enterprise IoT deployments.",
+  "website": "https://www.iottechexpo.com/europe/",
+  "location": "Amsterdam, Netherlands",
+  "mode": "in-person",
+  "startDate": "2026-10-20",
+  "endDate": "2026-10-21",
+  "fee": {
+    "type": "free",
+    "notes": "A free pass is listed; paid Gold Pass conference options are also available."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["industrial-iot", "predictive-maintenance", "industrial-automation"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.iottechexpo.com/europe/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

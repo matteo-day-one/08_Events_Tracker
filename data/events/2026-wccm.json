@@ -1,0 +1,26 @@
+{
+  "id": "2026-wccm",
+  "name": "4th World Congress on Condition Monitoring",
+  "description": "International congress on condition monitoring with workshops and exhibition covering diagnostics, monitoring technologies, predictive maintenance, and industrial asset reliability.",
+  "website": "https://www.aimnet.it/wccm2026/",
+  "location": "Milan, Italy",
+  "mode": "in-person",
+  "startDate": "2026-08-25",
+  "endDate": "2026-08-28",
+  "applicationDeadline": "2026-07-31",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration deadlines are visible, but detailed pricing was not captured during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["condition-monitoring", "predictive-maintenance", "rotating-equipment"],
+  "attachments": [
+    {
+      "label": "Official congress page",
+      "type": "external",
+      "url": "https://www.aimnet.it/wccm2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

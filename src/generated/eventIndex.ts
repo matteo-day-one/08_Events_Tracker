@@ -36,6 +36,138 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-iea-heat-pump-conference",
+    "name": "15th IEA Heat Pump Conference",
+    "description": "International heat pump conference focused on heat pump technology, industrial heat, high-temperature applications, thermal systems, and decarbonized heating and cooling.",
+    "website": "https://hpc2026.org/",
+    "location": "Vienna, Austria",
+    "mode": "in-person",
+    "startDate": "2026-05-26",
+    "endDate": "2026-05-29",
+    "applicationDeadline": "2026-05-15",
+    "fee": {
+      "type": "paid",
+      "amount": 1560,
+      "currency": "EUR",
+      "notes": "Regular conference registration rate; student and other ticket categories vary."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "renewables"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://hpc2026.org/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-spe-well-decommissioning",
+    "name": "SPE Well Decommissioning 2026",
+    "description": "SPE Aberdeen conference focused on well decommissioning, plug and abandonment, legacy wells, sustained annulus pressure, and late-life well integrity.",
+    "website": "https://www.spe-aberdeen.org/events/well-decommissioning-2026",
+    "location": "Aberdeen, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-06-03",
+    "endDate": "2026-06-04",
+    "fee": {
+      "type": "unknown",
+      "notes": "Ticketing is referenced on the official page, but pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "well-integrity",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.spe-aberdeen.org/events/well-decommissioning-2026"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-cm-condition-monitoring-asset-management",
+    "name": "CM 2026: International Conference on Condition Monitoring and Asset Management",
+    "description": "Condition monitoring and asset management conference with technical sessions and tabletop exhibition covering machinery diagnostics, industrial reliability, and failure prevention.",
+    "website": "https://www.bindt.org/events-and-awards/cm-2026/",
+    "location": "York, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-06-09",
+    "endDate": "2026-06-11",
+    "applicationDeadline": "2026-05-08",
+    "fee": {
+      "type": "paid",
+      "amount": 695,
+      "currency": "GBP",
+      "notes": "Full-time conference pricing starts from the listed member rate; non-member rates and VAT vary."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "condition-monitoring",
+      "predictive-maintenance",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.bindt.org/events-and-awards/cm-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-euroheat-power-congress",
+    "name": "Euroheat & Power Congress 2026",
+    "description": "European district heating and cooling congress with B2B networking, focused on thermal systems, heat networks, decarbonized heat, and industrial heat integration.",
+    "website": "https://www.euroheat.org/events/save-the-date-euroheat-and-power-congress-2026",
+    "location": "Krakow, Poland",
+    "mode": "in-person",
+    "startDate": "2026-06-09",
+    "endDate": "2026-06-11",
+    "fee": {
+      "type": "unknown",
+      "notes": "Tickets were announced on the official event page, but pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "energy"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "waste-heat",
+      "thermal-energy-storage"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.euroheat.org/events/save-the-date-euroheat-and-power-congress-2026"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
     "id": "2026-the-battery-show-europe",
     "name": "The Battery Show Europe 2026",
     "description": "European battery and electric vehicle technology event with conference, exhibition, and networking for advanced battery systems and manufacturing.",
@@ -106,6 +238,108 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-ees-europe",
+    "name": "ees Europe 2026",
+    "description": "European exhibition and conference for batteries and energy storage systems, including storage applications, battery technology, power-to-gas, and integrated renewable energy systems.",
+    "website": "https://www.ees-europe.com/exhibition-quick-facts",
+    "location": "Munich, Germany",
+    "mode": "in-person",
+    "startDate": "2026-06-22",
+    "endDate": "2026-06-25",
+    "fee": {
+      "type": "paid",
+      "amount": 43,
+      "currency": "EUR",
+      "notes": "Listed day-ticket price starts at the early exhibition rate; regular and multi-day tickets vary."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "batteries",
+      "thermal-energy-storage",
+      "power-grids"
+    ],
+    "attachments": [
+      {
+        "label": "Official quick facts page",
+        "type": "external",
+        "url": "https://www.ees-europe.com/exhibition-quick-facts"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-euromaintenance",
+    "name": "EuroMaintenance 2026",
+    "description": "European maintenance congress and exhibition covering maintenance, reliability, asset management, industrial operations, workshops, and networking.",
+    "website": "https://euromaintenance26.eu/",
+    "location": "Lulea, Sweden",
+    "mode": "in-person",
+    "startDate": "2026-06-23",
+    "endDate": "2026-06-25",
+    "applicationDeadline": "2026-05-21",
+    "fee": {
+      "type": "paid",
+      "amount": 9500,
+      "currency": "SEK",
+      "notes": "General attendee registration fee; workshop and other categories vary."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official congress page",
+        "type": "external",
+        "url": "https://euromaintenance26.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-spe-europe-energy-conference",
+    "name": "SPE Europe Energy Conference and Exhibition 2026",
+    "description": "SPE conference and exhibition for European energy engineering, including drilling, completions, geothermal operations, well integrity, and subsurface energy systems.",
+    "website": "https://www.spe-events.org/europeenergyconference",
+    "location": "Istanbul, Turkiye",
+    "mode": "in-person",
+    "startDate": "2026-06-23",
+    "endDate": "2026-06-25",
+    "fee": {
+      "type": "paid",
+      "amount": 930,
+      "currency": "EUR",
+      "notes": "SPE member registration rate; non-member and other categories vary."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity",
+      "geothermal"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.spe-events.org/europeenergyconference"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
     "id": "2026-medical-robotics-workshop",
     "name": "Medical Robotics Workshop",
     "description": "Hands-on workshop covering robotic assistance, clinical workflow integration, and validation of biomedical devices.",
@@ -135,6 +369,38 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T08:05:00.000Z",
     "updatedAt": "2026-05-12T08:05:00.000Z"
+  },
+  {
+    "id": "2026-wccm",
+    "name": "4th World Congress on Condition Monitoring",
+    "description": "International congress on condition monitoring with workshops and exhibition covering diagnostics, monitoring technologies, predictive maintenance, and industrial asset reliability.",
+    "website": "https://www.aimnet.it/wccm2026/",
+    "location": "Milan, Italy",
+    "mode": "in-person",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-28",
+    "applicationDeadline": "2026-07-31",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration deadlines are visible, but detailed pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "condition-monitoring",
+      "predictive-maintenance",
+      "rotating-equipment"
+    ],
+    "attachments": [
+      {
+        "label": "Official congress page",
+        "type": "external",
+        "url": "https://www.aimnet.it/wccm2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
     "id": "2026-intelligent-maintenance-conference",
@@ -243,6 +509,71 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T08:00:00.000Z"
   },
   {
+    "id": "2026-iadc-spe-mpd-ubo",
+    "name": "IADC/SPE Managed Pressure Drilling and Underbalanced Operations Conference 2026",
+    "description": "IADC/SPE conference and exhibition focused on managed pressure drilling, underbalanced operations, dual-gradient drilling, downhole pressure control, and drilling safety.",
+    "website": "https://iadc.org/event/iadc-spe-managed-pressure-drilling-underbalanced-operations-2026/",
+    "location": "London, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-09-15",
+    "endDate": "2026-09-16",
+    "fee": {
+      "type": "paid",
+      "amount": 750,
+      "currency": "EUR",
+      "notes": "IADC/SPE member rate; non-member registration is higher and discounts may apply."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "downhole-drilling",
+      "well-integrity"
+    ],
+    "attachments": [
+      {
+        "label": "Official IADC event page",
+        "type": "external",
+        "url": "https://iadc.org/event/iadc-spe-managed-pressure-drilling-underbalanced-operations-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-therminic",
+    "name": "THERMINIC 2026",
+    "description": "Workshop on thermal investigations of integrated circuits and systems, covering electronics thermal management, thermal modeling, measurement, and reliability.",
+    "website": "https://therminic.eu/",
+    "location": "Berlin-Kopenick, Germany",
+    "mode": "in-person",
+    "startDate": "2026-09-16",
+    "endDate": "2026-09-18",
+    "applicationDeadline": "2026-04-30",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract deadline was visible; registration pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "thermal-systems",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "heat-recovery",
+      "materials"
+    ],
+    "attachments": [
+      {
+        "label": "Official workshop page",
+        "type": "external",
+        "url": "https://therminic.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
     "id": "2026-geothermal-rising-conference",
     "name": "2026 Geothermal Rising Conference",
     "description": "Annual geothermal industry conference with technical, policy, market, education, tour, and exhibition programming for geothermal energy professionals.",
@@ -347,6 +678,107 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-european-geothermal-workshop",
+    "name": "European Geothermal Workshop 2026",
+    "description": "European geothermal research workshop focused on geothermal systems, subsurface experiments, GeoLaB, and utilization of underground thermal resources.",
+    "website": "https://egw2026.eu/",
+    "location": "Darmstadt, Germany",
+    "mode": "in-person",
+    "startDate": "2026-09-29",
+    "endDate": "2026-10-01",
+    "fee": {
+      "type": "paid",
+      "amount": 100,
+      "currency": "EUR",
+      "notes": "Workshop participation fee shown on the official event site."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "heat-recovery",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official workshop page",
+        "type": "external",
+        "url": "https://egw2026.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-energy-storage-global-conference",
+    "name": "Energy Storage Global Conference 2026",
+    "description": "Energy storage conference and exhibition focused on storage markets, policy, deployment, long-duration storage, and the European energy storage ecosystem.",
+    "website": "https://ease-storage.eu/easeevents/energy-storage-global-conference",
+    "location": "Brussels, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-08",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event page during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "batteries",
+      "thermal-energy-storage",
+      "power-grids"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://ease-storage.eu/easeevents/energy-storage-global-conference"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-iadc-international-well-control",
+    "name": "IADC International Well Control Conference & Exhibition 2026",
+    "description": "IADC conference and exhibition focused on well control, drilling safety, pressure management, incident prevention, and well-control practices.",
+    "website": "https://iadc.org/event/iadc-international-well-control-2026/",
+    "location": "Stavanger, Norway",
+    "mode": "in-person",
+    "startDate": "2026-10-13",
+    "endDate": "2026-10-14",
+    "applicationDeadline": "2026-03-17",
+    "fee": {
+      "type": "paid",
+      "amount": 750,
+      "currency": "EUR",
+      "notes": "IADC member rate; non-member registration is higher and discounts may apply."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "well-integrity",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official IADC event page",
+        "type": "external",
+        "url": "https://iadc.org/event/iadc-international-well-control-2026/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
     "id": "2026-icemrb",
     "name": "International Conference on Energy Materials and Rechargeable Batteries 2026",
     "description": "Scientific conference on energy materials and rechargeable batteries, including solid-state, thin-film, flexible, metal-air, and sustainable battery research.",
@@ -379,6 +811,38 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-iot-tech-expo-europe",
+    "name": "IoT Tech Expo Europe 2026",
+    "description": "European IoT expo and conference covering industrial IoT, smart manufacturing, connected operations, edge AI, digital twins, and enterprise IoT deployments.",
+    "website": "https://www.iottechexpo.com/europe/",
+    "location": "Amsterdam, Netherlands",
+    "mode": "in-person",
+    "startDate": "2026-10-20",
+    "endDate": "2026-10-21",
+    "fee": {
+      "type": "free",
+      "notes": "A free pass is listed; paid Gold Pass conference options are also available."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "industrial-iot",
+      "predictive-maintenance",
+      "industrial-automation"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.iottechexpo.com/europe/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
     "id": "2026-autonomous-mobility-forum",
@@ -441,6 +905,71 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2026-electrobatt",
+    "name": "ElectROBatt 2026",
+    "description": "Conference on electrochemical energy storage, advanced battery materials, battery chemistries, and rechargeable battery research.",
+    "website": "https://electrobatt.eu/",
+    "location": "Bled, Slovenia",
+    "mode": "in-person",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-06",
+    "applicationDeadline": "2026-06-30",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract and registration deadlines were visible; pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://electrobatt.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-spe-icota-european-well-intervention",
+    "name": "SPE ICoTA European Well Intervention Conference 2026",
+    "description": "European well intervention conference focused on well restoration, intervention operations, sustained casing pressure, late-life assets, and well integrity.",
+    "website": "https://www.spe-aberdeen.org/events/spe-icota-32nd-european-well-intervention-conference-2026",
+    "location": "Aberdeen, United Kingdom",
+    "mode": "in-person",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-12",
+    "applicationDeadline": "2026-07-17",
+    "fee": {
+      "type": "unknown",
+      "notes": "Abstract deadline is visible; tickets were not available during verification."
+    },
+    "macrotopics": [
+      "drilling-and-wells",
+      "energy"
+    ],
+    "subtopics": [
+      "well-integrity",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.spe-aberdeen.org/events/spe-icota-32nd-european-well-intervention-conference-2026"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
   },
   {
     "id": "2026-batteries-event",
@@ -517,6 +1046,70 @@ export const events: EventRecord[] = [
     "updatedAt": "2026-05-12T09:00:00.000Z"
   },
   {
+    "id": "2026-asset-performance-conference",
+    "name": "Asset Performance Conference 2026",
+    "description": "Conference for maintenance, reliability, asset performance, digital transformation, AI, and data-driven industrial operations.",
+    "website": "https://assetperformance.eu/",
+    "location": "Antwerp, Belgium",
+    "mode": "in-person",
+    "startDate": "2026-11-18",
+    "endDate": "2026-11-19",
+    "applicationDeadline": "2026-03-15",
+    "fee": {
+      "type": "unknown",
+      "notes": "Registration was announced to open in May 2026; pricing was not visible during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://assetperformance.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2026-future-battery-forum",
+    "name": "Future Battery Forum 2026",
+    "description": "Battery industry conference and exhibition focused on the battery value chain, manufacturing, materials, innovation, and European battery markets.",
+    "website": "https://en.futurebattery.eu/",
+    "location": "Berlin, Germany",
+    "mode": "hybrid",
+    "startDate": "2026-11-24",
+    "endDate": "2026-11-25",
+    "fee": {
+      "type": "unknown",
+      "notes": "Discounted ticket information was visible, but exact pricing was not captured during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "batteries",
+      "materials",
+      "solid-state-batteries"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://en.futurebattery.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
     "id": "2026-mrs-en04",
     "name": "MRS Fall Meeting Symposium EN04",
     "description": "MRS Fall Meeting symposium on materials, characterization, interface engineering, processing, manufacturing, and applications for solid-state batteries.",
@@ -581,5 +1174,133 @@ export const events: EventRecord[] = [
     ],
     "createdAt": "2026-05-12T09:00:00.000Z",
     "updatedAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "2027-geotherm-offenburg",
+    "name": "GeoTHERM Expo & Congress 2027",
+    "description": "European geothermal expo and congress covering deep and shallow geothermal energy, project development, drilling-adjacent geothermal operations, and industry networking.",
+    "website": "https://www.geotherm-offenburg.de/en/welcome-geotherm-expo-congress",
+    "location": "Offenburg, Germany",
+    "mode": "in-person",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-26",
+    "fee": {
+      "type": "unknown",
+      "notes": "Ticket information was not visible on the official event page during verification."
+    },
+    "macrotopics": [
+      "energy",
+      "thermal-systems",
+      "drilling-and-wells"
+    ],
+    "subtopics": [
+      "geothermal",
+      "heat-recovery",
+      "downhole-drilling"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.geotherm-offenburg.de/en/welcome-geotherm-expo-congress"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2027-ictm-conference",
+    "name": "8th ICTM Conference",
+    "description": "International conference on turbomachinery manufacturing covering aircraft engines, stationary turbomachinery, digitized manufacturing, and production technologies.",
+    "website": "https://www.ipt.fraunhofer.de/en/dates/conferences-seminars/ictm-conference.html",
+    "location": "Aachen, Germany",
+    "mode": "in-person",
+    "startDate": "2027-03-17",
+    "endDate": "2027-03-18",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event page during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "manufacturing"
+    ],
+    "subtopics": [
+      "turbomachinery",
+      "gas-turbines",
+      "industrial-automation"
+    ],
+    "attachments": [
+      {
+        "label": "Official Fraunhofer event page",
+        "type": "external",
+        "url": "https://www.ipt.fraunhofer.de/en/dates/conferences-seminars/ictm-conference.html"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2027-etc17",
+    "name": "ETC17 European Turbomachinery Conference",
+    "description": "European turbomachinery technical conference covering turbomachinery fluid dynamics, thermodynamics, design, modeling, and rotating equipment research.",
+    "website": "https://www.etc17.eu/",
+    "location": "Gdansk, Poland",
+    "mode": "in-person",
+    "startDate": "2027-04-19",
+    "endDate": "2027-04-23",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official conference page during verification."
+    },
+    "macrotopics": [
+      "industrial-operations",
+      "thermal-systems"
+    ],
+    "subtopics": [
+      "turbomachinery",
+      "rotating-equipment",
+      "gas-turbines"
+    ],
+    "attachments": [
+      {
+        "label": "Official conference page",
+        "type": "external",
+        "url": "https://www.etc17.eu/"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "2027-maintenance-next",
+    "name": "Maintenance NEXT 2027",
+    "description": "Maintenance and technology trade fair for industrial maintenance, asset management, AI, data-driven operations, reliability, and service innovation.",
+    "website": "https://www.maintenancenext.nl/en",
+    "location": "Rotterdam, Netherlands",
+    "mode": "in-person",
+    "startDate": "2027-04-20",
+    "endDate": "2027-04-22",
+    "fee": {
+      "type": "unknown",
+      "notes": "Pricing was not visible on the official event page during verification."
+    },
+    "macrotopics": [
+      "industrial-operations"
+    ],
+    "subtopics": [
+      "predictive-maintenance",
+      "condition-monitoring",
+      "industrial-iot"
+    ],
+    "attachments": [
+      {
+        "label": "Official event page",
+        "type": "external",
+        "url": "https://www.maintenancenext.nl/en"
+      }
+    ],
+    "createdAt": "2026-05-12T10:00:00.000Z",
+    "updatedAt": "2026-05-12T10:00:00.000Z"
   }
 ];

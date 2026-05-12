@@ -1,0 +1,26 @@
+{
+  "id": "2026-asset-performance-conference",
+  "name": "Asset Performance Conference 2026",
+  "description": "Conference for maintenance, reliability, asset performance, digital transformation, AI, and data-driven industrial operations.",
+  "website": "https://assetperformance.eu/",
+  "location": "Antwerp, Belgium",
+  "mode": "in-person",
+  "startDate": "2026-11-18",
+  "endDate": "2026-11-19",
+  "applicationDeadline": "2026-03-15",
+  "fee": {
+    "type": "unknown",
+    "notes": "Registration was announced to open in May 2026; pricing was not visible during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://assetperformance.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

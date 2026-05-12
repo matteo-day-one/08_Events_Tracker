@@ -1,0 +1,25 @@
+{
+  "id": "2027-etc17",
+  "name": "ETC17 European Turbomachinery Conference",
+  "description": "European turbomachinery technical conference covering turbomachinery fluid dynamics, thermodynamics, design, modeling, and rotating equipment research.",
+  "website": "https://www.etc17.eu/",
+  "location": "Gdansk, Poland",
+  "mode": "in-person",
+  "startDate": "2027-04-19",
+  "endDate": "2027-04-23",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official conference page during verification."
+  },
+  "macrotopics": ["industrial-operations", "thermal-systems"],
+  "subtopics": ["turbomachinery", "rotating-equipment", "gas-turbines"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://www.etc17.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

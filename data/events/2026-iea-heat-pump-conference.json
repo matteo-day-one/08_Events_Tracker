@@ -1,0 +1,28 @@
+{
+  "id": "2026-iea-heat-pump-conference",
+  "name": "15th IEA Heat Pump Conference",
+  "description": "International heat pump conference focused on heat pump technology, industrial heat, high-temperature applications, thermal systems, and decarbonized heating and cooling.",
+  "website": "https://hpc2026.org/",
+  "location": "Vienna, Austria",
+  "mode": "in-person",
+  "startDate": "2026-05-26",
+  "endDate": "2026-05-29",
+  "applicationDeadline": "2026-05-15",
+  "fee": {
+    "type": "paid",
+    "amount": 1560,
+    "currency": "EUR",
+    "notes": "Regular conference registration rate; student and other ticket categories vary."
+  },
+  "macrotopics": ["thermal-systems", "energy"],
+  "subtopics": ["heat-recovery", "waste-heat", "renewables"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://hpc2026.org/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

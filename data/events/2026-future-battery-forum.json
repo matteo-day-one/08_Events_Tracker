@@ -1,0 +1,25 @@
+{
+  "id": "2026-future-battery-forum",
+  "name": "Future Battery Forum 2026",
+  "description": "Battery industry conference and exhibition focused on the battery value chain, manufacturing, materials, innovation, and European battery markets.",
+  "website": "https://en.futurebattery.eu/",
+  "location": "Berlin, Germany",
+  "mode": "hybrid",
+  "startDate": "2026-11-24",
+  "endDate": "2026-11-25",
+  "fee": {
+    "type": "unknown",
+    "notes": "Discounted ticket information was visible, but exact pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://en.futurebattery.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

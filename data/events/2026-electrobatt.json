@@ -1,0 +1,26 @@
+{
+  "id": "2026-electrobatt",
+  "name": "ElectROBatt 2026",
+  "description": "Conference on electrochemical energy storage, advanced battery materials, battery chemistries, and rechargeable battery research.",
+  "website": "https://electrobatt.eu/",
+  "location": "Bled, Slovenia",
+  "mode": "in-person",
+  "startDate": "2026-11-04",
+  "endDate": "2026-11-06",
+  "applicationDeadline": "2026-06-30",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract and registration deadlines were visible; pricing was not captured during verification."
+  },
+  "macrotopics": ["energy", "manufacturing"],
+  "subtopics": ["batteries", "materials", "solid-state-batteries"],
+  "attachments": [
+    {
+      "label": "Official conference page",
+      "type": "external",
+      "url": "https://electrobatt.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

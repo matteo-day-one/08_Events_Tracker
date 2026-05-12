@@ -1,0 +1,27 @@
+{
+  "id": "2026-spe-europe-energy-conference",
+  "name": "SPE Europe Energy Conference and Exhibition 2026",
+  "description": "SPE conference and exhibition for European energy engineering, including drilling, completions, geothermal operations, well integrity, and subsurface energy systems.",
+  "website": "https://www.spe-events.org/europeenergyconference",
+  "location": "Istanbul, Turkiye",
+  "mode": "in-person",
+  "startDate": "2026-06-23",
+  "endDate": "2026-06-25",
+  "fee": {
+    "type": "paid",
+    "amount": 930,
+    "currency": "EUR",
+    "notes": "SPE member registration rate; non-member and other categories vary."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity", "geothermal"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.spe-events.org/europeenergyconference"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

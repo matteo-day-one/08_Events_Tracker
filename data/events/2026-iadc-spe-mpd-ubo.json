@@ -1,0 +1,27 @@
+{
+  "id": "2026-iadc-spe-mpd-ubo",
+  "name": "IADC/SPE Managed Pressure Drilling and Underbalanced Operations Conference 2026",
+  "description": "IADC/SPE conference and exhibition focused on managed pressure drilling, underbalanced operations, dual-gradient drilling, downhole pressure control, and drilling safety.",
+  "website": "https://iadc.org/event/iadc-spe-managed-pressure-drilling-underbalanced-operations-2026/",
+  "location": "London, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-09-15",
+  "endDate": "2026-09-16",
+  "fee": {
+    "type": "paid",
+    "amount": 750,
+    "currency": "EUR",
+    "notes": "IADC/SPE member rate; non-member registration is higher and discounts may apply."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["downhole-drilling", "well-integrity"],
+  "attachments": [
+    {
+      "label": "Official IADC event page",
+      "type": "external",
+      "url": "https://iadc.org/event/iadc-spe-managed-pressure-drilling-underbalanced-operations-2026/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

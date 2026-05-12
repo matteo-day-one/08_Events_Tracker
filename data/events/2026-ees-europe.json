@@ -1,0 +1,27 @@
+{
+  "id": "2026-ees-europe",
+  "name": "ees Europe 2026",
+  "description": "European exhibition and conference for batteries and energy storage systems, including storage applications, battery technology, power-to-gas, and integrated renewable energy systems.",
+  "website": "https://www.ees-europe.com/exhibition-quick-facts",
+  "location": "Munich, Germany",
+  "mode": "in-person",
+  "startDate": "2026-06-22",
+  "endDate": "2026-06-25",
+  "fee": {
+    "type": "paid",
+    "amount": 43,
+    "currency": "EUR",
+    "notes": "Listed day-ticket price starts at the early exhibition rate; regular and multi-day tickets vary."
+  },
+  "macrotopics": ["energy", "thermal-systems"],
+  "subtopics": ["batteries", "thermal-energy-storage", "power-grids"],
+  "attachments": [
+    {
+      "label": "Official quick facts page",
+      "type": "external",
+      "url": "https://www.ees-europe.com/exhibition-quick-facts"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

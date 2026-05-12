@@ -1,0 +1,26 @@
+{
+  "id": "2026-spe-icota-european-well-intervention",
+  "name": "SPE ICoTA European Well Intervention Conference 2026",
+  "description": "European well intervention conference focused on well restoration, intervention operations, sustained casing pressure, late-life assets, and well integrity.",
+  "website": "https://www.spe-aberdeen.org/events/spe-icota-32nd-european-well-intervention-conference-2026",
+  "location": "Aberdeen, United Kingdom",
+  "mode": "in-person",
+  "startDate": "2026-11-11",
+  "endDate": "2026-11-12",
+  "applicationDeadline": "2026-07-17",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract deadline is visible; tickets were not available during verification."
+  },
+  "macrotopics": ["drilling-and-wells", "energy"],
+  "subtopics": ["well-integrity", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.spe-aberdeen.org/events/spe-icota-32nd-european-well-intervention-conference-2026"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

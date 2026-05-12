@@ -1,0 +1,26 @@
+{
+  "id": "2026-therminic",
+  "name": "THERMINIC 2026",
+  "description": "Workshop on thermal investigations of integrated circuits and systems, covering electronics thermal management, thermal modeling, measurement, and reliability.",
+  "website": "https://therminic.eu/",
+  "location": "Berlin-Kopenick, Germany",
+  "mode": "in-person",
+  "startDate": "2026-09-16",
+  "endDate": "2026-09-18",
+  "applicationDeadline": "2026-04-30",
+  "fee": {
+    "type": "unknown",
+    "notes": "Abstract deadline was visible; registration pricing was not visible during verification."
+  },
+  "macrotopics": ["thermal-systems", "manufacturing"],
+  "subtopics": ["heat-recovery", "materials"],
+  "attachments": [
+    {
+      "label": "Official workshop page",
+      "type": "external",
+      "url": "https://therminic.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

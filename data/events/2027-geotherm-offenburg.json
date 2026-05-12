@@ -1,0 +1,25 @@
+{
+  "id": "2027-geotherm-offenburg",
+  "name": "GeoTHERM Expo & Congress 2027",
+  "description": "European geothermal expo and congress covering deep and shallow geothermal energy, project development, drilling-adjacent geothermal operations, and industry networking.",
+  "website": "https://www.geotherm-offenburg.de/en/welcome-geotherm-expo-congress",
+  "location": "Offenburg, Germany",
+  "mode": "in-person",
+  "startDate": "2027-02-25",
+  "endDate": "2027-02-26",
+  "fee": {
+    "type": "unknown",
+    "notes": "Ticket information was not visible on the official event page during verification."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "heat-recovery", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.geotherm-offenburg.de/en/welcome-geotherm-expo-congress"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

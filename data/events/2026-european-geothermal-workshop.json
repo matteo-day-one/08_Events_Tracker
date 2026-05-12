@@ -1,0 +1,27 @@
+{
+  "id": "2026-european-geothermal-workshop",
+  "name": "European Geothermal Workshop 2026",
+  "description": "European geothermal research workshop focused on geothermal systems, subsurface experiments, GeoLaB, and utilization of underground thermal resources.",
+  "website": "https://egw2026.eu/",
+  "location": "Darmstadt, Germany",
+  "mode": "in-person",
+  "startDate": "2026-09-29",
+  "endDate": "2026-10-01",
+  "fee": {
+    "type": "paid",
+    "amount": 100,
+    "currency": "EUR",
+    "notes": "Workshop participation fee shown on the official event site."
+  },
+  "macrotopics": ["energy", "thermal-systems", "drilling-and-wells"],
+  "subtopics": ["geothermal", "heat-recovery", "downhole-drilling"],
+  "attachments": [
+    {
+      "label": "Official workshop page",
+      "type": "external",
+      "url": "https://egw2026.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2027-ictm-conference",
+  "name": "8th ICTM Conference",
+  "description": "International conference on turbomachinery manufacturing covering aircraft engines, stationary turbomachinery, digitized manufacturing, and production technologies.",
+  "website": "https://www.ipt.fraunhofer.de/en/dates/conferences-seminars/ictm-conference.html",
+  "location": "Aachen, Germany",
+  "mode": "in-person",
+  "startDate": "2027-03-17",
+  "endDate": "2027-03-18",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official event page during verification."
+  },
+  "macrotopics": ["industrial-operations", "manufacturing"],
+  "subtopics": ["turbomachinery", "gas-turbines", "industrial-automation"],
+  "attachments": [
+    {
+      "label": "Official Fraunhofer event page",
+      "type": "external",
+      "url": "https://www.ipt.fraunhofer.de/en/dates/conferences-seminars/ictm-conference.html"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

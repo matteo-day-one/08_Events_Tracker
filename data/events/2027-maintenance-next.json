@@ -1,0 +1,25 @@
+{
+  "id": "2027-maintenance-next",
+  "name": "Maintenance NEXT 2027",
+  "description": "Maintenance and technology trade fair for industrial maintenance, asset management, AI, data-driven operations, reliability, and service innovation.",
+  "website": "https://www.maintenancenext.nl/en",
+  "location": "Rotterdam, Netherlands",
+  "mode": "in-person",
+  "startDate": "2027-04-20",
+  "endDate": "2027-04-22",
+  "fee": {
+    "type": "unknown",
+    "notes": "Pricing was not visible on the official event page during verification."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official event page",
+      "type": "external",
+      "url": "https://www.maintenancenext.nl/en"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}

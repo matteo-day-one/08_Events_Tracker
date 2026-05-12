@@ -1,0 +1,28 @@
+{
+  "id": "2026-euromaintenance",
+  "name": "EuroMaintenance 2026",
+  "description": "European maintenance congress and exhibition covering maintenance, reliability, asset management, industrial operations, workshops, and networking.",
+  "website": "https://euromaintenance26.eu/",
+  "location": "Lulea, Sweden",
+  "mode": "in-person",
+  "startDate": "2026-06-23",
+  "endDate": "2026-06-25",
+  "applicationDeadline": "2026-05-21",
+  "fee": {
+    "type": "paid",
+    "amount": 9500,
+    "currency": "SEK",
+    "notes": "General attendee registration fee; workshop and other categories vary."
+  },
+  "macrotopics": ["industrial-operations"],
+  "subtopics": ["predictive-maintenance", "condition-monitoring", "industrial-iot"],
+  "attachments": [
+    {
+      "label": "Official congress page",
+      "type": "external",
+      "url": "https://euromaintenance26.eu/"
+    }
+  ],
+  "createdAt": "2026-05-12T10:00:00.000Z",
+  "updatedAt": "2026-05-12T10:00:00.000Z"
+}
