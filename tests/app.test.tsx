@@ -23,8 +23,13 @@ describe("event tracker app", () => {
     render(<App />);
 
     const filters = within(screen.getByLabelText("Event filters"));
+    openFilterDropdown(filters, "Topics");
     fireEvent.click(filters.getByRole("checkbox", { name: "Robotics" }));
+    expect(filters.getByRole("button", { name: "Topics 1 selected" })).toBeInTheDocument();
+
+    openFilterDropdown(filters, "Countries");
     fireEvent.click(filters.getByRole("checkbox", { name: "United States" }));
+    expect(filters.getByRole("button", { name: "Countries 1 selected" })).toBeInTheDocument();
 
     expect(screen.queryByRole("row", { name: /Clean Energy Summit/ })).not.toBeInTheDocument();
     expect(screen.queryByRole("row", { name: /Medical Robotics Workshop/ })).not.toBeInTheDocument();
@@ -40,7 +45,9 @@ describe("event tracker app", () => {
     render(<App />);
 
     const filters = within(screen.getByLabelText("Event filters"));
+    openFilterDropdown(filters, "Topics");
     fireEvent.click(filters.getByRole("checkbox", { name: "Energy" }));
+    openFilterDropdown(filters, "Countries");
     fireEvent.click(filters.getByRole("checkbox", { name: "Italy" }));
     fireEvent.click(screen.getByRole("button", { name: "Timeline" }));
 
@@ -50,13 +57,30 @@ describe("event tracker app", () => {
     expect(screen.queryByText("Medical Robotics Workshop")).not.toBeInTheDocument();
   });
 
+  it("closes multi-select dropdowns and clears their selections", () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+    openFilterDropdown(filters, "Subtopics");
+    fireEvent.click(filters.getByRole("checkbox", { name: "Batteries" }));
+    expect(filters.getByRole("button", { name: "Subtopics 1 selected" })).toBeInTheDocument();
+
+    fireEvent.keyDown(document, { key: "Escape" });
+    expect(filters.queryByRole("checkbox", { name: "Batteries" })).not.toBeInTheDocument();
+
+    openFilterDropdown(filters, "Subtopics");
+    fireEvent.click(filters.getByRole("button", { name: "Clear Subtopics" }));
+    expect(filters.getByRole("button", { name: "Subtopics All" })).toBeInTheDocument();
+    expect(filters.getByRole("checkbox", { name: "Batteries" })).not.toBeChecked();
+  });
+
   it("opens a globe event popup from a mappable city pin", async () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole("button", { name: "Globe" }));
 
     expect(await screen.findByRole("heading", { name: "Globe" })).toBeInTheDocument();
-    fireEvent.click(await screen.findByRole("button", { name: "Show Clean Energy Summit on globe" }));
+    fireEvent.click(await screen.findByRole("button", { name: "Clean Energy Summit" }));
 
     const popup = screen.getByRole("dialog", { name: "Clean Energy Summit" });
     expect(within(popup).getByText("Milan, Italy")).toBeInTheDocument();
@@ -155,3 +179,7 @@ describe("event tracker app", () => {
     expect(details.getByText("Batteries")).toHaveClass("topic-chip", "topic-chip-micro", "topic-energy");
   });
 });
+
+function openFilterDropdown(filters: ReturnType<typeof within>, label: string) {
+  fireEvent.click(filters.getByRole("button", { name: new RegExp(`^${label} `) }));
+}
