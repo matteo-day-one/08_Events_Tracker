@@ -1,6 +1,7 @@
-import { CalendarDays, ExternalLink, MapPin, X } from "lucide-react";
-import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
+import { CalendarDays, ExternalLink, MapPin, RotateCcw, X, ZoomIn, ZoomOut } from "lucide-react";
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import type { EventRecord } from "../lib/eventTypes";
 import { formatDate, formatDateRange, formatFee, formatMode } from "../lib/formatters";
 import { getGlobePins, type GlobePin } from "../lib/locations";
@@ -10,9 +11,16 @@ import {
   getSubtopicColorClass,
   getSubtopicLabel
 } from "../lib/taxonomy";
+import worldMapUrl from "../assets/world-map.svg";
 
 type GlobePageProps = {
   events: EventRecord[];
+};
+
+type GlobeSceneControls = {
+  zoomIn: () => void;
+  zoomOut: () => void;
+  reset: () => void;
 };
 
 export function GlobePage({ events }: GlobePageProps) {
@@ -20,8 +28,9 @@ export function GlobePage({ events }: GlobePageProps) {
   const [selectedPin, setSelectedPin] = useState<GlobePin | null>(null);
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const handleSelectPin = useCallback((pin: GlobePin) => setSelectedPin(pin), []);
 
-  useGlobeScene(viewportRef, canvasRef);
+  const globeControls = useGlobeScene(viewportRef, canvasRef, pins, handleSelectPin);
 
   return (
     <section className="globe-page" aria-label="Globe page">
@@ -33,23 +42,16 @@ export function GlobePage({ events }: GlobePageProps) {
       <div className="globe-layout">
         <div className="globe-viewport" ref={viewportRef}>
           <canvas aria-hidden="true" className="globe-canvas" ref={canvasRef} />
-          <div className="globe-pin-layer" aria-label="Mappable event pins">
-            {pins.map((pin) => {
-              const position = projectLocation(pin.location.latitude, pin.location.longitude);
-
-              return (
-                <button
-                  aria-label={`Show ${pin.event.name} on globe`}
-                  className="globe-pin"
-                  key={pin.event.id}
-                  style={{ left: `${position.x}%`, top: `${position.y}%` }}
-                  type="button"
-                  onClick={() => setSelectedPin(pin)}
-                >
-                  <MapPin aria-hidden="true" size={16} />
-                </button>
-              );
-            })}
+          <div aria-label="Globe controls" className="globe-controls">
+            <button aria-label="Zoom in globe" className="globe-control-button" type="button" onClick={globeControls.zoomIn}>
+              <ZoomIn aria-hidden="true" size={16} />
+            </button>
+            <button aria-label="Zoom out globe" className="globe-control-button" type="button" onClick={globeControls.zoomOut}>
+              <ZoomOut aria-hidden="true" size={16} />
+            </button>
+            <button aria-label="Reset globe view" className="globe-control-button" type="button" onClick={globeControls.reset}>
+              <RotateCcw aria-hidden="true" size={16} />
+            </button>
           </div>
         </div>
 
@@ -65,7 +67,7 @@ export function GlobePage({ events }: GlobePageProps) {
             <h3>City pins</h3>
             <p>Select a pin to inspect the event details.</p>
             <ul>
-              {pins.slice(0, 12).map((pin) => (
+              {pins.map((pin) => (
                 <li key={pin.event.id}>
                   <button type="button" onClick={() => setSelectedPin(pin)}>
                     {pin.event.name}
@@ -151,8 +153,21 @@ function EventPopup({ pin, onClose }: { pin: GlobePin; onClose: () => void }) {
 
 function useGlobeScene(
   viewportRef: RefObject<HTMLDivElement | null>,
-  canvasRef: RefObject<HTMLCanvasElement | null>
-) {
+  canvasRef: RefObject<HTMLCanvasElement | null>,
+  pins: GlobePin[],
+  onSelectPin: (pin: GlobePin) => void
+): GlobeSceneControls {
+  const controlsRef = useRef<GlobeSceneControls>({
+    zoomIn: () => undefined,
+    zoomOut: () => undefined,
+    reset: () => undefined
+  });
+  const onSelectPinRef = useRef(onSelectPin);
+
+  useEffect(() => {
+    onSelectPinRef.current = onSelectPin;
+  }, [onSelectPin]);
+
   useEffect(() => {
     const viewport = viewportRef.current;
     const canvas = canvasRef.current;
@@ -167,36 +182,97 @@ function useGlobeScene(
 
     let frame = 0;
     let renderer: THREE.WebGLRenderer | undefined;
+    let controls: OrbitControls | undefined;
 
     try {
       const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
       camera.position.z = 3;
 
       renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, canvas });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      controls = new OrbitControls(camera, canvas);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+      controls.enablePan = false;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 0.35;
+      controls.minDistance = 1.75;
+      controls.maxDistance = 4.8;
+      controls.target.set(0, 0, 0);
+      controls.saveState();
+
+      const texture = new THREE.TextureLoader().load(worldMapUrl);
+      texture.colorSpace = THREE.SRGBColorSpace;
+      texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      texture.generateMipmaps = false;
+      texture.magFilter = THREE.LinearFilter;
+      texture.minFilter = THREE.LinearFilter;
+
+      const globeGroup = new THREE.Group();
+      scene.add(globeGroup);
 
       const globe = new THREE.Mesh(
         new THREE.SphereGeometry(1, 64, 64),
-        new THREE.MeshPhongMaterial({
-          color: 0x1f8a77,
-          emissive: 0x07342e,
-          shininess: 28,
-          specular: 0xb8fff0
+        new THREE.MeshStandardMaterial({
+          color: 0xffffff,
+          emissive: 0x061d1a,
+          emissiveIntensity: 0.18,
+          map: texture,
+          metalness: 0.02,
+          roughness: 0.64
         })
       );
-      scene.add(globe);
+      globeGroup.add(globe);
 
       const wireframe = new THREE.Mesh(
         new THREE.SphereGeometry(1.006, 32, 32),
         new THREE.MeshBasicMaterial({ color: 0xc7fff4, wireframe: true, transparent: true, opacity: 0.18 })
       );
-      scene.add(wireframe);
+      globeGroup.add(wireframe);
 
-      scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+      const markerMaterial = new THREE.MeshStandardMaterial({
+        color: 0xffcf5a,
+        emissive: 0x7a4b00,
+        emissiveIntensity: 0.14,
+        metalness: 0.05,
+        roughness: 0.38
+      });
+      const markerOutlineMaterial = new THREE.MeshBasicMaterial({ color: 0x3b2600 });
+      const markerMeshes: THREE.Object3D[] = [];
+      const markerGroups = pins.map((pin, index) =>
+        createPinMarker(pin, index, markerMaterial, markerOutlineMaterial, markerMeshes)
+      );
+      markerGroups.forEach((marker) => globeGroup.add(marker));
+
+      scene.add(new THREE.AmbientLight(0xffffff, 0.75));
       const light = new THREE.DirectionalLight(0xffffff, 1.2);
       light.position.set(3, 2, 4);
       scene.add(light);
+      const rimLight = new THREE.DirectionalLight(0xa8fff0, 0.6);
+      rimLight.position.set(-3, 1.2, -2);
+      scene.add(rimLight);
+
+      const setCameraDistance = (distance: number) => {
+        if (!controls) {
+          return;
+        }
+
+        const nextDistance = THREE.MathUtils.clamp(distance, controls.minDistance, controls.maxDistance);
+        camera.position.copy(camera.position.clone().normalize().multiplyScalar(nextDistance));
+        controls.update();
+      };
+
+      controlsRef.current = {
+        zoomIn: () => setCameraDistance(camera.position.length() * 0.78),
+        zoomOut: () => setCameraDistance(camera.position.length() * 1.22),
+        reset: () => {
+          controls?.reset();
+          controls?.update();
+        }
+      };
 
       const resize = () => {
         const width = viewport.clientWidth || 800;
@@ -206,33 +282,135 @@ function useGlobeScene(
         camera.updateProjectionMatrix();
       };
 
+      const raycaster = new THREE.Raycaster();
+      const pointer = new THREE.Vector2();
+      let pointerDownPosition: { x: number; y: number } | null = null;
+
+      const updatePointer = (event: PointerEvent) => {
+        const rect = canvas.getBoundingClientRect();
+        pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+      };
+
+      const handlePointerDown = (event: PointerEvent) => {
+        pointerDownPosition = { x: event.clientX, y: event.clientY };
+      };
+
+      const handlePointerUp = (event: PointerEvent) => {
+        if (!pointerDownPosition) {
+          return;
+        }
+
+        const moved = Math.hypot(event.clientX - pointerDownPosition.x, event.clientY - pointerDownPosition.y);
+        pointerDownPosition = null;
+
+        if (moved > 6) {
+          return;
+        }
+
+        updatePointer(event);
+        raycaster.setFromCamera(pointer, camera);
+        const hit = raycaster.intersectObjects(markerMeshes, false)[0];
+        const pinIndex = hit?.object.userData.pinIndex;
+
+        if (typeof pinIndex === "number" && pins[pinIndex]) {
+          onSelectPinRef.current(pins[pinIndex]);
+        }
+      };
+
       const animate = () => {
-        globe.rotation.y += 0.002;
-        wireframe.rotation.y += 0.002;
+        controls?.update();
         renderer?.render(scene, camera);
         frame = window.requestAnimationFrame(animate);
       };
 
       resize();
       window.addEventListener("resize", resize);
+      canvas.addEventListener("pointerdown", handlePointerDown);
+      canvas.addEventListener("pointerup", handlePointerUp);
       animate();
 
       return () => {
         window.cancelAnimationFrame(frame);
         window.removeEventListener("resize", resize);
+        canvas.removeEventListener("pointerdown", handlePointerDown);
+        canvas.removeEventListener("pointerup", handlePointerUp);
+        controls?.dispose();
         renderer?.dispose();
+        texture.dispose();
         globe.geometry.dispose();
+        markerMaterial.dispose();
+        markerOutlineMaterial.dispose();
         wireframe.geometry.dispose();
+        markerGroups.forEach((group) => {
+          group.traverse((object) => {
+            if (object instanceof THREE.Mesh) {
+              object.geometry.dispose();
+            }
+          });
+        });
+        controlsRef.current = {
+          zoomIn: () => undefined,
+          zoomOut: () => undefined,
+          reset: () => undefined
+        };
       };
     } catch {
+      controls?.dispose();
       renderer?.dispose();
     }
-  }, [canvasRef, viewportRef]);
+  }, [canvasRef, pins, viewportRef]);
+
+  return useMemo(
+    () => ({
+      zoomIn: () => controlsRef.current.zoomIn(),
+      zoomOut: () => controlsRef.current.zoomOut(),
+      reset: () => controlsRef.current.reset()
+    }),
+    []
+  );
 }
 
-function projectLocation(latitude: number, longitude: number): { x: number; y: number } {
-  return {
-    x: ((longitude + 180) / 360) * 100,
-    y: ((90 - latitude) / 180) * 100
-  };
+function createPinMarker(
+  pin: GlobePin,
+  index: number,
+  markerMaterial: THREE.Material,
+  markerOutlineMaterial: THREE.Material,
+  markerMeshes: THREE.Object3D[]
+) {
+  const position = latLongToVector3(pin.location.latitude, pin.location.longitude, 1.025);
+  const marker = new THREE.Group();
+  marker.position.copy(position);
+  marker.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), position.clone().normalize());
+
+  const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.011, 0.075, 10), markerMaterial);
+  stem.position.y = 0.026;
+  stem.userData.pinIndex = index;
+  marker.add(stem);
+  markerMeshes.push(stem);
+
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.036, 18, 18), markerMaterial);
+  head.position.y = 0.078;
+  head.userData.pinIndex = index;
+  marker.add(head);
+  markerMeshes.push(head);
+
+  const core = new THREE.Mesh(new THREE.SphereGeometry(0.013, 12, 12), markerOutlineMaterial);
+  core.position.y = 0.08;
+  core.userData.pinIndex = index;
+  marker.add(core);
+  markerMeshes.push(core);
+
+  return marker;
+}
+
+function latLongToVector3(latitude: number, longitude: number, radius: number) {
+  const latitudeRadians = THREE.MathUtils.degToRad(latitude);
+  const longitudeRadians = THREE.MathUtils.degToRad(longitude);
+
+  return new THREE.Vector3(
+    Math.cos(latitudeRadians) * Math.sin(longitudeRadians),
+    Math.sin(latitudeRadians),
+    Math.cos(latitudeRadians) * Math.cos(longitudeRadians)
+  ).multiplyScalar(radius);
 }
