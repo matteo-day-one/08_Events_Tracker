@@ -1,17 +1,23 @@
 import { Github } from "lucide-react";
-import { useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useMemo, useRef, useState } from "react";
 import { EventDetails } from "./components/EventDetails";
 import { EventTable } from "./components/EventTable";
 import { FilterBar } from "./components/FilterBar";
 import { ProposalDrawer, type ProposalMode } from "./components/ProposalPanel";
+import { TimelinePage } from "./components/TimelinePage";
 import { repositoryUrl } from "./config";
 import { events } from "./generated/eventIndex";
 import { defaultFilters, defaultSort, filterEvents, sortEvents, type EventFilters, type SortState } from "./lib/eventFilters";
+
+const GlobePage = lazy(() => import("./components/GlobePage").then((module) => ({ default: module.GlobePage })));
+
+type ViewMode = "directory" | "timeline" | "globe";
 
 export default function App() {
   const [filters, setFilters] = useState<EventFilters>(defaultFilters);
   const [sort, setSort] = useState<SortState>(defaultSort);
   const [selectedEventId, setSelectedEventId] = useState(events[0]?.id);
+  const [activeView, setActiveView] = useState<ViewMode>("directory");
   const [proposalMode, setProposalMode] = useState<ProposalMode | null>(null);
   const openerRef = useRef<HTMLElement | null>(null);
 
@@ -42,6 +48,18 @@ export default function App() {
           <p>{events.length} reviewed events · GitHub proposals</p>
         </div>
         <div className="header-actions">
+          <nav className="view-tabs" aria-label="Views">
+            {(["directory", "timeline", "globe"] as const).map((view) => (
+              <button
+                aria-current={activeView === view ? "page" : undefined}
+                key={view}
+                type="button"
+                onClick={() => setActiveView(view)}
+              >
+                {viewLabel(view)}
+              </button>
+            ))}
+          </nav>
           <button
             className="icon-button primary"
             type="button"
@@ -64,25 +82,37 @@ export default function App() {
           onFiltersChange={setFilters}
         />
 
-        <section className="workspace-grid" aria-label="Event workspace">
-          <div className="directory-panel">
-            <EventTable
-              events={visibleEvents}
-              selectedEventId={selectedEvent?.id}
-              sort={sort}
-              onSortChange={setSort}
-              onSelectEvent={(event) => setSelectedEventId(event.id)}
-            />
-          </div>
+        {activeView === "directory" ? (
+          <section className="workspace-grid" aria-label="Event workspace">
+            <div className="directory-panel">
+              <EventTable
+                events={visibleEvents}
+                selectedEventId={selectedEvent?.id}
+                sort={sort}
+                onSortChange={setSort}
+                onSelectEvent={(event) => setSelectedEventId(event.id)}
+              />
+            </div>
 
-          {selectedEvent ? (
-            <EventDetails
-              event={selectedEvent}
-              onUpdate={(opener) => openProposal("update", opener)}
-              onDelete={(opener) => openProposal("delete", opener)}
-            />
-          ) : null}
-        </section>
+            {selectedEvent ? (
+              <EventDetails
+                event={selectedEvent}
+                onUpdate={(opener) => openProposal("update", opener)}
+                onDelete={(opener) => openProposal("delete", opener)}
+              />
+            ) : null}
+          </section>
+        ) : null}
+
+        {activeView === "timeline" ? (
+          <TimelinePage events={visibleEvents} onSelectEvent={(event) => setSelectedEventId(event.id)} />
+        ) : null}
+
+        {activeView === "globe" ? (
+          <Suspense fallback={<div className="loading-panel">Loading globe...</div>}>
+            <GlobePage events={visibleEvents} />
+          </Suspense>
+        ) : null}
 
         {selectedEvent && proposalMode ? (
           <ProposalDrawer
@@ -95,4 +125,16 @@ export default function App() {
       </main>
     </div>
   );
+}
+
+function viewLabel(view: ViewMode): string {
+  if (view === "directory") {
+    return "Directory";
+  }
+
+  if (view === "timeline") {
+    return "Timeline";
+  }
+
+  return "Globe";
 }

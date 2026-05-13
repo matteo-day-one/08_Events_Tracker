@@ -1,11 +1,14 @@
 import type { EventRecord } from "./eventTypes";
 import { formatFee, formatMode } from "./formatters";
+import { buildLocationIndex, locationCatalog, type LocationCatalogRecord } from "./locations";
 import { getMacrotopicLabel, getSubtopicLabel } from "./taxonomy";
 
 export type EventFilters = {
   query: string;
-  macrotopic: string;
-  subtopic: string;
+  macrotopics: string[];
+  subtopics: string[];
+  regions: string[];
+  countries: string[];
   mode: string;
   feeType: string;
   startsAfter: string;
@@ -21,8 +24,10 @@ export type SortState = {
 
 export const defaultFilters: EventFilters = {
   query: "",
-  macrotopic: "all",
-  subtopic: "all",
+  macrotopics: [],
+  subtopics: [],
+  regions: [],
+  countries: [],
   mode: "all",
   feeType: "all",
   startsAfter: "",
@@ -34,8 +39,15 @@ export const defaultSort: SortState = {
   direction: "asc"
 };
 
-export function filterEvents(events: EventRecord[], filters: EventFilters): EventRecord[] {
+export function filterEvents(
+  events: EventRecord[],
+  filters: EventFilters,
+  locations: LocationCatalogRecord[] = locationCatalog
+): EventRecord[] {
   const query = filters.query.trim().toLowerCase();
+  const locationIndex = buildLocationIndex(locations);
+  const hasRegionFilter = filters.regions.length > 0;
+  const hasCountryFilter = filters.countries.length > 0;
 
   return events.filter((event) => {
     const searchableText = [
@@ -55,11 +67,11 @@ export function filterEvents(events: EventRecord[], filters: EventFilters): Even
       return false;
     }
 
-    if (filters.macrotopic !== "all" && !event.macrotopics.includes(filters.macrotopic)) {
+    if (filters.macrotopics.length > 0 && !filters.macrotopics.some((id) => event.macrotopics.includes(id))) {
       return false;
     }
 
-    if (filters.subtopic !== "all" && !event.subtopics.includes(filters.subtopic)) {
+    if (filters.subtopics.length > 0 && !filters.subtopics.some((id) => event.subtopics.includes(id))) {
       return false;
     }
 
@@ -80,6 +92,21 @@ export function filterEvents(events: EventRecord[], filters: EventFilters): Even
       (!event.applicationDeadline || event.applicationDeadline > filters.deadlineBefore)
     ) {
       return false;
+    }
+
+    if (hasRegionFilter || hasCountryFilter) {
+      const location = locationIndex.get(event.location);
+      if (!location) {
+        return false;
+      }
+
+      if (hasRegionFilter && (!location.region || !filters.regions.includes(location.region))) {
+        return false;
+      }
+
+      if (hasCountryFilter && (!location.country || !filters.countries.includes(location.country))) {
+        return false;
+      }
     }
 
     return true;

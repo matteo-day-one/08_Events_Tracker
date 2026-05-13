@@ -47,6 +47,34 @@ test("browses, filters, selects details, and generates drawer proposals", async 
   await expect(page.getByRole("dialog", { name: "Delete event proposal" })).toBeVisible();
 });
 
+test("shares multi-select topic and geography filters across timeline and globe", async ({ page }) => {
+  await page.goto("/");
+
+  const filters = page.getByLabel("Event filters");
+  await filters.getByRole("checkbox", { name: "Energy", exact: true }).check();
+  await filters.getByRole("checkbox", { name: "Italy", exact: true }).check();
+
+  await expect(page.getByRole("row", { name: /Clean Energy Summit/ })).toBeVisible();
+  await expect(page.getByRole("row", { name: /Medical Robotics Workshop/ })).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Timeline" }).click();
+  await expect(page.getByRole("heading", { name: "Timeline" })).toBeVisible();
+  await expect(page.getByText("September 2026")).toBeVisible();
+  await expect(page.getByText("Clean Energy Summit")).toBeVisible();
+  await expect(page.getByText("Medical Robotics Workshop")).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Globe" }).click();
+  await expect(page.getByRole("heading", { name: "Globe" })).toBeVisible();
+  await page.getByRole("button", { name: "Show Clean Energy Summit on globe" }).click();
+
+  const popup = page.getByRole("dialog", { name: "Clean Energy Summit" });
+  await expect(popup).toContainText("Milan, Italy");
+  await expect(popup.getByRole("link", { name: "Website" })).toHaveAttribute(
+    "href",
+    "https://example.org/clean-energy-summit"
+  );
+});
+
 test("filter toolbar wraps without overlap on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 900 });
   await page.goto("/");

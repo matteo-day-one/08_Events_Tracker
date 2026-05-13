@@ -19,6 +19,53 @@ describe("event tracker app", () => {
     expect(screen.getByRole("row", { name: /Medical Robotics Workshop/ })).toBeInTheDocument();
   });
 
+  it("filters with multiple topics and geography selections, then resets them", () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+    fireEvent.click(filters.getByRole("checkbox", { name: "Robotics" }));
+    fireEvent.click(filters.getByRole("checkbox", { name: "United States" }));
+
+    expect(screen.queryByRole("row", { name: /Clean Energy Summit/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole("row", { name: /Medical Robotics Workshop/ })).not.toBeInTheDocument();
+    expect(screen.getByRole("row", { name: /Automate/ })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "Reset" }));
+
+    expect(screen.getByRole("row", { name: /Clean Energy Summit/ })).toBeInTheDocument();
+    expect(screen.getByRole("row", { name: /Medical Robotics Workshop/ })).toBeInTheDocument();
+  });
+
+  it("shares filters between directory and timeline pages", async () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+    fireEvent.click(filters.getByRole("checkbox", { name: "Energy" }));
+    fireEvent.click(filters.getByRole("checkbox", { name: "Italy" }));
+    fireEvent.click(screen.getByRole("button", { name: "Timeline" }));
+
+    expect(await screen.findByRole("heading", { name: "Timeline" })).toBeInTheDocument();
+    expect(screen.getByText("September 2026")).toBeInTheDocument();
+    expect(screen.getByText("Clean Energy Summit")).toBeInTheDocument();
+    expect(screen.queryByText("Medical Robotics Workshop")).not.toBeInTheDocument();
+  });
+
+  it("opens a globe event popup from a mappable city pin", async () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Globe" }));
+
+    expect(await screen.findByRole("heading", { name: "Globe" })).toBeInTheDocument();
+    fireEvent.click(await screen.findByRole("button", { name: "Show Clean Energy Summit on globe" }));
+
+    const popup = screen.getByRole("dialog", { name: "Clean Energy Summit" });
+    expect(within(popup).getByText("Milan, Italy")).toBeInTheDocument();
+    expect(within(popup).getByRole("link", { name: "Website" })).toHaveAttribute(
+      "href",
+      "https://example.org/clean-energy-summit"
+    );
+  });
+
   it("opens add proposals in a drawer and returns focus when closed", () => {
     render(<App />);
 

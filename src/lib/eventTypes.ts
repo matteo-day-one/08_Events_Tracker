@@ -50,6 +50,19 @@ export type EventRecord = {
   updatedAt: string;
 };
 
+export type LocationRegion = "Europe" | "North America" | "Asia" | "Middle East" | "Africa";
+
+export type LocationCatalogRecord = {
+  location: string;
+  city?: string;
+  country?: string;
+  region?: LocationRegion;
+  latitude?: number;
+  longitude?: number;
+  mappable: boolean;
+  notes?: string;
+};
+
 export type TaxonomySubtopic = {
   id: string;
   label: string;

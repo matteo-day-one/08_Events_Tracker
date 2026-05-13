@@ -5,7 +5,8 @@ A static, GitHub-reviewed event tracker for public technical and research events
 ## Features
 
 - Searchable and sortable event table.
-- Filters for topic, subtopic, mode, fee, start date, and application deadline.
+- Multi-select filters for topics, subtopics, region, country, mode, fee, start date, and application deadline.
+- Timeline and 3D globe views that share the active filters.
 - Event detail panel with websites, external file links, and reviewed repository-hosted attachments.
 - Add, update, and delete proposal forms that generate structured GitHub issue content.
 - Data validation for schema shape, duplicate ids, dates, URLs, controlled taxonomy tags, and repository attachment paths.
@@ -74,6 +75,10 @@ Optional fields:
 - `applicationDeadline`
 
 Dates use `YYYY-MM-DD`. Timestamps use ISO UTC format ending in `Z`.
+
+## Locations
+
+Reviewed location metadata lives in `data/locations.json`. Each unique event `location` must have a catalog entry with country/region metadata; mappable physical cities also include approximate city-center latitude and longitude. Online and ambiguous multi-city events can remain non-mappable, so they appear in the directory and timeline but are hidden from the globe.
 
 ## Taxonomy
 

@@ -1,6 +1,7 @@
 import { RotateCcw, Search } from "lucide-react";
 import type { EventFilters } from "../lib/eventFilters";
 import { defaultFilters } from "../lib/eventFilters";
+import { getCountryOptions, getRegionOptions } from "../lib/locations";
 import { taxonomy } from "../lib/taxonomy";
 
 type FilterBarProps = {
@@ -15,7 +16,21 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
     onFiltersChange({ ...filters, [key]: value });
   };
 
+  const toggleArrayFilter = (
+    key: "macrotopics" | "subtopics" | "regions" | "countries",
+    value: string
+  ) => {
+    const current = filters[key];
+    const next = current.includes(value)
+      ? current.filter((candidate) => candidate !== value)
+      : [...current, value];
+
+    onFiltersChange({ ...filters, [key]: next });
+  };
+
   const subtopics = taxonomy.macrotopics.flatMap((topic) => topic.subtopics);
+  const regions = getRegionOptions();
+  const countries = getCountryOptions();
 
   return (
     <section className="filter-band" aria-label="Event filters">
@@ -32,35 +47,37 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
           />
         </div>
 
-        <label className="select-field">
-          <span>Topic filter</span>
-          <select
-            value={filters.macrotopic}
-            onChange={(event) => updateFilter("macrotopic", event.target.value)}
-          >
-            <option value="all">All topics</option>
-            {taxonomy.macrotopics.map((topic) => (
-              <option key={topic.id} value={topic.id}>
-                {topic.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <CheckboxGroup
+          className="topic-filter"
+          legend="Topics"
+          options={taxonomy.macrotopics.map((topic) => ({ value: topic.id, label: topic.label }))}
+          selected={filters.macrotopics}
+          onToggle={(value) => toggleArrayFilter("macrotopics", value)}
+        />
 
-        <label className="select-field">
-          <span>Subtopic filter</span>
-          <select
-            value={filters.subtopic}
-            onChange={(event) => updateFilter("subtopic", event.target.value)}
-          >
-            <option value="all">All subtopics</option>
-            {subtopics.map((subtopic) => (
-              <option key={subtopic.id} value={subtopic.id}>
-                {subtopic.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <CheckboxGroup
+          className="subtopic-filter"
+          legend="Subtopics"
+          options={subtopics.map((subtopic) => ({ value: subtopic.id, label: subtopic.label }))}
+          selected={filters.subtopics}
+          onToggle={(value) => toggleArrayFilter("subtopics", value)}
+        />
+
+        <CheckboxGroup
+          className="region-filter"
+          legend="Regions"
+          options={regions.map((region) => ({ value: region, label: region }))}
+          selected={filters.regions}
+          onToggle={(value) => toggleArrayFilter("regions", value)}
+        />
+
+        <CheckboxGroup
+          className="country-filter"
+          legend="Countries"
+          options={countries.map((country) => ({ value: country, label: country }))}
+          selected={filters.countries}
+          onToggle={(value) => toggleArrayFilter("countries", value)}
+        />
 
         <label className="select-field compact">
           <span>Mode</span>
@@ -116,5 +133,42 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
         </button>
       </div>
     </section>
+  );
+}
+
+type CheckboxOption = {
+  value: string;
+  label: string;
+};
+
+function CheckboxGroup({
+  className,
+  legend,
+  options,
+  selected,
+  onToggle
+}: {
+  className: string;
+  legend: string;
+  options: CheckboxOption[];
+  selected: string[];
+  onToggle: (value: string) => void;
+}) {
+  return (
+    <fieldset className={`multi-filter-field ${className}`}>
+      <legend>{legend}</legend>
+      <div className="checkbox-chip-grid">
+        {options.map((option) => (
+          <label className="checkbox-chip" key={option.value}>
+            <input
+              checked={selected.includes(option.value)}
+              type="checkbox"
+              onChange={() => onToggle(option.value)}
+            />
+            <span>{option.label}</span>
+          </label>
+        ))}
+      </div>
+    </fieldset>
   );
 }

@@ -1,0 +1,671 @@
+[
+  {
+    "location": "Aachen, Germany",
+    "city": "Aachen",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 50.7753,
+    "longitude": 6.0839,
+    "mappable": true
+  },
+  {
+    "location": "Aberdeen, United Kingdom",
+    "city": "Aberdeen",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 57.1497,
+    "longitude": -2.0943,
+    "mappable": true
+  },
+  {
+    "location": "Abuja and Lagos, Nigeria",
+    "country": "Nigeria",
+    "region": "Africa",
+    "mappable": false,
+    "notes": "Multi-city event; hidden from globe until per-city locations are tracked."
+  },
+  {
+    "location": "Amsterdam, Netherlands",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "latitude": 52.3676,
+    "longitude": 4.9041,
+    "mappable": true
+  },
+  {
+    "location": "Antwerp, Belgium",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "region": "Europe",
+    "latitude": 51.2194,
+    "longitude": 4.4025,
+    "mappable": true
+  },
+  {
+    "location": "Arlington, United States",
+    "city": "Arlington",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 38.8799,
+    "longitude": -77.1068,
+    "mappable": true
+  },
+  {
+    "location": "Austin, United States",
+    "city": "Austin",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "mappable": true
+  },
+  {
+    "location": "Bad Neuenahr, Germany",
+    "city": "Bad Neuenahr",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 50.5447,
+    "longitude": 7.1136,
+    "mappable": true
+  },
+  {
+    "location": "Baytown, United States",
+    "city": "Baytown",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 29.7355,
+    "longitude": -94.9774,
+    "mappable": true
+  },
+  {
+    "location": "Bellevue, United States",
+    "city": "Bellevue",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 47.6101,
+    "longitude": -122.2015,
+    "mappable": true
+  },
+  {
+    "location": "Berlin, Germany",
+    "city": "Berlin",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 52.52,
+    "longitude": 13.405,
+    "mappable": true
+  },
+  {
+    "location": "Berlin-Kopenick, Germany",
+    "city": "Berlin-Kopenick",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 52.4455,
+    "longitude": 13.5746,
+    "mappable": true
+  },
+  {
+    "location": "Bilbao, Spain",
+    "city": "Bilbao",
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 43.263,
+    "longitude": -2.935,
+    "mappable": true
+  },
+  {
+    "location": "Birmingham, United Kingdom",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 52.4862,
+    "longitude": -1.8904,
+    "mappable": true
+  },
+  {
+    "location": "Bled, Slovenia",
+    "city": "Bled",
+    "country": "Slovenia",
+    "region": "Europe",
+    "latitude": 46.3683,
+    "longitude": 14.1146,
+    "mappable": true
+  },
+  {
+    "location": "Boom, Belgium",
+    "city": "Boom",
+    "country": "Belgium",
+    "region": "Europe",
+    "latitude": 51.0875,
+    "longitude": 4.3667,
+    "mappable": true
+  },
+  {
+    "location": "Boston, MA, USA",
+    "city": "Boston",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "mappable": true
+  },
+  {
+    "location": "Brussels, Belgium",
+    "city": "Brussels",
+    "country": "Belgium",
+    "region": "Europe",
+    "latitude": 50.8503,
+    "longitude": 4.3517,
+    "mappable": true
+  },
+  {
+    "location": "Calgary, Canada",
+    "city": "Calgary",
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 51.0447,
+    "longitude": -114.0719,
+    "mappable": true
+  },
+  {
+    "location": "Celle, Germany",
+    "city": "Celle",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 52.6226,
+    "longitude": 10.0805,
+    "mappable": true
+  },
+  {
+    "location": "Chiba, Japan",
+    "city": "Chiba",
+    "country": "Japan",
+    "region": "Asia",
+    "latitude": 35.6074,
+    "longitude": 140.1065,
+    "mappable": true
+  },
+  {
+    "location": "Chicago, United States",
+    "city": "Chicago",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "mappable": true
+  },
+  {
+    "location": "Copenhagen, Denmark",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "region": "Europe",
+    "latitude": 55.6761,
+    "longitude": 12.5683,
+    "mappable": true
+  },
+  {
+    "location": "Darmstadt, Germany",
+    "city": "Darmstadt",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 49.8728,
+    "longitude": 8.6512,
+    "mappable": true
+  },
+  {
+    "location": "Detroit, United States",
+    "city": "Detroit",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 42.3314,
+    "longitude": -83.0458,
+    "mappable": true
+  },
+  {
+    "location": "Doha, Qatar",
+    "city": "Doha",
+    "country": "Qatar",
+    "region": "Middle East",
+    "latitude": 25.2854,
+    "longitude": 51.531,
+    "mappable": true
+  },
+  {
+    "location": "Dubai, United Arab Emirates",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "latitude": 25.2048,
+    "longitude": 55.2708,
+    "mappable": true
+  },
+  {
+    "location": "Estoril, Portugal",
+    "city": "Estoril",
+    "country": "Portugal",
+    "region": "Europe",
+    "latitude": 38.7057,
+    "longitude": -9.3977,
+    "mappable": true
+  },
+  {
+    "location": "Faridabad, India",
+    "city": "Faridabad",
+    "country": "India",
+    "region": "Asia",
+    "latitude": 28.4089,
+    "longitude": 77.3178,
+    "mappable": true
+  },
+  {
+    "location": "Galveston, United States",
+    "city": "Galveston",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 29.3013,
+    "longitude": -94.7977,
+    "mappable": true
+  },
+  {
+    "location": "Gdansk, Poland",
+    "city": "Gdansk",
+    "country": "Poland",
+    "region": "Europe",
+    "latitude": 54.352,
+    "longitude": 18.6466,
+    "mappable": true
+  },
+  {
+    "location": "Greater Noida, India",
+    "city": "Greater Noida",
+    "country": "India",
+    "region": "Asia",
+    "latitude": 28.4744,
+    "longitude": 77.504,
+    "mappable": true
+  },
+  {
+    "location": "Hannover, Germany",
+    "city": "Hannover",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 52.3759,
+    "longitude": 9.732,
+    "mappable": true
+  },
+  {
+    "location": "Helsinki, Finland",
+    "city": "Helsinki",
+    "country": "Finland",
+    "region": "Europe",
+    "latitude": 60.1699,
+    "longitude": 24.9384,
+    "mappable": true
+  },
+  {
+    "location": "Hong Kong, China",
+    "city": "Hong Kong",
+    "country": "China",
+    "region": "Asia",
+    "latitude": 22.3193,
+    "longitude": 114.1694,
+    "mappable": true
+  },
+  {
+    "location": "Houston, TX, USA",
+    "city": "Houston",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "mappable": true
+  },
+  {
+    "location": "Houston, United States",
+    "city": "Houston",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "mappable": true
+  },
+  {
+    "location": "Huddersfield, United Kingdom",
+    "city": "Huddersfield",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 53.6458,
+    "longitude": -1.785,
+    "mappable": true
+  },
+  {
+    "location": "Istanbul, Turkiye",
+    "city": "Istanbul",
+    "country": "Turkiye",
+    "region": "Middle East",
+    "latitude": 41.0082,
+    "longitude": 28.9784,
+    "mappable": true
+  },
+  {
+    "location": "Jakarta, Indonesia",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "region": "Asia",
+    "latitude": -6.2088,
+    "longitude": 106.8456,
+    "mappable": true
+  },
+  {
+    "location": "Jeddah, Saudi Arabia",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "latitude": 21.4858,
+    "longitude": 39.1925,
+    "mappable": true
+  },
+  {
+    "location": "Krakow, Poland",
+    "city": "Krakow",
+    "country": "Poland",
+    "region": "Europe",
+    "latitude": 50.0647,
+    "longitude": 19.945,
+    "mappable": true
+  },
+  {
+    "location": "Kuala Lumpur, Malaysia",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "region": "Asia",
+    "latitude": 3.139,
+    "longitude": 101.6869,
+    "mappable": true
+  },
+  {
+    "location": "Lausanne, Switzerland",
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "region": "Europe",
+    "latitude": 46.5197,
+    "longitude": 6.6323,
+    "mappable": true
+  },
+  {
+    "location": "Lisbon, Portugal",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "region": "Europe",
+    "latitude": 38.7223,
+    "longitude": -9.1393,
+    "mappable": true
+  },
+  {
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 51.5072,
+    "longitude": -0.1276,
+    "mappable": true
+  },
+  {
+    "location": "Lulea, Sweden",
+    "city": "Lulea",
+    "country": "Sweden",
+    "region": "Europe",
+    "latitude": 65.5848,
+    "longitude": 22.1547,
+    "mappable": true
+  },
+  {
+    "location": "Lyon, France",
+    "city": "Lyon",
+    "country": "France",
+    "region": "Europe",
+    "latitude": 45.764,
+    "longitude": 4.8357,
+    "mappable": true
+  },
+  {
+    "location": "Madrid, Spain",
+    "city": "Madrid",
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 40.4168,
+    "longitude": -3.7038,
+    "mappable": true
+  },
+  {
+    "location": "Mainz, Germany",
+    "city": "Mainz",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 49.9929,
+    "longitude": 8.2473,
+    "mappable": true
+  },
+  {
+    "location": "Milan, Italy",
+    "city": "Milan",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 45.4642,
+    "longitude": 9.19,
+    "mappable": true
+  },
+  {
+    "location": "Montreal, Canada",
+    "city": "Montreal",
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 45.5017,
+    "longitude": -73.5673,
+    "mappable": true
+  },
+  {
+    "location": "Munich, Germany",
+    "city": "Munich",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 48.1351,
+    "longitude": 11.582,
+    "mappable": true
+  },
+  {
+    "location": "Nuremberg, Germany",
+    "city": "Nuremberg",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 49.4521,
+    "longitude": 11.0767,
+    "mappable": true
+  },
+  {
+    "location": "Offenburg, Germany",
+    "city": "Offenburg",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 48.4735,
+    "longitude": 7.9444,
+    "mappable": true
+  },
+  {
+    "location": "Online",
+    "mappable": false,
+    "notes": "Online event; hidden from globe."
+  },
+  {
+    "location": "Osaka, Japan",
+    "city": "Osaka",
+    "country": "Japan",
+    "region": "Asia",
+    "latitude": 34.6937,
+    "longitude": 135.5023,
+    "mappable": true
+  },
+  {
+    "location": "Paris, France",
+    "city": "Paris",
+    "country": "France",
+    "region": "Europe",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "mappable": true
+  },
+  {
+    "location": "Raleigh, United States",
+    "city": "Raleigh",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 35.7796,
+    "longitude": -78.6382,
+    "mappable": true
+  },
+  {
+    "location": "Reno Tahoe, United States",
+    "city": "Reno Tahoe",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 39.5296,
+    "longitude": -119.8138,
+    "mappable": true
+  },
+  {
+    "location": "Rotterdam, Netherlands",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "latitude": 51.9244,
+    "longitude": 4.4777,
+    "mappable": true
+  },
+  {
+    "location": "San Francisco, United States",
+    "city": "San Francisco",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "mappable": true
+  },
+  {
+    "location": "Shenzhen, China",
+    "city": "Shenzhen",
+    "country": "China",
+    "region": "Asia",
+    "latitude": 22.5431,
+    "longitude": 114.0579,
+    "mappable": true
+  },
+  {
+    "location": "Singapore",
+    "city": "Singapore",
+    "country": "Singapore",
+    "region": "Asia",
+    "latitude": 1.3521,
+    "longitude": 103.8198,
+    "mappable": true
+  },
+  {
+    "location": "St. Pete Beach, FL, USA",
+    "city": "St. Pete Beach",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 27.7253,
+    "longitude": -82.7412,
+    "mappable": true
+  },
+  {
+    "location": "Stavanger, Norway",
+    "city": "Stavanger",
+    "country": "Norway",
+    "region": "Europe",
+    "latitude": 58.97,
+    "longitude": 5.7331,
+    "mappable": true
+  },
+  {
+    "location": "Stuttgart, Germany",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 48.7758,
+    "longitude": 9.1829,
+    "mappable": true
+  },
+  {
+    "location": "The Woodlands, United States",
+    "city": "The Woodlands",
+    "country": "United States",
+    "region": "North America",
+    "latitude": 30.1658,
+    "longitude": -95.4613,
+    "mappable": true
+  },
+  {
+    "location": "Tokyo, Japan",
+    "city": "Tokyo",
+    "country": "Japan",
+    "region": "Asia",
+    "latitude": 35.6762,
+    "longitude": 139.6503,
+    "mappable": true
+  },
+  {
+    "location": "Trabzon, Turkiye",
+    "city": "Trabzon",
+    "country": "Turkiye",
+    "region": "Middle East",
+    "latitude": 41.0027,
+    "longitude": 39.7168,
+    "mappable": true
+  },
+  {
+    "location": "Turin, Italy",
+    "city": "Turin",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 45.0703,
+    "longitude": 7.6869,
+    "mappable": true
+  },
+  {
+    "location": "Vancouver, Canada",
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 49.2827,
+    "longitude": -123.1207,
+    "mappable": true
+  },
+  {
+    "location": "Vienna, Austria",
+    "city": "Vienna",
+    "country": "Austria",
+    "region": "Europe",
+    "latitude": 48.2082,
+    "longitude": 16.3738,
+    "mappable": true
+  },
+  {
+    "location": "Warsaw, Poland",
+    "city": "Warsaw",
+    "country": "Poland",
+    "region": "Europe",
+    "latitude": 52.2297,
+    "longitude": 21.0122,
+    "mappable": true
+  },
+  {
+    "location": "York, United Kingdom",
+    "city": "York",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 53.959,
+    "longitude": -1.0815,
+    "mappable": true
+  }
+]

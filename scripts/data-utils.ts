@@ -3,6 +3,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateEventCollection } from "../src/lib/eventSchema";
+import { locationCatalog, validateLocationCatalog } from "../src/lib/locations";
 import { taxonomy } from "../src/lib/taxonomy";
 import type { EventRecord, ValidationResult } from "../src/lib/eventTypes";
 
@@ -26,7 +27,11 @@ export async function readEventData(): Promise<EventRecord[]> {
 }
 
 export function validateRepositoryEvents(events: EventRecord[]): ValidationResult {
-  return validateEventCollection(events, taxonomy, {
+  const eventValidation = validateEventCollection(events, taxonomy, {
     attachmentExists: (relativePath) => existsSync(path.join(repositoryRoot, relativePath))
   });
+  const locationValidation = validateLocationCatalog(locationCatalog, events);
+  const errors = [...eventValidation.errors, ...locationValidation.errors];
+
+  return { ok: errors.length === 0, errors };
 }
