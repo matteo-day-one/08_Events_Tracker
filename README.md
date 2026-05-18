@@ -6,7 +6,7 @@ A static, GitHub-reviewed event tracker for public technical and research events
 
 - Searchable and sortable event table.
 - Multi-select filters for topics, subtopics, region, country, mode, fee, start date, and application deadline.
-- Timeline and 3D globe views that share the active filters.
+- Timeline and Google Maps views that share the active filters.
 - Event detail panel with websites, external file links, and reviewed repository-hosted attachments.
 - Add, update, and delete proposal forms that generate structured GitHub issue content.
 - Data validation for schema shape, duplicate ids, dates, URLs, controlled taxonomy tags, and repository attachment paths.
@@ -30,6 +30,18 @@ npm run e2e
 ```
 
 `npm run generate:index` creates `src/generated/eventIndex.ts` from the files in `data/events/`.
+
+## Google Maps
+
+The map view uses Google Maps when `VITE_GOOGLE_MAPS_API_KEY` is configured. Without a key, the app still builds and shows the mappable event list with a clear configuration fallback.
+
+For local development:
+
+```bash
+VITE_GOOGLE_MAPS_API_KEY=<browser-key> npm run dev
+```
+
+`VITE_GOOGLE_MAPS_MAP_ID` is optional and defaults to Google's demo map id for local development. For production, create your own Google Maps Platform map id and restrict the browser API key by HTTP referrer because frontend map keys are visible in deployed JavaScript.
 
 ## Repository URL
 
@@ -78,7 +90,7 @@ Dates use `YYYY-MM-DD`. Timestamps use ISO UTC format ending in `Z`.
 
 ## Locations
 
-Reviewed location metadata lives in `data/locations.json`. Each unique event `location` must have a catalog entry with country/region metadata; mappable physical cities also include approximate city-center latitude and longitude. Online and ambiguous multi-city events can remain non-mappable, so they appear in the directory and timeline but are hidden from the globe.
+Reviewed location metadata lives in `data/locations.json`. Each unique event `location` must have a catalog entry with country/region metadata; mappable physical cities also include approximate city-center latitude and longitude. Online and ambiguous multi-city events can remain non-mappable, so they appear in the directory and timeline but are hidden from the map.
 
 ## Taxonomy
 

@@ -109,7 +109,7 @@ export default function App() {
         ) : null}
 
         {activeView === "globe" ? (
-          <Suspense fallback={<div className="loading-panel">Loading globe...</div>}>
+          <Suspense fallback={<div className="loading-panel">Loading map...</div>}>
             <GlobePage events={visibleEvents} />
           </Suspense>
         ) : null}
@@ -136,5 +136,5 @@ function viewLabel(view: ViewMode): string {
     return "Timeline";
   }
 
-  return "Globe";
+  return "Map";
 }

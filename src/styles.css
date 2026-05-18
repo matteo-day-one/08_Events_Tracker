@@ -814,7 +814,7 @@ a:focus-visible {
 
 .loading-panel,
 .timeline-page,
-.globe-page {
+.map-page {
   min-width: 0;
 }
 
@@ -917,61 +917,81 @@ a:focus-visible {
   gap: 6px;
 }
 
-.globe-layout {
+.map-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
   gap: 18px;
   align-items: stretch;
 }
 
-.globe-viewport {
+.map-viewport {
   position: relative;
   min-height: 560px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background:
-    radial-gradient(circle at 50% 45%, rgb(223 244 236 / 38%), transparent 36%),
-    linear-gradient(135deg, #0f2f2b 0%, #17212b 100%);
+  background: #eef3f1;
   box-shadow: var(--shadow);
 }
 
-.globe-canvas {
-  position: absolute;
-  inset: 0;
+.google-map {
   width: 100%;
   height: 100%;
 }
 
-.globe-controls {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 2;
-  display: flex;
-  gap: 7px;
+.map-placeholder {
+  display: grid;
+  min-height: inherit;
+  place-content: center;
+  justify-items: center;
+  gap: 9px;
+  padding: 30px;
+  background:
+    linear-gradient(0deg, rgb(248 250 252 / 84%), rgb(248 250 252 / 84%)),
+    repeating-linear-gradient(45deg, #d9e4df 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(-45deg, #d9e4df 0 1px, transparent 1px 22px);
+  color: var(--muted);
+  text-align: center;
 }
 
-.globe-control-button {
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(255 255 255 / 24%);
-  border-radius: 7px;
-  background: rgb(255 255 255 / 88%);
+.map-placeholder svg {
   color: var(--accent-strong);
-  cursor: pointer;
-  box-shadow: 0 10px 26px rgb(0 0 0 / 22%);
 }
 
-.globe-control-button:hover {
-  background: #fff;
+.map-placeholder h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.15rem;
 }
 
-.globe-side-panel,
-.globe-popup {
+.map-placeholder p {
+  max-width: 430px;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.map-info-window {
+  display: grid;
+  gap: 5px;
+  min-width: 190px;
+  color: #17212b;
+  font-family: inherit;
+}
+
+.map-info-window strong {
+  color: #063f34;
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.map-info-window span {
+  color: #536479;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.map-side-panel,
+.map-popup {
   min-width: 0;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -979,20 +999,20 @@ a:focus-visible {
   box-shadow: var(--shadow);
 }
 
-.globe-side-panel {
+.map-side-panel {
   padding: 20px;
 }
 
-.globe-side-panel h3 {
+.map-side-panel h3 {
   margin: 0 0 8px;
 }
 
-.globe-side-panel p {
+.map-side-panel p {
   margin: 0 0 14px;
   color: var(--muted);
 }
 
-.globe-side-panel ul {
+.map-side-panel ul {
   display: grid;
   gap: 10px;
   max-height: 480px;
@@ -1002,12 +1022,12 @@ a:focus-visible {
   list-style: none;
 }
 
-.globe-side-panel li {
+.map-side-panel li {
   display: grid;
   gap: 3px;
 }
 
-.globe-side-panel li button {
+.map-side-panel li button {
   justify-self: start;
   border: 0;
   padding: 0;
@@ -1018,39 +1038,39 @@ a:focus-visible {
   text-align: left;
 }
 
-.globe-side-panel li span {
+.map-side-panel li span {
   color: var(--muted);
   font-size: 0.82rem;
 }
 
-.globe-popup {
+.map-popup {
   display: grid;
   gap: 14px;
   align-self: start;
   padding: 20px;
 }
 
-.globe-popup-header {
+.map-popup-header {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   align-items: flex-start;
 }
 
-.globe-popup-header p {
+.map-popup-header p {
   margin: 0 0 5px;
   color: var(--muted);
   font-size: 0.76rem;
   font-weight: 800;
 }
 
-.globe-popup-header h3 {
+.map-popup-header h3 {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
-.globe-popup > p {
+.map-popup > p {
   margin: 0;
   color: #344252;
   line-height: 1.5;
@@ -1267,7 +1287,7 @@ body.proposal-drawer-open {
 
   .page-heading,
   .timeline-month,
-  .globe-layout {
+  .map-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1281,7 +1301,7 @@ body.proposal-drawer-open {
     padding-bottom: 0;
   }
 
-  .globe-viewport {
+  .map-viewport {
     min-height: 390px;
   }
 }

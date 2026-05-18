@@ -1,7 +1,13 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import React from "react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import App from "../src/App";
+
+vi.mock("../src/config", () => ({
+  googleMapsApiKey: "",
+  googleMapsMapId: "DEMO_MAP_ID",
+  repositoryUrl: "https://github.com/your-user/public-event-tracker"
+}));
 
 describe("event tracker app", () => {
   it("renders the event directory and filters events by text", () => {
@@ -74,12 +80,22 @@ describe("event tracker app", () => {
     expect(filters.getByRole("checkbox", { name: "Batteries" })).not.toBeChecked();
   });
 
-  it("opens a globe event popup from a mappable city pin", async () => {
+  it("renders a map fallback when the Google Maps key is missing", async () => {
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Globe" }));
+    fireEvent.click(screen.getByRole("button", { name: "Map" }));
 
-    expect(await screen.findByRole("heading", { name: "Globe" })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "Map" })).toBeInTheDocument();
+    expect(screen.getByText("Google Maps is not configured.")).toBeInTheDocument();
+    expect(screen.getByText(/Add VITE_GOOGLE_MAPS_API_KEY/)).toBeInTheDocument();
+  });
+
+  it("opens map event details from the city list without a Google Maps key", async () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Map" }));
+
+    expect(await screen.findByRole("heading", { name: "Map" })).toBeInTheDocument();
     fireEvent.click(await screen.findByRole("button", { name: "Clean Energy Summit" }));
 
     const popup = screen.getByRole("dialog", { name: "Clean Energy Summit" });
@@ -88,6 +104,19 @@ describe("event tracker app", () => {
       "href",
       "https://example.org/clean-energy-summit"
     );
+  });
+
+  it("shows an empty map state when filtered events are not mappable", async () => {
+    render(<App />);
+
+    fireEvent.change(screen.getByLabelText("Search events"), {
+      target: { value: "Medical Robotics Workshop" }
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Map" }));
+
+    expect(await screen.findByRole("heading", { name: "Map" })).toBeInTheDocument();
+    expect(screen.getByText("No mappable events match the current filters.")).toBeInTheDocument();
+    expect(screen.getByText("Online and ambiguous multi-city events are hidden from the map.")).toBeInTheDocument();
   });
 
   it("opens add proposals in a drawer and returns focus when closed", () => {

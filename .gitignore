@@ -8,3 +8,5 @@ event-tracker-*.png
 .DS_Store
 *.tsbuildinfo
 node_modules/.tmp/
+.env.local
+.env.*.local

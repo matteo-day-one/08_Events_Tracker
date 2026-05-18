@@ -47,7 +47,7 @@ test("browses, filters, selects details, and generates drawer proposals", async 
   await expect(page.getByRole("dialog", { name: "Delete event proposal" })).toBeVisible();
 });
 
-test("shares multi-select topic and geography filters across timeline and globe", async ({ page }) => {
+test("shares multi-select topic and geography filters across timeline and map", async ({ page }) => {
   await page.goto("/");
 
   const filters = page.getByLabel("Event filters");
@@ -69,9 +69,12 @@ test("shares multi-select topic and geography filters across timeline and globe"
   await expect(page.getByText("Clean Energy Summit")).toBeVisible();
   await expect(page.getByText("Medical Robotics Workshop")).toHaveCount(0);
 
-  await page.getByRole("button", { name: "Globe", exact: true }).click();
-  await expect(page.getByRole("heading", { name: "Globe" })).toBeVisible();
-  await page.getByRole("button", { name: "Clean Energy Summit", exact: true }).click();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Map", exact: true })).toBeVisible();
+  await page
+    .getByRole("complementary", { name: "Mappable events" })
+    .getByRole("button", { name: "Clean Energy Summit", exact: true })
+    .click();
 
   const popup = page.getByRole("dialog", { name: "Clean Energy Summit" });
   await expect(popup).toContainText("Milan, Italy");
@@ -114,6 +117,30 @@ test("filter toolbar wraps without overlap on mobile", async ({ page }) => {
 
   expect(layout.overlaps).toBe(false);
   expect(layout.scrollWidth).toBeLessThanOrEqual(layout.viewportWidth);
+
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Map", exact: true })).toBeVisible();
+  await expect(page.getByRole("complementary", { name: "Mappable events" })).toBeVisible();
+
+  const mobileMapLayout = await page.evaluate(() => {
+    const viewportWidth = document.documentElement.clientWidth;
+    const scrollWidth = document.documentElement.scrollWidth;
+    const map = document.querySelector<HTMLElement>(".map-viewport")?.getBoundingClientRect();
+    const panel = document.querySelector<HTMLElement>(".map-side-panel")?.getBoundingClientRect();
+
+    return {
+      scrollWidth,
+      viewportWidth,
+      stacked: Boolean(map && panel && panel.top >= map.bottom),
+      mapFits: Boolean(map && map.left >= 0 && map.right <= viewportWidth),
+      panelFits: Boolean(panel && panel.left >= 0 && panel.right <= viewportWidth)
+    };
+  });
+
+  expect(mobileMapLayout.stacked).toBe(true);
+  expect(mobileMapLayout.mapFits).toBe(true);
+  expect(mobileMapLayout.panelFits).toBe(true);
+  expect(mobileMapLayout.scrollWidth).toBeLessThanOrEqual(mobileMapLayout.viewportWidth);
 
   await page.getByRole("button", { name: "Add event" }).click();
   await expect(page.getByRole("dialog", { name: "Add event proposal" })).toBeVisible();
