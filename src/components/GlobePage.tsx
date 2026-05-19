@@ -1,5 +1,5 @@
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
-import { APIProvider, InfoWindow, Map, useMap, useMapsLibrary } from "@vis.gl/react-google-maps";
+import { APIProvider, InfoWindow, Map, useMap } from "@vis.gl/react-google-maps";
 import { CalendarDays, ExternalLink, MapPin, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { googleMapsApiKey, googleMapsMapId } from "../config";
@@ -152,32 +152,32 @@ function ClusteredEventMarkers({
   onSelectPin: (pin: GlobePin) => void;
 }) {
   const map = useMap();
-  const markerLibrary = useMapsLibrary("marker");
   const handleSelectPin = useCallback((pin: GlobePin) => onSelectPin(pin), [onSelectPin]);
 
   useEffect(() => {
-    if (!map || !markerLibrary) {
+    if (!map) {
       return;
     }
 
     const markers = pins.map((pin) => {
       const isSelected = selectedPin?.event.id === pin.event.id;
-      const glyph = new markerLibrary.PinElement({
-        background: isSelected ? "#006c54" : "#0b7a61",
-        borderColor: isSelected ? "#003f32" : "#064c3d",
-        glyphColor: "#ffffff",
-        scale: isSelected ? 1.22 : 1
-      });
-      const marker = new markerLibrary.AdvancedMarkerElement({
-        content: glyph,
-        gmpClickable: true,
+      const marker = new google.maps.Marker({
+        icon: {
+          fillColor: isSelected ? "#006c54" : "#0b7a61",
+          fillOpacity: 1,
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: isSelected ? 10 : 8,
+          strokeColor: "#ffffff",
+          strokeWeight: 2
+        },
         position: toLatLngLiteral(pin),
-        title: pin.event.name
+        title: pin.event.name,
+        zIndex: isSelected ? 2 : 1
       });
       const handleMarkerClick = () => handleSelectPin(pin);
-      marker.addEventListener("gmp-click", handleMarkerClick);
+      const listener = marker.addListener("click", handleMarkerClick);
 
-      return { handleMarkerClick, marker };
+      return { listener, marker };
     });
 
     const clusterer = new MarkerClusterer({
@@ -187,12 +187,12 @@ function ClusteredEventMarkers({
 
     return () => {
       clusterer.clearMarkers();
-      markers.forEach(({ marker, handleMarkerClick }) => {
-        marker.removeEventListener("gmp-click", handleMarkerClick);
-        marker.map = null;
+      markers.forEach(({ marker, listener }) => {
+        listener.remove();
+        marker.setMap(null);
       });
     };
-  }, [handleSelectPin, map, markerLibrary, pins, selectedPin]);
+  }, [handleSelectPin, map, pins, selectedPin]);
 
   return null;
 }

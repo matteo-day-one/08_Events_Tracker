@@ -5,7 +5,7 @@ import App from "../src/App";
 
 vi.mock("../src/config", () => ({
   googleMapsApiKey: "",
-  googleMapsMapId: "DEMO_MAP_ID",
+  googleMapsMapId: undefined,
   repositoryUrl: "https://github.com/your-user/public-event-tracker"
 }));
 

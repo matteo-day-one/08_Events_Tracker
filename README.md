@@ -41,7 +41,7 @@ For local development:
 VITE_GOOGLE_MAPS_API_KEY=<browser-key> npm run dev
 ```
 
-`VITE_GOOGLE_MAPS_MAP_ID` is optional and defaults to Google's demo map id for local development. For production, create your own Google Maps Platform map id and restrict the browser API key by HTTP referrer because frontend map keys are visible in deployed JavaScript.
+`VITE_GOOGLE_MAPS_MAP_ID` is optional. Leave it unset unless you have created a real Google Maps Platform map ID for this project. For production, restrict the browser API key by HTTP referrer because frontend map keys are visible in deployed JavaScript.
 
 ## Repository URL
 
