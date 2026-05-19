@@ -45,6 +45,31 @@ export function getCountryOptions(source: LocationCatalogRecord[] = locationCata
   );
 }
 
+export function getCountriesByRegion(
+  source: LocationCatalogRecord[] = locationCatalog
+): { region: LocationRegion; countries: string[] }[] {
+  return regionOrder.flatMap((region) => {
+    const countries = [
+      ...new Set(
+        source.flatMap((entry) => (entry.region === region && entry.country ? [entry.country] : []))
+      )
+    ].sort((a, b) => a.localeCompare(b));
+
+    return countries.length > 0 ? [{ region, countries }] : [];
+  });
+}
+
+export function getCountriesForRegions(
+  regions: LocationRegion[],
+  source: LocationCatalogRecord[] = locationCatalog
+): string[] {
+  const selectedRegions = new Set(regions);
+
+  return getCountriesByRegion(source)
+    .filter((group) => selectedRegions.has(group.region))
+    .flatMap((group) => group.countries);
+}
+
 export function getGlobePins(
   events: EventRecord[],
   source: LocationCatalogRecord[] = locationCatalog

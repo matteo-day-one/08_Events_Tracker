@@ -25,21 +25,42 @@ describe("event tracker app", () => {
     expect(screen.getByRole("row", { name: /Medical Robotics Workshop/ })).toBeInTheDocument();
   });
 
-  it("filters with multiple topics and geography selections, then resets them", () => {
+  it("renders search plus hierarchical topic and location filters", () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+
+    expect(filters.getByLabelText("Search events")).toBeInTheDocument();
+    expect(filters.getByRole("button", { name: "Topics All" })).toBeInTheDocument();
+    expect(filters.getByRole("button", { name: "Location All" })).toBeInTheDocument();
+    expect(filters.queryByRole("button", { name: /^Subtopics / })).not.toBeInTheDocument();
+    expect(filters.queryByRole("button", { name: /^Regions / })).not.toBeInTheDocument();
+    expect(filters.queryByRole("button", { name: /^Countries / })).not.toBeInTheDocument();
+    expect(filters.queryByText("Mode")).not.toBeInTheDocument();
+    expect(filters.queryByText("Fee")).not.toBeInTheDocument();
+    expect(filters.queryByText("Starts after")).not.toBeInTheDocument();
+    expect(filters.queryByText("Deadline before")).not.toBeInTheDocument();
+  });
+
+  it("filters with hierarchical topic and location selections, then resets them", () => {
     render(<App />);
 
     const filters = within(screen.getByLabelText("Event filters"));
     openFilterDropdown(filters, "Topics");
     fireEvent.click(filters.getByRole("checkbox", { name: "Robotics" }));
-    expect(filters.getByRole("button", { name: "Topics 1 selected" })).toBeInTheDocument();
+    expect(filters.getByRole("button", { name: "Topics Robotics" })).toBeInTheDocument();
 
-    openFilterDropdown(filters, "Countries");
+    openFilterDropdown(filters, "Location");
+    fireEvent.click(filters.getByRole("button", { name: "Show North America countries" }));
     fireEvent.click(filters.getByRole("checkbox", { name: "United States" }));
-    expect(filters.getByRole("button", { name: "Countries 1 selected" })).toBeInTheDocument();
+    expect(filters.getByRole("button", { name: "Location United States" })).toBeInTheDocument();
 
     expect(screen.queryByRole("row", { name: /Clean Energy Summit/ })).not.toBeInTheDocument();
     expect(screen.queryByRole("row", { name: /Medical Robotics Workshop/ })).not.toBeInTheDocument();
     expect(screen.getByRole("row", { name: /Automate/ })).toBeInTheDocument();
+    expect(
+      within(screen.getByLabelText("Selected event details")).getByRole("heading", { name: "Automate 2026" })
+    ).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Reset" }));
 
@@ -53,7 +74,8 @@ describe("event tracker app", () => {
     const filters = within(screen.getByLabelText("Event filters"));
     openFilterDropdown(filters, "Topics");
     fireEvent.click(filters.getByRole("checkbox", { name: "Energy" }));
-    openFilterDropdown(filters, "Countries");
+    openFilterDropdown(filters, "Location");
+    fireEvent.click(filters.getByRole("button", { name: "Show Europe countries" }));
     fireEvent.click(filters.getByRole("checkbox", { name: "Italy" }));
     fireEvent.click(screen.getByRole("button", { name: "Timeline" }));
 
@@ -63,21 +85,52 @@ describe("event tracker app", () => {
     expect(screen.queryByText("Medical Robotics Workshop")).not.toBeInTheDocument();
   });
 
-  it("closes multi-select dropdowns and clears their selections", () => {
+  it("opens subtopics by hover and click, then clears selections", () => {
     render(<App />);
 
     const filters = within(screen.getByLabelText("Event filters"));
-    openFilterDropdown(filters, "Subtopics");
+    openFilterDropdown(filters, "Topics");
+    fireEvent.mouseEnter(filters.getByRole("button", { name: "Show Energy subtopics" }));
+    expect(filters.getByRole("checkbox", { name: "Batteries" })).toBeInTheDocument();
+
     fireEvent.click(filters.getByRole("checkbox", { name: "Batteries" }));
-    expect(filters.getByRole("button", { name: "Subtopics 1 selected" })).toBeInTheDocument();
+    expect(filters.getByRole("button", { name: "Topics Batteries" })).toBeInTheDocument();
 
     fireEvent.keyDown(document, { key: "Escape" });
     expect(filters.queryByRole("checkbox", { name: "Batteries" })).not.toBeInTheDocument();
 
-    openFilterDropdown(filters, "Subtopics");
-    fireEvent.click(filters.getByRole("button", { name: "Clear Subtopics" }));
-    expect(filters.getByRole("button", { name: "Subtopics All" })).toBeInTheDocument();
+    openFilterDropdown(filters, "Topics");
+    fireEvent.click(filters.getByRole("button", { name: "Show Energy subtopics" }));
+    expect(filters.getByRole("checkbox", { name: "Batteries" })).toBeChecked();
+
+    fireEvent.click(filters.getByRole("button", { name: "Clear Topics" }));
+    expect(filters.getByRole("button", { name: "Topics All" })).toBeInTheDocument();
     expect(filters.getByRole("checkbox", { name: "Batteries" })).not.toBeChecked();
+  });
+
+  it("selects every child subtopic when a parent topic is checked", () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+    openFilterDropdown(filters, "Topics");
+    fireEvent.click(filters.getByRole("checkbox", { name: "Energy" }));
+    fireEvent.click(filters.getByRole("button", { name: "Show Energy subtopics" }));
+
+    expect(filters.getByRole("checkbox", { name: "Batteries" })).toBeChecked();
+    expect(filters.getByRole("checkbox", { name: "Solid-state batteries" })).toBeChecked();
+    expect(filters.getByRole("checkbox", { name: "High-temperature batteries" })).toBeChecked();
+  });
+
+  it("opens only countries for the selected region group", () => {
+    render(<App />);
+
+    const filters = within(screen.getByLabelText("Event filters"));
+    openFilterDropdown(filters, "Location");
+    fireEvent.click(filters.getByRole("button", { name: "Show Europe countries" }));
+
+    expect(filters.getByRole("checkbox", { name: "Italy" })).toBeInTheDocument();
+    expect(filters.getByRole("checkbox", { name: "Germany" })).toBeInTheDocument();
+    expect(filters.queryByRole("checkbox", { name: "United States" })).not.toBeInTheDocument();
   });
 
   it("renders a map fallback when the Google Maps key is missing", async () => {

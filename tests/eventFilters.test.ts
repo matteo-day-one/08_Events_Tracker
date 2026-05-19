@@ -47,6 +47,14 @@ const events: EventRecord[] = [
   },
   {
     ...baseEvent,
+    id: "2026-european-geothermal-workshop",
+    name: "European Geothermal Workshop",
+    location: "Berlin, Germany",
+    macrotopics: ["energy"],
+    subtopics: ["renewables"]
+  },
+  {
+    ...baseEvent,
     id: "2026-gitex-nigeria",
     name: "GITEX Nigeria",
     location: "Abuja and Lagos, Nigeria",
@@ -75,6 +83,15 @@ const locations: LocationCatalogRecord[] = [
     mappable: true
   },
   {
+    location: "Berlin, Germany",
+    city: "Berlin",
+    country: "Germany",
+    region: "Europe",
+    latitude: 52.52,
+    longitude: 13.405,
+    mappable: true
+  },
+  {
     location: "Abuja and Lagos, Nigeria",
     country: "Nigeria",
     region: "Africa",
@@ -95,16 +112,23 @@ describe("event filtering", () => {
     const result = filterEvents(
       events,
       withFilters({
-        macrotopics: ["energy", "robotics"],
-        subtopics: ["batteries", "industrial-automation"]
+        macrotopics: ["robotics"],
+        subtopics: ["batteries"]
       }),
       locations
     );
 
     expect(result.map((event) => event.id)).toEqual([
       "2026-clean-energy-summit",
+      "2026-medical-robotics-workshop",
       "2026-automate"
     ]);
+  });
+
+  it("allows a child subtopic to filter without selecting its parent topic", () => {
+    const result = filterEvents(events, withFilters({ subtopics: ["batteries"] }), locations);
+
+    expect(result.map((event) => event.id)).toEqual(["2026-clean-energy-summit"]);
   });
 
   it("combines topic, region, and country groups as narrowing filters", () => {
@@ -119,6 +143,12 @@ describe("event filtering", () => {
     );
 
     expect(result.map((event) => event.id)).toEqual(["2026-automate"]);
+  });
+
+  it("filters a selected country without including sibling countries or other regions", () => {
+    const result = filterEvents(events, withFilters({ countries: ["Italy"] }), locations);
+
+    expect(result.map((event) => event.id)).toEqual(["2026-clean-energy-summit"]);
   });
 
   it("keeps non-mappable locations available to region and country filters when cataloged", () => {

@@ -194,9 +194,10 @@ main {
   min-width: min(100%, 155px);
 }
 
-.filter-toolbar .subtopic-filter,
-.filter-toolbar .country-filter {
-  flex-basis: 210px;
+.filter-toolbar .topic-filter,
+.filter-toolbar .location-filter {
+  flex: 1 1 250px;
+  min-width: min(100%, 220px);
 }
 
 .filter-toolbar .select-field.compact {
@@ -254,6 +255,13 @@ main {
   cursor: pointer;
   font-weight: 750;
   text-align: left;
+}
+
+.multi-select-trigger span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .multi-select-trigger svg {
@@ -325,6 +333,73 @@ main {
   gap: 2px;
   overflow: auto;
   padding: 6px;
+}
+
+.hierarchical-menu {
+  min-width: min(380px, calc(100vw - 36px));
+}
+
+.hierarchical-options {
+  display: grid;
+  gap: 2px;
+  overflow: auto;
+  padding: 6px;
+}
+
+.hierarchical-group {
+  display: grid;
+  gap: 2px;
+}
+
+.hierarchical-parent-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.hierarchical-parent-row:hover {
+  background: #f7fbf9;
+}
+
+.hierarchical-parent-option {
+  min-width: 0;
+}
+
+.hierarchical-child-toggle {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.hierarchical-child-toggle:hover,
+.hierarchical-child-toggle[aria-expanded="true"] {
+  background: #eaf4ef;
+  color: var(--accent-strong);
+}
+
+.hierarchical-child-toggle[aria-expanded="true"] svg {
+  transform: rotate(90deg);
+}
+
+.hierarchical-children {
+  display: grid;
+  gap: 2px;
+  padding: 2px 0 5px 28px;
+}
+
+.hierarchical-child-option {
+  min-height: 32px;
+  color: #344252;
+  font-size: 0.92rem;
+  font-weight: 650;
 }
 
 .multi-select-option {

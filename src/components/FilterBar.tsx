@@ -1,8 +1,8 @@
-import { ChevronDown, RotateCcw, Search, X } from "lucide-react";
+import { ChevronDown, ChevronRight, RotateCcw, Search, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 import type { EventFilters } from "../lib/eventFilters";
 import { defaultFilters } from "../lib/eventFilters";
-import { getCountryOptions, getRegionOptions } from "../lib/locations";
+import { getCountriesByRegion } from "../lib/locations";
 import { taxonomy } from "../lib/taxonomy";
 
 type FilterBarProps = {
@@ -12,34 +12,123 @@ type FilterBarProps = {
   onFiltersChange: (filters: EventFilters) => void;
 };
 
-type MultiFilterKey = "macrotopics" | "subtopics" | "regions" | "countries";
+type DropdownKey = "topics" | "location";
+
+type HierarchicalGroup = {
+  value: string;
+  label: string;
+  children: {
+    value: string;
+    label: string;
+  }[];
+};
 
 export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }: FilterBarProps) {
-  const [openDropdown, setOpenDropdown] = useState<MultiFilterKey | null>(null);
+  const [openDropdown, setOpenDropdown] = useState<DropdownKey | null>(null);
 
   const updateFilter = (key: keyof EventFilters, value: string) => {
     onFiltersChange({ ...filters, [key]: value });
   };
 
-  const toggleArrayFilter = (
-    key: MultiFilterKey,
-    value: string
-  ) => {
-    const current = filters[key];
-    const next = current.includes(value)
-      ? current.filter((candidate) => candidate !== value)
-      : [...current, value];
+  const topicGroups: HierarchicalGroup[] = taxonomy.macrotopics.map((topic) => ({
+    value: topic.id,
+    label: topic.label,
+    children: topic.subtopics.map((subtopic) => ({ value: subtopic.id, label: subtopic.label }))
+  }));
 
-    onFiltersChange({ ...filters, [key]: next });
+  const locationGroups: HierarchicalGroup[] = getCountriesByRegion().map((group) => ({
+    value: group.region,
+    label: group.region,
+    children: group.countries.map((country) => ({ value: country, label: country }))
+  }));
+
+  const toggleTopic = (topicId: string) => {
+    const topic = topicGroups.find((group) => group.value === topicId);
+    if (!topic) {
+      return;
+    }
+
+    const childIds = topic.children.map((child) => child.value);
+    const allChildrenSelected = childIds.every((id) => filters.subtopics.includes(id));
+
+    if (allChildrenSelected) {
+      onFiltersChange({
+        ...filters,
+        macrotopics: filters.macrotopics.filter((id) => id !== topicId),
+        subtopics: filters.subtopics.filter((id) => !childIds.includes(id))
+      });
+      return;
+    }
+
+    onFiltersChange({
+      ...filters,
+      macrotopics: addUnique(filters.macrotopics, topicId),
+      subtopics: addUnique(filters.subtopics, childIds)
+    });
   };
 
-  const clearArrayFilter = (key: MultiFilterKey) => {
-    onFiltersChange({ ...filters, [key]: [] });
+  const toggleSubtopic = (topicId: string, subtopicId: string) => {
+    const topic = topicGroups.find((group) => group.value === topicId);
+    if (!topic) {
+      return;
+    }
+
+    const nextSubtopics = toggleValue(filters.subtopics, subtopicId);
+    const childIds = topic.children.map((child) => child.value);
+    const allChildrenSelected = childIds.every((id) => nextSubtopics.includes(id));
+
+    onFiltersChange({
+      ...filters,
+      macrotopics: allChildrenSelected
+        ? addUnique(filters.macrotopics, topicId)
+        : filters.macrotopics.filter((id) => id !== topicId),
+      subtopics: nextSubtopics
+    });
   };
 
-  const subtopics = taxonomy.macrotopics.flatMap((topic) => topic.subtopics);
-  const regions = getRegionOptions();
-  const countries = getCountryOptions();
+  const toggleRegion = (region: string) => {
+    const group = locationGroups.find((candidate) => candidate.value === region);
+    if (!group) {
+      return;
+    }
+
+    const childCountries = group.children.map((child) => child.value);
+    const allChildrenSelected = childCountries.every((country) => filters.countries.includes(country));
+
+    if (allChildrenSelected) {
+      onFiltersChange({
+        ...filters,
+        regions: filters.regions.filter((candidate) => candidate !== region),
+        countries: filters.countries.filter((country) => !childCountries.includes(country))
+      });
+      return;
+    }
+
+    onFiltersChange({
+      ...filters,
+      regions: addUnique(filters.regions, region),
+      countries: addUnique(filters.countries, childCountries)
+    });
+  };
+
+  const toggleCountry = (region: string, country: string) => {
+    const group = locationGroups.find((candidate) => candidate.value === region);
+    if (!group) {
+      return;
+    }
+
+    const nextCountries = toggleValue(filters.countries, country);
+    const childCountries = group.children.map((child) => child.value);
+    const allChildrenSelected = childCountries.every((candidate) => nextCountries.includes(candidate));
+
+    onFiltersChange({
+      ...filters,
+      regions: allChildrenSelected
+        ? addUnique(filters.regions, region)
+        : filters.regions.filter((candidate) => candidate !== region),
+      countries: nextCountries
+    });
+  };
 
   return (
     <section className="filter-band" aria-label="Event filters">
@@ -56,90 +145,33 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
           />
         </div>
 
-        <MultiSelectDropdown
+        <HierarchicalFilterDropdown
           className="topic-filter"
           label="Topics"
-          options={taxonomy.macrotopics.map((topic) => ({ value: topic.id, label: topic.label }))}
-          selected={filters.macrotopics}
-          isOpen={openDropdown === "macrotopics"}
-          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "macrotopics" : null)}
-          onToggle={(value) => toggleArrayFilter("macrotopics", value)}
-          onClear={() => clearArrayFilter("macrotopics")}
+          childLabel="subtopics"
+          groups={topicGroups}
+          selectedParents={filters.macrotopics}
+          selectedChildren={filters.subtopics}
+          isOpen={openDropdown === "topics"}
+          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "topics" : null)}
+          onToggleParent={toggleTopic}
+          onToggleChild={toggleSubtopic}
+          onClear={() => onFiltersChange({ ...filters, macrotopics: [], subtopics: [] })}
         />
 
-        <MultiSelectDropdown
-          className="subtopic-filter"
-          label="Subtopics"
-          options={subtopics.map((subtopic) => ({ value: subtopic.id, label: subtopic.label }))}
-          selected={filters.subtopics}
-          isOpen={openDropdown === "subtopics"}
-          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "subtopics" : null)}
-          onToggle={(value) => toggleArrayFilter("subtopics", value)}
-          onClear={() => clearArrayFilter("subtopics")}
+        <HierarchicalFilterDropdown
+          className="location-filter"
+          label="Location"
+          childLabel="countries"
+          groups={locationGroups}
+          selectedParents={filters.regions}
+          selectedChildren={filters.countries}
+          isOpen={openDropdown === "location"}
+          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "location" : null)}
+          onToggleParent={toggleRegion}
+          onToggleChild={toggleCountry}
+          onClear={() => onFiltersChange({ ...filters, regions: [], countries: [] })}
         />
-
-        <MultiSelectDropdown
-          className="region-filter"
-          label="Regions"
-          options={regions.map((region) => ({ value: region, label: region }))}
-          selected={filters.regions}
-          isOpen={openDropdown === "regions"}
-          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "regions" : null)}
-          onToggle={(value) => toggleArrayFilter("regions", value)}
-          onClear={() => clearArrayFilter("regions")}
-        />
-
-        <MultiSelectDropdown
-          className="country-filter"
-          label="Countries"
-          options={countries.map((country) => ({ value: country, label: country }))}
-          selected={filters.countries}
-          isOpen={openDropdown === "countries"}
-          onOpenChange={(isOpen) => setOpenDropdown(isOpen ? "countries" : null)}
-          onToggle={(value) => toggleArrayFilter("countries", value)}
-          onClear={() => clearArrayFilter("countries")}
-        />
-
-        <label className="select-field compact">
-          <span>Mode</span>
-          <select value={filters.mode} onChange={(event) => updateFilter("mode", event.target.value)}>
-            <option value="all">All modes</option>
-            <option value="in-person">In person</option>
-            <option value="online">Online</option>
-            <option value="hybrid">Hybrid</option>
-          </select>
-        </label>
-
-        <label className="select-field compact">
-          <span>Fee</span>
-          <select
-            value={filters.feeType}
-            onChange={(event) => updateFilter("feeType", event.target.value)}
-          >
-            <option value="all">Any fee</option>
-            <option value="free">Free</option>
-            <option value="paid">Paid</option>
-            <option value="unknown">Unknown</option>
-          </select>
-        </label>
-
-        <label className="date-field">
-          <span>Starts after</span>
-          <input
-            type="date"
-            value={filters.startsAfter}
-            onChange={(event) => updateFilter("startsAfter", event.target.value)}
-          />
-        </label>
-
-        <label className="date-field">
-          <span>Deadline before</span>
-          <input
-            type="date"
-            value={filters.deadlineBefore}
-            onChange={(event) => updateFilter("deadlineBefore", event.target.value)}
-          />
-        </label>
       </div>
 
       <div className="filter-actions-row">
@@ -157,37 +189,42 @@ export function FilterBar({ filters, resultCount, totalCount, onFiltersChange }:
   );
 }
 
-type CheckboxOption = {
-  value: string;
-  label: string;
-};
-
-function MultiSelectDropdown({
+function HierarchicalFilterDropdown({
   className,
   label,
-  options,
-  selected,
+  childLabel,
+  groups,
+  selectedParents,
+  selectedChildren,
   isOpen,
   onOpenChange,
-  onToggle,
+  onToggleParent,
+  onToggleChild,
   onClear
 }: {
   className: string;
   label: string;
-  options: CheckboxOption[];
-  selected: string[];
+  childLabel: string;
+  groups: HierarchicalGroup[];
+  selectedParents: string[];
+  selectedChildren: string[];
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
-  onToggle: (value: string) => void;
+  onToggleParent: (parent: string) => void;
+  onToggleChild: (parent: string, child: string) => void;
   onClear: () => void;
 }) {
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
   const fieldRef = useRef<HTMLDivElement | null>(null);
   const labelId = useId();
   const menuId = useId();
-  const summary = selected.length === 0 ? "All" : `${selected.length} selected`;
+  const selectedSummary = getSelectionSummary(groups, selectedParents, selectedChildren);
+  const summary = selectedSummary.length === 0 ? "All" : selectedSummary.join(", ");
+  const hasSelection = selectedParents.length > 0 || selectedChildren.length > 0;
 
   useEffect(() => {
     if (!isOpen) {
+      setOpenGroup(null);
       return;
     }
 
@@ -213,7 +250,7 @@ function MultiSelectDropdown({
   }, [isOpen, onOpenChange]);
 
   return (
-    <div className={`multi-select-field ${className}`} ref={fieldRef}>
+    <div className={`multi-select-field hierarchical-filter ${className}`} ref={fieldRef}>
       <span className="multi-select-label" id={labelId}>
         {label}
       </span>
@@ -231,13 +268,13 @@ function MultiSelectDropdown({
       </button>
 
       {isOpen ? (
-        <div aria-labelledby={labelId} className="multi-select-menu" id={menuId} role="group">
+        <div aria-labelledby={labelId} className="multi-select-menu hierarchical-menu" id={menuId} role="group">
           <div className="multi-select-menu-header">
             <strong>{label}</strong>
             <button
               aria-label={`Clear ${label}`}
               className="multi-select-clear"
-              disabled={selected.length === 0}
+              disabled={!hasSelection}
               type="button"
               onClick={onClear}
             >
@@ -245,20 +282,106 @@ function MultiSelectDropdown({
             </button>
           </div>
 
-          <div className="multi-select-options">
-        {options.map((option) => (
-          <label className="multi-select-option" key={option.value}>
-            <input
-              checked={selected.includes(option.value)}
-              type="checkbox"
-              onChange={() => onToggle(option.value)}
-            />
-            <span>{option.label}</span>
-          </label>
-        ))}
+          <div className="hierarchical-options">
+            {groups.map((group) => {
+              const childValues = group.children.map((child) => child.value);
+              const allChildrenSelected =
+                childValues.length > 0 && childValues.every((child) => selectedChildren.includes(child));
+              const someChildrenSelected = childValues.some((child) => selectedChildren.includes(child));
+              const isExpanded = openGroup === group.value;
+
+              return (
+                <div className="hierarchical-group" key={group.value} onMouseEnter={() => setOpenGroup(group.value)}>
+                  <div className="hierarchical-parent-row">
+                    <label className="multi-select-option hierarchical-parent-option">
+                      <input
+                        checked={allChildrenSelected}
+                        ref={(element) => {
+                          if (element) {
+                            element.indeterminate = !allChildrenSelected && someChildrenSelected;
+                          }
+                        }}
+                        type="checkbox"
+                        onChange={() => onToggleParent(group.value)}
+                      />
+                      <span>{group.label}</span>
+                    </label>
+                    <button
+                      aria-expanded={isExpanded}
+                      aria-label={`Show ${group.label} ${childLabel}`}
+                      className="hierarchical-child-toggle"
+                      type="button"
+                      onClick={() => setOpenGroup(group.value)}
+                      onMouseEnter={() => setOpenGroup(group.value)}
+                    >
+                      <ChevronRight aria-hidden="true" size={16} />
+                    </button>
+                  </div>
+
+                  {isExpanded ? (
+                    <div aria-label={`${group.label} ${childLabel}`} className="hierarchical-children" role="group">
+                      {group.children.map((child) => (
+                        <label className="multi-select-option hierarchical-child-option" key={child.value}>
+                          <input
+                            checked={selectedChildren.includes(child.value)}
+                            type="checkbox"
+                            onChange={() => onToggleChild(group.value, child.value)}
+                          />
+                          <span>{child.label}</span>
+                        </label>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              );
+            })}
           </div>
         </div>
       ) : null}
     </div>
   );
+}
+
+function getSelectionSummary(
+  groups: HierarchicalGroup[],
+  selectedParents: string[],
+  selectedChildren: string[]
+): string[] {
+  const summary: string[] = [];
+
+  for (const group of groups) {
+    const childValues = group.children.map((child) => child.value);
+    const allChildrenSelected =
+      childValues.length > 0 && childValues.every((child) => selectedChildren.includes(child));
+
+    if (selectedParents.includes(group.value) || allChildrenSelected) {
+      summary.push(group.label);
+      continue;
+    }
+
+    for (const child of group.children) {
+      if (selectedChildren.includes(child.value)) {
+        summary.push(child.label);
+      }
+    }
+  }
+
+  return summary.slice(0, 3);
+}
+
+function addUnique(current: string[], value: string): string[];
+function addUnique(current: string[], values: string[]): string[];
+function addUnique(current: string[], valueOrValues: string | string[]): string[] {
+  const next = new Set(current);
+  const values = Array.isArray(valueOrValues) ? valueOrValues : [valueOrValues];
+
+  values.forEach((value) => next.add(value));
+
+  return [...next];
+}
+
+function toggleValue(current: string[], value: string): string[] {
+  return current.includes(value)
+    ? current.filter((candidate) => candidate !== value)
+    : [...current, value];
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { validateLocationCatalog } from "../src/lib/locations";
+import { getCountriesByRegion, getCountriesForRegions, validateLocationCatalog } from "../src/lib/locations";
 import type { EventRecord, LocationCatalogRecord } from "../src/lib/eventTypes";
 
 const event: EventRecord = {
@@ -107,5 +107,42 @@ describe("location catalog validation", () => {
 
     expect(result.ok).toBe(false);
     expect(result.errors).toContain("Location Online cannot be mappable.");
+  });
+});
+
+describe("location filter options", () => {
+  const regionalCatalog: LocationCatalogRecord[] = [
+    ...validCatalog,
+    {
+      location: "Berlin, Germany",
+      city: "Berlin",
+      country: "Germany",
+      region: "Europe",
+      latitude: 52.52,
+      longitude: 13.405,
+      mappable: true
+    },
+    {
+      location: "Chicago, United States",
+      city: "Chicago",
+      country: "United States",
+      region: "North America",
+      latitude: 41.8781,
+      longitude: -87.6298,
+      mappable: true
+    }
+  ];
+
+  it("groups countries under their region instead of exposing one global country list", () => {
+    const groups = getCountriesByRegion(regionalCatalog);
+
+    expect(groups).toEqual([
+      { region: "Europe", countries: ["Germany", "Italy"] },
+      { region: "North America", countries: ["United States"] }
+    ]);
+  });
+
+  it("expands a selected region into its countries", () => {
+    expect(getCountriesForRegions(["Europe"], regionalCatalog)).toEqual(["Germany", "Italy"]);
   });
 });

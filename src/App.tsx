@@ -22,10 +22,10 @@ export default function App() {
   const openerRef = useRef<HTMLElement | null>(null);
 
   const visibleEvents = useMemo(() => sortEvents(filterEvents(events, filters), sort), [filters, sort]);
+  const selectedVisibleEvent = visibleEvents.find((event) => event.id === selectedEventId) ?? visibleEvents[0];
   const selectedEvent =
-    visibleEvents.find((event) => event.id === selectedEventId) ??
+    selectedVisibleEvent ??
     events.find((event) => event.id === selectedEventId) ??
-    visibleEvents[0] ??
     events[0];
 
   const openProposal = (mode: ProposalMode, opener?: HTMLElement) => {
@@ -87,16 +87,16 @@ export default function App() {
             <div className="directory-panel">
               <EventTable
                 events={visibleEvents}
-                selectedEventId={selectedEvent?.id}
+                selectedEventId={selectedVisibleEvent?.id}
                 sort={sort}
                 onSortChange={setSort}
                 onSelectEvent={(event) => setSelectedEventId(event.id)}
               />
             </div>
 
-            {selectedEvent ? (
+            {selectedVisibleEvent ? (
               <EventDetails
-                event={selectedEvent}
+                event={selectedVisibleEvent}
                 onUpdate={(opener) => openProposal("update", opener)}
                 onDelete={(opener) => openProposal("delete", opener)}
               />

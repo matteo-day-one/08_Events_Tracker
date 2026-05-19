@@ -53,15 +53,34 @@ test("shares multi-select topic and geography filters across timeline and map", 
   const filters = page.getByLabel("Event filters");
   await filters.getByRole("button", { name: "Topics All", exact: true }).click();
   await filters.getByRole("checkbox", { name: "Energy", exact: true }).check();
-  await expect(filters.getByRole("button", { name: "Topics 1 selected", exact: true })).toBeVisible();
+  await expect(filters.getByRole("button", { name: "Topics Energy", exact: true })).toBeVisible();
 
-  await filters.getByRole("button", { name: "Countries All", exact: true }).click();
-  await filters.getByRole("checkbox", { name: "Italy", exact: true }).check();
-  await expect(filters.getByRole("button", { name: "Countries 1 selected", exact: true })).toBeVisible();
+  await filters.getByRole("button", { name: "Location All", exact: true }).click();
+  await filters.getByRole("checkbox", { name: "Europe", exact: true }).check();
+  await expect(filters.getByRole("button", { name: "Location Europe", exact: true })).toBeVisible();
   await page.keyboard.press("Escape");
 
   await expect(page.getByRole("row", { name: /Clean Energy Summit/ })).toBeVisible();
   await expect(page.getByRole("row", { name: /Medical Robotics Workshop/ })).toHaveCount(0);
+
+  await filters.getByRole("button", { name: "Topics Energy", exact: true }).click();
+  await filters.getByRole("button", { name: "Clear Topics" }).click();
+  await filters.getByRole("button", { name: "Show Energy subtopics", exact: true }).click();
+  await filters.getByRole("checkbox", { name: "Batteries", exact: true }).check();
+  await expect(filters.getByRole("button", { name: "Topics Batteries", exact: true })).toBeVisible();
+  await page.keyboard.press("Escape");
+
+  await expect(page.getByRole("row", { name: /Clean Energy Summit/ })).toBeVisible();
+  await expect(page.getByRole("row", { name: /European Geothermal Workshop/ })).toHaveCount(0);
+
+  await filters.getByRole("button", { name: "Location Europe", exact: true }).click();
+  await filters.getByRole("button", { name: "Clear Location" }).click();
+  await filters.getByRole("button", { name: "Show Europe countries", exact: true }).click();
+  await filters.getByRole("checkbox", { name: "Italy", exact: true }).check();
+  await expect(filters.getByRole("button", { name: "Location Italy", exact: true })).toBeVisible();
+  await page.keyboard.press("Escape");
+
+  await expect(page.getByRole("row", { name: /Clean Energy Summit/ })).toBeVisible();
 
   await page.getByRole("button", { name: "Timeline", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Timeline" })).toBeVisible();
@@ -117,6 +136,27 @@ test("filter toolbar wraps without overlap on mobile", async ({ page }) => {
 
   expect(layout.overlaps).toBe(false);
   expect(layout.scrollWidth).toBeLessThanOrEqual(layout.viewportWidth);
+
+  const filters = page.getByLabel("Event filters");
+  await filters.getByRole("button", { name: "Topics All", exact: true }).click();
+  await filters.getByRole("button", { name: "Show Energy subtopics", exact: true }).click();
+  await expect(filters.getByRole("checkbox", { name: "Batteries", exact: true })).toBeVisible();
+
+  const openMenuLayout = await page.evaluate(() => {
+    const viewportWidth = document.documentElement.clientWidth;
+    const scrollWidth = document.documentElement.scrollWidth;
+    const menu = document.querySelector<HTMLElement>(".multi-select-menu")?.getBoundingClientRect();
+
+    return {
+      scrollWidth,
+      viewportWidth,
+      menuFits: Boolean(menu && menu.left >= 0 && menu.right <= viewportWidth)
+    };
+  });
+
+  expect(openMenuLayout.menuFits).toBe(true);
+  expect(openMenuLayout.scrollWidth).toBeLessThanOrEqual(openMenuLayout.viewportWidth);
+  await page.keyboard.press("Escape");
 
   await page.getByRole("button", { name: "Map", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Map", exact: true })).toBeVisible();

@@ -1,5 +1,5 @@
 import taxonomyData from "../../data/taxonomy.json";
-import type { Taxonomy } from "./eventTypes";
+import type { Taxonomy, TaxonomySubtopic } from "./eventTypes";
 
 export const taxonomy = taxonomyData satisfies Taxonomy;
 
@@ -28,6 +28,23 @@ export function getSubtopicLabel(id: string, source: Taxonomy = taxonomy): strin
   }
 
   return id;
+}
+
+export function getSubtopicsForMacrotopic(
+  macrotopicId: string,
+  source: Taxonomy = taxonomy
+): TaxonomySubtopic[] {
+  return source.macrotopics.find((topic) => topic.id === macrotopicId)?.subtopics ?? [];
+}
+
+export function getMacrotopicIdForSubtopic(id: string, source: Taxonomy = taxonomy): string | undefined {
+  for (const macrotopic of source.macrotopics) {
+    if (macrotopic.subtopics.some((candidate) => candidate.id === id)) {
+      return macrotopic.id;
+    }
+  }
+
+  return undefined;
 }
 
 export function getMacrotopicColorClass(id: string): string {

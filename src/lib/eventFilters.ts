@@ -67,11 +67,11 @@ export function filterEvents(
       return false;
     }
 
-    if (filters.macrotopics.length > 0 && !filters.macrotopics.some((id) => event.macrotopics.includes(id))) {
-      return false;
-    }
-
-    if (filters.subtopics.length > 0 && !filters.subtopics.some((id) => event.subtopics.includes(id))) {
+    if (
+      (filters.macrotopics.length > 0 || filters.subtopics.length > 0) &&
+      !filters.macrotopics.some((id) => event.macrotopics.includes(id)) &&
+      !filters.subtopics.some((id) => event.subtopics.includes(id))
+    ) {
       return false;
     }
 
